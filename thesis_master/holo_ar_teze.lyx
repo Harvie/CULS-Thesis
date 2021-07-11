@@ -1,0 +1,346 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\end_preamble
+\options idxtotoc
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 35mm
+\topmargin 30mm
+\rightmargin 20mm
+\bottommargin 30mm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Česká zemědělská univerzita v Praze
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Provozně ekonomická fakulta
+\begin_inset Newline newline
+\end_inset
+
+Katedra informačního inženýrství
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Graphics
+	filename logo.svg
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+Diplomová práce
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Využití holofonního prostorového zvuku
+\begin_inset Newline newline
+\end_inset
+
+pro účel rozšířené reality
+\end_layout
+
+\begin_layout Author
+Autor práce: 
+\series bold
+Bc.
+ Tomáš Mudruňka
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Vedoucí práce: 
+\series bold
+Ing.
+ Josef Pavlíček, Ph.D.
+\end_layout
+
+\begin_layout Date
+\begin_inset VSpace vfill
+\end_inset
+
+©2017 ČZU v Praze
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cíl práce
+\end_layout
+
+\begin_layout Standard
+Cílem této práce je zjistit, zda je možné použití holofonního prostorového
+ zvuku k implementaci prostředků rozšířené reality.
+ A následně na základě získaných poznatků navrhnout vzorovou implementaci
+ formou mobilní aplikace.
+ Aplikace bude svému uživateli prezentovat informace získané z externích
+ zdrojů.
+ Tyto informace budou prezentovány pomocí holofonních zvukových signálů,
+ což má umožnit jejich podvědomé vnímání uživatelem.
+ V ideálním případě budou prezentovány informace z bezprostředního okolí
+ uživatele způsobem, který umožní, aby je uživatel podvědomě zapracoval
+ do svého subjektivního obrazu reality.
+ Tím by měla u uživatele vzniknout iluze, že má "šestý smysl", skrze který
+ může s informacemi pracovat nejen racionálně, ale také intuitivně.
+\end_layout
+
+\begin_layout Section
+Metodika práce
+\end_layout
+
+\begin_layout Standard
+Metodika diplomové práce je založena na analýze lidského vnímání zvuků vytvořený
+ch nebo zachycených pomocí holofonní technologie.
+ Dále budou poznatky využity v praxi při tvorbě mobilní aplikace.
+ Následně bude kriticky zhodnocena přínosnost této aplikace a budou navržena
+ případná vylepšení.
+\end_layout
+
+\begin_layout Section
+Závěr
+\end_layout
+
+\begin_layout Standard
+V této práci bylo na základě objektivních měření i subjektivních pozorování
+ dokázáno, že je možné využít binaurální prostorový zvuk pro účely rozšířené
+ reality.
+ Je však nutné mít na paměti, že lokalizace zvuku lidským sluchem není zdaleka
+ tak jednoznačná, jako je například lokalizace objektů pomocí hmatu a zraku.
+ V práci byla také změřena míra, do jaké je možné se na tento systém spolehnout.
+\end_layout
+
+\begin_layout Standard
+Tento zjištěný fakt byl demonstrován v praxi na funkční mobilní aplikaci,
+ která umožňuje uživateli rozšířit svou realitu o pomyslný šestý smysl,
+ který umožňuje podvědomě vnímat světové strany.
+\end_layout
+
+\begin_layout Standard
+Jako vedlejší produkt této práce vznikl počítačový program vhodný pro provádění
+ podobných měření při budoucím výzkumu schopností lidského sluchu lokalizovat
+ zdroj prostorového zvuku.
+\end_layout
+
+\begin_layout Standard
+Za důležitý vedlejší přínos této práce také považuji otevření tohoto tématu.
+ V současnosti se většina snah na poli rozšířené reality zaměřuje na obrazové
+ systémy, které jsou pro většinu lidí pochopitelně lákavé.
+ To ale neznamená, že bysme se měli soustředit jen na zrak a celkově opomíjet
+ využití ostatních smyslů pro účely rozšířené reality.
+\end_layout
+
+\begin_layout Section
+Seznam vybraných použitých zdrojů
+\end_layout
+
+\begin_layout Description
+[1] BAXTER, A.J., KEMP, David T., "Zuccarelli's Theory," New Scientist, 1983,
+ ISSN 606-606
+\end_layout
+
+\begin_layout Description
+[2] GILKEY, Robert H., ANDERSON, Timtohy A., "Binaural and Spatial Hearing
+ in Real and Virtual Environments
+\begin_inset Quotes prd
+\end_inset
+
+, ISBN 978-1138987852
+\end_layout
+
+\begin_layout Description
+[6] BEGAULT, D.R., 
+\begin_inset Quotes pld
+\end_inset
+
+3D sound for virtual reality and multimedia
+\begin_inset Quotes prd
+\end_inset
+
+, AP Professional, 1994
+\end_layout
+
+\begin_layout Description
+[7] BLAUERT, J., 
+\begin_inset Quotes pld
+\end_inset
+
+Spatial hearing: the psychophysics of human sound localization, MIT Press,
+ 1997
+\end_layout
+
+\begin_layout Description
+[8] SO, R.H.Y., NGAN, B., HORNER, A., LEUNG, K.L., BRAASCH, J., BLAUERT, J., 
+\begin_inset Quotes pld
+\end_inset
+
+Toward orthogonal non-individualized head-related transfer functions for
+ forward and backward directional sound: cluster analysis and an experimental
+ study.
+ Ergonomics
+\begin_inset Quotes prd
+\end_inset
+
+, 2010 , 53(6), pp.767-781.
+\end_layout
+
+\begin_layout Description
+[11] GARDNER, Bill, MARTIN, Keith, 
+\begin_inset Quotes pld
+\end_inset
+
+HRTF Measurements of a KEMAR Dummy-Head Microphone
+\begin_inset Quotes prd
+\end_inset
+
+ [online], 2000, [cit.
+ 23.11.2017], Dostupné z: http://sound.media.mit.edu/resources/KEMAR.html
+\end_layout
+
+\begin_layout Description
+[12] BEHRINGER, R., KLINKER, G., MIZELL, D., 
+\begin_inset Quotes pld
+\end_inset
+
+Augmented Reality – Placing Artificial Objects in Real Scenes
+\begin_inset Quotes prd
+\end_inset
+
+, Proceedings of IWAR '98.
+ A.K.Peters, Natick, 1999.
+ ISBN 1-56881-098-9
+\end_layout
+
+\begin_layout Description
+[13] THAUT, Michael H., 
+\begin_inset Quotes pld
+\end_inset
+
+Rhythm, music, and the brain : scientific foundations and clinical applications
+ (1st in paperback ed.)
+\begin_inset Quotes prd
+\end_inset
+
+, New York, NY [u.a.]: Routledge, 2005, ISBN 0415973708
+\end_layout
+
+\end_body
+\end_document

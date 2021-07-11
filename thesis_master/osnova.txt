@@ -1,0 +1,21 @@
+
+
+název v českém a anglickém jazyce,
+souhrn (abstrakt) v českém a anglickém jazyce,
+klíčová slova v českém a anglickém jazyce,
+
+
+- obsah
+- cíl práce
+- metodika práce
+- základní principy využití holofonního zvuku
+- objektivní měření vlivu lidského vnímání holofonního zvuku
+- zhodnocení výsledků měření a návrh praktického využití
+- praktické využití získaných dat na ukázkovém případu
+- subjektivní zhodnocení praktického přínosu technologie
+- závěr
+
+
+mohou být samozřejmě přílohy,
+seznam literatury, samozřejmě se může odlišovat od toho v zadání,
+dále by práce měla obsahovat obsah, případně poděkování, seznam zkratek atd.

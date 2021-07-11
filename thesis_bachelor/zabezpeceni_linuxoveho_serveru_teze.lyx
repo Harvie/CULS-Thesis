@@ -1,0 +1,653 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\end_preamble
+\options idxtotoc
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 35mm
+\topmargin 30mm
+\rightmargin 20mm
+\bottommargin 30mm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Česká zemědělská univerzita v Praze
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Provozně ekonomická fakulta
+\begin_inset Newline newline
+\end_inset
+
+Katedra informačního inženýrství
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Graphics
+	filename logo.png
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+Teze bakalářské práce
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Zabezpečení Linuxového serveru
+\end_layout
+
+\begin_layout Author
+Autor práce: 
+\series bold
+Tomáš Mudruňka
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Vedoucí práce: 
+\series bold
+doc.
+ Ing.
+ Arnošt Veselý, CSc.
+\end_layout
+
+\begin_layout Date
+\begin_inset VSpace vfill
+\end_inset
+
+©2014 ČZU v Praze
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Úvod
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že operační systém Linux je velmi často používán na síťových
+ serverech dostupných přes mezinárodní síť internet a
+\begin_inset space ~
+\end_inset
+
+je tak potenciálně vystaven případným útokům, je zabezpečení Linuxových
+ systémů vždy vděčné téma.
+ Proto se tato práce zabývá základními aspekty zabezpečení Linuxových systémů.
+\end_layout
+
+\begin_layout Standard
+Kromě toho také existuje mnoho technologií, které umožňují zabezpečení Linuxovéh
+o systému posílit nad rámec základní konfigurace.
+ Jednou z
+\begin_inset space ~
+\end_inset
+
+těchto technologií je bezpečnostní modul AppArmor, který je v
+\begin_inset space ~
+\end_inset
+
+práci rovněž popsán včetně ukázky jeho praktického nasazení.
+\end_layout
+
+\begin_layout Section
+Cíl práce a metodika
+\end_layout
+
+\begin_layout Standard
+Cílem práce je stručně seznámit čtenáře s
+\begin_inset space ~
+\end_inset
+
+problematikou zabezpečení Linuxových systémů.
+ V práci budou popsány nejvýznamnější slabiny, se kterými se na Linuxových
+ serverech můžeme běžně setkat, a
+\begin_inset space ~
+\end_inset
+
+hrozby, kterým tyto slabiny podléhají.
+ Součástí práce bude i
+\begin_inset space ~
+\end_inset
+
+popis nějčastějších opatření, která se používají k odvrácení těchto hrozeb.
+ Poté se práce zaměří na bezpečnostní modul AppArmor, zmapuje jeho oficiální
+ dokumentaci a
+\begin_inset space ~
+\end_inset
+
+další prameny, které se po teoretické stránce zabývají jeho funkcionalitou.
+ Následně bude demonstrováno nasazení tohoto modulu v
+\begin_inset space ~
+\end_inset
+
+praxi na modelovém případu.
+ Zhodnocena bude také funkčnost celého řešení.
+\end_layout
+
+\begin_layout Standard
+Tato práce je zpracována na základě analýzy odborné literatury a
+\begin_inset space ~
+\end_inset
+
+praktických zkušeností s
+\begin_inset space ~
+\end_inset
+
+nasazením popisovaných technologií.
+ Vzhledem k povaze zvoleného tématu je velký důraz kladen na online zdroje
+ a
+\begin_inset space ~
+\end_inset
+
+technickou dokumentaci popisovaných technologií.
+\end_layout
+
+\begin_layout Section
+Závěr
+\end_layout
+
+\begin_layout Standard
+Cílem práce bylo seznámit čtenáře s
+\begin_inset space ~
+\end_inset
+
+problematikou zabezpečení Linuxových systémů a
+\begin_inset space ~
+\end_inset
+
+blíže rozebrat bezpečnostní modul AppArmor.
+ Dále jsem chtěl přiblížit čtenáři jeho fungování v
+\begin_inset space ~
+\end_inset
+
+teoretické rovině a
+\begin_inset space ~
+\end_inset
+
+poté předvést jeho nasazení v
+\begin_inset space ~
+\end_inset
+
+praxi na modelovém případu, včetně ověření a
+\begin_inset space ~
+\end_inset
+
+zhodnocení funkcionality.
+ 
+\end_layout
+
+\begin_layout Standard
+V práci jsem stručně otevřel problematiku Linuxového prostředí, popsal základní
+ aspekty zabezpečení, které by měl každý začínající správce Linuxového serveru
+ znát.
+ Důraz byl kladen na nejčastěji se vyskytující bezpečnostní chyby, možnosti
+ jejich zneužití a
+\begin_inset space ~
+\end_inset
+
+prostředky jejich řešení.
+ Dále byla v práci popsána dostupná rozšíření tohoto základu, která poskytují
+ pokročilejší možnosti zabezpečení.
+ Poté byl v
+\begin_inset space ~
+\end_inset
+
+práci podrobněji rozebrán modul AppArmor, který mezi tato rozšíření spadá.
+ V práci byly popsány jak základní principy fungování AppArmoru, tak i
+\begin_inset space ~
+\end_inset
+
+ukázka úspěšné aplikace AppArmoru na modelový případ.
+ Čtenář s
+\begin_inset space ~
+\end_inset
+
+pouze základní předchozí zkušeností se správou Linuxového serveru by tedy
+ po přečtení práce měl mít přehled o
+\begin_inset space ~
+\end_inset
+
+problematice AppArmoru dostatečný k
+\begin_inset space ~
+\end_inset
+
+tomu, aby ho byl schopen sám nasadit v testovacím provozu a
+\begin_inset space ~
+\end_inset
+
+za použití aktuální dokumentace postupně začít AppArmor nastavovat pro svoje
+ konkrétní potřeby.
+\end_layout
+
+\begin_layout Standard
+Tato práce byla zpracována na základě analýzy odborné literatury, technické
+ dokumentace a
+\begin_inset space ~
+\end_inset
+
+praktických zkušeností s nasazením popisovaných technologií.
+\end_layout
+
+\begin_layout Section
+Seznam použité literatury
+\end_layout
+
+\begin_layout Description
+[1] BERLICH, R.
+ ALL YOU NEED TO KNOW ABOUT...
+ The early history of Linux: Part 2, Re: distribution [online].
+ 2001.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://oldlinux.org/Linux.old/docs/lu9-All_you_need_to_know_about
+\begin_inset Newline newline
+\end_inset
+
+-The_early_history_of_Linux_part_2.pdf>.
+\end_layout
+
+\begin_layout Description
+[2] SCHROEDER, M, SALTZER, J.
+ A Hardware Architecture for Implementing Protection Rings [online].
+ 1972.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.multicians.org/protection.html>
+\end_layout
+
+\begin_layout Description
+[3] Kolektiv autorů.
+ Linux Security HOWTO: Files and File system Security [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-HOWTO/file-security.html>
+\end_layout
+
+\begin_layout Description
+[4] The Linux Foundation, mfillpot.
+ Understanding Linux File Permissions [online].
+ 2010.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.linux.com/learn/tutorials/309527-understanding-linux-file-permissions>
+\end_layout
+
+\begin_layout Description
+[5] KERRISK, M.
+ CAP_SYS_ADMIN: the new root [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://lwn.net/Articles/486306/>
+\end_layout
+
+\begin_layout Description
+[6] Kolektiv autorů.
+ Linux Security HOWTO: Physical Security [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-HOWTO/physical-security.html>
+\end_layout
+
+\begin_layout Description
+[7] Kolektiv autorů.
+ TLDP: The File system [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://tldp.org/LDP/tlk/fs/filesystem.html>
+\end_layout
+
+\begin_layout Description
+[8] Kolektiv autorů.
+ Security Quick-Start HOWTO for Linux: Servers, Ports, and Packets [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-Quickstart-HOWTO/appendix.html>
+\end_layout
+
+\begin_layout Description
+[9] LEVY, E.
+ Smashing the Stack for Fun and Profit [online].
+ 1996.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://phrack.org/issues/49/14.html>
+\end_layout
+
+\begin_layout Description
+[10] COWAN, C, WAGLE, P, Pu, C, BEATTIE, S, WALPOLE, J.
+ Buffer Overflows: Attacks and Defenses for the Vulnerability of the Decade
+ [online].
+ 2000.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://tmp-www.cpe.ku.ac.th/~mcs/courses/
+\begin_inset Newline newline
+\end_inset
+
+2005_02/214573/papers/buffer_overflows.pdf>
+\end_layout
+
+\begin_layout Description
+[11] DEWRY, W, LUTOMIRSKI, A.
+ Dokumentace zdrojového kódu Linuxu: SECure COMPuting with filters [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://www.kernel.org/doc/Documentation/prctl/seccomp_filter.txt>
+\end_layout
+
+\begin_layout Description
+[12] ANDREASSON, O.
+ Iptables Tutorial 1.1.19 [online].
+ 2003.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.linuxhowtos.org/Security/iptables.htm>
+\end_layout
+
+\begin_layout Description
+[13] PAVLÍČEK, M.
+ Chroot prostředí - I [online].
+ 2003.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.abclinuxu.cz/clanky/bezpecnost/chroot-prostredi-i>
+\end_layout
+
+\begin_layout Description
+[14] WATZKE, D.
+ Unixové nástroje – 18 (nice, renice, umask) [online].
+ 2010.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.abclinuxu.cz/clanky/unixove-nastroje-18-nice-renice-umask>
+\end_layout
+
+\begin_layout Description
+[15] MENAGE, P, JACKSON, P, LAMETER, Ch.
+ Dokumentace zdrojového kódu Linuxu: CGROUPS [online].
+ 2006.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt>
+\end_layout
+
+\begin_layout Description
+[16] SIMES.
+ How to break out of a chroot() jail [online].
+ 2002.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.bpfh.net/simes/computing/chroot-break.html>
+\end_layout
+
+\begin_layout Description
+[17] WRIGHT, C, COWAN, C, MORRIS, J, SMALLEY, S, KROAH-HARTMAN, G, WireX
+ Communications, Inc., Intercode Pty, Ltd, NAI Labs, Network Associates,
+ Inc., IBM Linux Technology Center.
+ Linux Security Modules: General Security Support for the Linux Kernel [online].
+ 2002.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.usenix.org/event/sec02/wright.html>
+\end_layout
+
+\begin_layout Description
+[18] ŠINDELÁŘ, J.
+ Novell uvolňuje bezpečnostní řešení AppArmor pro Linux jako open-source
+ [online].
+ 2006.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.zive.cz/clanky/novell-uvolnuje-bezpecnostni-reseni-apparmor-pro-linux-
+jako-open-source/sc-3-a-128537/default.aspx>
+\end_layout
+
+\begin_layout Description
+[19] CORBET, J.
+ How patches get into the mainline [online].
+ 2009.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://lwn.net/Articles/318699/>
+\end_layout
+
+\begin_layout Description
+[20] http://wiki.apparmor.net/index.php/AppArmor_Core_Policy_Reference
+\end_layout
+
+\begin_layout Description
+[21] Kolektiv autorů, INSANITYBIT.
+ Compile And Patch Your Own Secure Linux Kernel With PaX and Grsecurity
+ [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.insanitybit.com/2012/05/31/compile-and-patch-your-own-secure-linux-ker
+nel-with-pax-and-grsecurity/>
+\end_layout
+
+\begin_layout Description
+[22] Kolektiv autorů, Canonical, Ltd.
+ Ubuntu documentation: Security/AppArmor [online].
+ 2014.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://help.ubuntu.com/lts/serverguide/apparmor.html>
+\end_layout
+
+\begin_layout Description
+[23] Kolektiv autorů, Canonical, Ltd.
+ Ubuntu documentation: Community/AppArmor [online].
+ 2014.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://help.ubuntu.com/community/AppArmor>
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,5200 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\end_preamble
+\options idxtotoc
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 35mm
+\topmargin 30mm
+\rightmargin 20mm
+\bottommargin 30mm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Česká zemědělská univerzita v Praze
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Provozně ekonomická fakulta
+\begin_inset Newline newline
+\end_inset
+
+Katedra informačního inženýrství
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Graphics
+	filename logo.svg
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+Diplomová práce
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Využití holofonního prostorového zvuku
+\begin_inset Newline newline
+\end_inset
+
+pro účel rozšířené reality
+\end_layout
+
+\begin_layout Author
+Autor práce: 
+\series bold
+Bc.
+ Tomáš Mudruňka
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Vedoucí práce: 
+\series bold
+Ing.
+ Josef Pavlíček, Ph.D.
+\end_layout
+
+\begin_layout Date
+\begin_inset VSpace vfill
+\end_inset
+
+©2017 ČZU v Praze
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Section*
+>>> Tento list nahradit zadáním BP z IS <<<
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename zadani.pdf
+	extra LaTeX "pages={1,2}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset VSpace vfill
+\end_inset
+
+Čestné prohlášení
+\end_layout
+
+\begin_layout Standard
+Prohlašuji, že svou diplomovou práci 
+\begin_inset Quotes pld
+\end_inset
+
+Využití holofonního prostorového zvuku pro účel rozšířené reality
+\begin_inset Quotes prd
+\end_inset
+
+ jsem vypracoval samostatně pod vedením vedoucího diplomové práce a
+\begin_inset space ~
+\end_inset
+
+s
+\begin_inset space ~
+\end_inset
+
+použitím odborné literatury a
+\begin_inset space ~
+\end_inset
+
+dalších informačních zdrojů, které jsou citovány v práci a
+\begin_inset space ~
+\end_inset
+
+uvedeny v seznamu použitých zdrojů na konci práce.
+ Jako autor uvedené diplomové práce dále prohlašuji, že jsem v
+\begin_inset space ~
+\end_inset
+
+souvislosti s
+\begin_inset space ~
+\end_inset
+
+jejím vytvořením neporušil autorská práva třetích osob.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Podepsán Tomáš Mudruňka dne 23.11.
+ 2017
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset VSpace vfill
+\end_inset
+
+Poděkování
+\end_layout
+
+\begin_layout Standard
+Rád bych poděkoval vedoucímu diplomové práce panu Ing.
+ Josefu Pavlíčkovi, Ph.D.
+ za konzultace a
+\begin_inset space ~
+\end_inset
+
+odborné vedení práce.
+ Poděkování patří též rodině a
+\begin_inset space ~
+\end_inset
+
+všem blízkým, kteří mě při psaní této práce podporovali.
+ Děkuji respondentům dotazníkového šetření v této práci, bez kterých by
+ její uskutečnění nebylo možné.
+ Stejně tak i mé nejdražší Bc.
+ Barboře Fišerové z fakulty tropického zemědělství ČZU, která pomáhala responden
+ty shánět.
+ S díky se zmiňuji také o pracovnících multimediální laboratoře na MIT (Bill
+ Gardner and Keith Martin), bez kterých bych pro tuto práci neměl dostatek
+ dat.
+ Taktéž děkuji autorům svobodného softwaru, který je v
+\begin_inset space ~
+\end_inset
+
+práci používán a popisován (3DSound by Gary Bishop, SoX by Lance Norskog,
+ Chris Bagwell and contributors, PHP, Apache HTTPd, R Project, Just-A-Damn-Compa
+ss by James Baster), stejně jako autorům softwaru, který byl při psaní práce
+ použit (sémantický editor \SpecialChar LyX
+ a
+\begin_inset space ~
+\end_inset
+
+verzovací systém Git).
+ Poslední, ale za to čestné poděkování patří fence se zábavným jménem Pinďa,
+ která mě při bloudění po Krkonošských lesích inspirovala k zájmu o tuto
+ problematiku a vytvoření experimentální 
+\begin_inset Quotes pld
+\end_inset
+
+štěkací
+\begin_inset Quotes prd
+\end_inset
+
+ mobilní aplikace pro zlepšení orientace v lesích.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Využití holofonního prostorového zvuku pro účel rozšířené reality
+\end_layout
+
+\begin_layout Subsection*
+Abstrakt
+\end_layout
+
+\begin_layout Standard
+Práce mapuje možnosti využití binaurálního prostorového zvuku k implementaci
+ aplikací rozšířené reality pomocí mobilních telefonů.
+\end_layout
+
+\begin_layout Subsection*
+Klíčová slova
+\end_layout
+
+\begin_layout Standard
+holofonní zvuk, prostorový zvuk, rozšířená realita
+\end_layout
+
+\begin_layout Section*
+Use of spatial holophonic sound for augmented reality purposes
+\end_layout
+
+\begin_layout Subsection*
+Abstract
+\end_layout
+
+\begin_layout Standard
+This thesis maps possibility of using binaural spatial audio in applications
+ of augmented reality using mobile phones.
+\end_layout
+
+\begin_layout Subsection*
+Keywords
+\end_layout
+
+\begin_layout Standard
+holophonic sound, spatial sound, augmented reality
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setstretch{-1}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cíl práce
+\end_layout
+
+\begin_layout Standard
+Cílem této práce je zjistit, zda je možné použití holofonního prostorového
+ zvuku k implementaci prostředků rozšířené reality.
+ A následně na základě získaných poznatků navrhnout vzorovou implementaci
+ formou mobilní aplikace.
+ Aplikace bude svému uživateli prezentovat informace získané z externích
+ zdrojů.
+ Tyto informace budou prezentovány pomocí holofonních zvukových signálů,
+ což má umožnit jejich podvědomé vnímání uživatelem.
+ V ideálním případě budou prezentovány informace z bezprostředního okolí
+ uživatele způsobem, který umožní, aby je uživatel podvědomě zapracoval
+ do svého subjektivního obrazu reality.
+ Tím by měla u uživatele vzniknout iluze, že má "šestý smysl", skrze který
+ může s informacemi pracovat nejen racionálně, ale také intuitivně.
+\end_layout
+
+\begin_layout Section
+Metodika práce
+\end_layout
+
+\begin_layout Standard
+Metodika diplomové práce je založena na analýze lidského vnímání zvuků vytvořený
+ch nebo zachycených pomocí holofonní technologie.
+ Dále budou poznatky využity v praxi při tvorbě mobilní aplikace.
+ Následně bude kriticky zhodnocena přínosnost této aplikace a budou navržena
+ případná vylepšení.
+\end_layout
+
+\begin_layout Section
+Popis prostředků využitých v práci
+\end_layout
+
+\begin_layout Subsection
+Přehled použitých konceptů
+\end_layout
+
+\begin_layout Subsubsection
+Stereo audio
+\end_layout
+
+\begin_layout Standard
+Technologie pro stereo reprodukci zvukových signálů se vyznačují tím, že
+ přenášejí signál ve dvou více či méně nezávislých zvukových kanálech.
+ To ale ještě nezaručuje, že tyto signály přijdou k posluchači ve stejném
+ fázovém posuvu a se stejnými odrazy jako kdyby slyšel zdroj přenášeného
+ zvuku bez zprostředkování.
+ Typický stereo záznam hudebního nebo rozhlasového vystoupení často vzniká
+ uměle.
+ Tým zvukařů rozmístí jednotlivé mikrofony ke všem zdrojům zvuku, které
+ mají zachytit.
+ Signál z těchto mikrofonů je potom umělě namixován do obou stereo kanálů
+ tak, aby byl pro posluchače příjemný a dobře čitelný.
+ V takovém případě není nutně kladen zřetel na prostorovou autentičnost,
+ tak jak ji chápe binaurální audio (viz.
+ dále).
+ [2]
+\end_layout
+
+\begin_layout Subsubsection
+Binaurální audio
+\end_layout
+
+\begin_layout Standard
+Slovo 
+\begin_inset Quotes eld
+\end_inset
+
+binaurální
+\begin_inset Quotes erd
+\end_inset
+
+ vychází z latinského 
+\begin_inset Quotes eld
+\end_inset
+
+auris
+\begin_inset Quotes erd
+\end_inset
+
+ (ucho), předpona potom značí, že jsou uši dvě.
+ Můžeme tedy takto označovat vše, co využívá faktu, že člověk má pár uší.
+ [1]
+\end_layout
+
+\begin_layout Standard
+Celý systém vychází ze základní myšlenky, že lidské sluchové ústrojí dokáže
+ působit jako zvukový interferometr.
+ To v
+\begin_inset space ~
+\end_inset
+
+praxi znamená, že je člověk schopen rozpoznat velmi jemné rozdíly mezi signály,
+ které přichází do levého a
+\begin_inset space ~
+\end_inset
+
+pravého ucha.
+ Především jde o
+\begin_inset space ~
+\end_inset
+
+schopnost sluchového ústrojí rozpoznat fázový posuv a vytvořit z něj vjem
+ směrovosti zvuku.
+ Binaurální audio je tedy podmnožinou stereo audia, která tyto prostorové
+ kvality zvuku zachovává.
+ Poslech takového záznamu může být mnohem více pohlcující, než u klasického
+ uměle mixovaného stereo záznamu.
+ [8]
+\end_layout
+
+\begin_layout Standard
+Pokud se na celou situaci podíváme pragmaticky, lze tvrdit následující:
+ Člověk k prostorovému vnímání používá jen dvě uši, proto by nám měly k
+ přenosu a záznamu prostorového zvuku stačit jen dva mikrofony a dvě sluchátka.
+ [1][6]
+\end_layout
+
+\begin_layout Subsection
+Zázněj
+\end_layout
+
+\begin_layout Standard
+Zázněj (anglicky 
+\begin_inset Quotes pld
+\end_inset
+
+Beat
+\begin_inset Quotes prd
+\end_inset
+
+) je zvuk vzniklý složením dvou neharmonických tónů mírně odlišné frekvence.
+ Vzniká při něm pulzující dojem, způsobený sřídavým skládáním fází a protifází
+ obou tónů.
+ Frekvence těchto pulzů závisí na rozdílu frekvencí obou tónů.
+ [13]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/beat.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Průběh výsledného záznějového signálu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zvláštní situace nastává, pokud se tyto dva zvuky neskládají v akustickém
+ prostředí, ale přímo v mozku posluchače.
+ Například při puštění každého z tónů do jednoho ze sluchátek.
+ V takovém případě se tóny skládají až na úrovni nervových spojení mezi
+ hemisférami mozku.
+ U posluchače pak vzniká zvláštní pocit mírné dezorientace.
+ Jde o klam, který je pro nás zajímavý tím, že poodhaluje fungování prostorového
+ sluchu tím, že ho zneužívá podle principu 
+\begin_inset Quotes pld
+\end_inset
+
+failure reveals character
+\begin_inset Quotes prd
+\end_inset
+
+.
+ [13]
+\end_layout
+
+\begin_layout Subsubsection
+Holofonní audio
+\end_layout
+
+\begin_layout Standard
+Holofonika (Holofonie) je binaurální systém pro záznam a
+\begin_inset space ~
+\end_inset
+
+reprodukci prostorového zvuku, který kolem roku 1983 vytvořil Hugo Zuccarelli.
+ Celý pojem 
+\begin_inset Quotes eld
+\end_inset
+
+holophonics
+\begin_inset Quotes erd
+\end_inset
+
+ vznikl spíše jako Zuccareliho obchodní značka.
+ Zároveň ale můžeme pod tímto názvem vnímat konkrétní metodiku pro implementaci
+ binaurálního zvukového systému, která se vyznačuje především tím, že využívá
+ k zachycení zvukových vln umělý model lidské hlavy s mikrofony místo uší.
+ Nicméně to není neobvyklé ani pro jiné binaurální systémy.
+ V praxi tedy existují jen drobné rozdíly v
+\begin_inset space ~
+\end_inset
+
+použití pojmů Binaurální a
+\begin_inset space ~
+\end_inset
+
+Holofonní.
+ V
+\begin_inset space ~
+\end_inset
+
+této práci budou tyto termíny volně zaměňovány.
+ [4][1]
+\end_layout
+
+\begin_layout Standard
+Zuccareli se u svojí techniky snažil dosáhnout maximální anatomické korektnosti.
+ To je vidět na následujícím obrázku z jeho patentu.
+ Za povšimnutí stojí lebeční dutina a zvukovody.
+ [4]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/holo_patent.png
+	lyxscale 10
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schéma Zuccarelliho mikrofonu z US patentu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Hologramy
+\end_layout
+
+\begin_layout Standard
+Hologramy zde zmiňuji hlavně proto, že název 
+\begin_inset Quotes eld
+\end_inset
+
+holofonie
+\begin_inset Quotes erd
+\end_inset
+
+ vznikl jako parafráze na termín 
+\begin_inset Quotes eld
+\end_inset
+
+holografie
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Hologramy, podobně jako holofonie, využívají interference dvou vln k zachycení
+ jejich prostorové konfigurace.
+ U hologramů se ale nejedná o vlny zvukové, jedná se u nich o vlny světelné.
+ Zjednodušeně řečeno tedy umožňují zachycení trojrozměrného obrazu.
+ [1]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hologram.svg
+	lyxscale 200
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Princip pořízení holografického snímku
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na obrázku je patrné, že holografický snímek vzniká v místě, kde dochází
+ k interakci dvou fází světelného vlnění ze stejného zdroje.
+ V tom místě je možné zachytit prostorové aspekty světelného vlnění.
+ Podobně je lidský sluch schopný zachytit 
+\begin_inset Quotes pld
+\end_inset
+
+prostorovost
+\begin_inset Quotes prd
+\end_inset
+
+ zvuku, pokud se nachází v místě, kde dochází ke střetnutí dvou fází zvukového
+ vlnění ze stejného zdroje a každou z nich zachytí jedním uchem.
+ [1]
+\end_layout
+
+\begin_layout Subsubsection
+Fázový posuv zvukového signálu
+\end_layout
+
+\begin_layout Standard
+Fázovým posuvem se v této práci rozumí diferenciální časový posuv signálu
+ vlivem odrazů v prostoru, nebo odlišnou dobou vzdáleností od zdroje zvuku
+ do obou uší.
+ Toto zpoždění je tak nepatrné, že je typicky kratší než časový interval
+ mezi zvukovými vlnami zkoumaného signálu.
+ Nebo se alespoň řádově pohybuje v těchto hodnotách.
+ [8][3]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/phase_shift.svg
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fázový posun mezi dvěma signály
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Přenosová funkce systému
+\end_layout
+
+\begin_layout Standard
+Přenosová funkce je matematické vyjádření toho, jak je ovlivněn signál systémem,
+ který tento signál přenáší.
+ [6]
+\end_layout
+
+\begin_layout Subsubsection
+HRTF - Anatomická přenosová funkce
+\end_layout
+
+\begin_layout Standard
+Anglicky head-related transfer function (HRTF) nebo anatomical transfer
+ function (ATF).
+ Je přenosová funkce, která popisuje, jak je ovlivněn zvukový signál, který
+ dorazí k nervovým zakončením v uchu z předem definovaného bodu v okolí
+ posluchače.
+ V tom hrají roli vlastnosti hlavy a uší, dutiny v nich a další podobné
+ vlivy.
+ [2][1][8]
+\end_layout
+
+\begin_layout Standard
+Z čistě spektrálního pohledu HRTF zesiluje frekvence mezi 2 a 5 kHz, přičemž
+ největší rezonance o magnitudě +17 dB se nachází na 2,7 kHz.
+ To způsobují převážně odrazy uvnitř zvukovodu.
+ Můžeme tedy tvrdit, že lidský sluch je uzpůsoben právě pro spolehlivé zachycení
+ zvuků v této části spektra.
+ To se následně zrcadlí i ve faktech, že se v této části spektra nachází
+ i převážná část lidské řeči.
+ Také dle mezinárodní telekomunikační unie se velmi podobné pásmo považuje
+ za dostatečné pro srozumitelný přenos hlasových telefonních hovorů.
+ [9]
+\end_layout
+
+\begin_layout Standard
+Pro tuto práci je ale důležité především jak se liší přenosová funkce pro
+ zvuky přicházející do levého a pravého ucha.
+ A jak se liší pro zvuky přicházející z různých směrů.
+ [6]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/HRTF.svg
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Grafické znázornění HRTF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Jednotkový impulz
+\end_layout
+
+\begin_layout Standard
+Diracův jednotkový impulz je funkce f(t), která má v čase t=0 hodnotu 1
+ a ve všech ostatních bodech hodnotu 0.
+ [10]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/dirac.svg
+	lyxscale 20
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Graf průběhu diracovo jednotkového impulsu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Impulzní charakteristika
+\end_layout
+
+\begin_layout Standard
+Také impulzní odezva, anglicky impulse response (IR).
+ Je jedna z možností, jak lze numericky popsat přenosovou funkci systému.
+ To teoreticky provedeme tak, že na vstup systému přivedeme jednotkový impulz
+ a výstup systému pak odpovídá své vlastní impulzní odezvě.
+ V praxi ale nelze při analogovém měření takový postup aplikovat.
+ K tomu by bylo nutné mít reproduktor, který by byl schopný svoji membránu
+ vychýlit nekonečnou rychlostí.
+ Proto se impulzní charakteristika získává nepřímo pomocí složitějších měření.
+ Do systému je postupně pouštěn sinusový průběh o různých frekvencích a
+ na jeho výstupu je změřena frekvenční charakteristika.
+ Z frekvenční charakteristiky je potom možné impulzní charakteristiku vypočítat.
+ [10]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hrtf_fr.gif
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Frekvenční odezva HRTF pro zvuk přicházející kolmo z prava
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Anatomická impulzní charakteristika
+\end_layout
+
+\begin_layout Standard
+Anglicky Head Related Impulse Response (HRIR).
+ Je impulzní charakteristika HRTF.
+ [8]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hrtf_ir.gif
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Impulzní odezva HRTF pro zvuk přicházející kolmo z prava
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na obrázku HRIR můžeme vidět, že je pro naše účely názornější.
+ Vidíme na něm, že zvuk přicházející kolmo z prava dorazí do levého ucha
+ s časovým zpožděním (fázovým posuvem) a útlumem v porovnání s pravým uchem.
+\end_layout
+
+\begin_layout Subsubsection
+Bezodrazová komora
+\end_layout
+
+\begin_layout Standard
+Také bezdozvuková komora, anglicky anechoic chamber je speciální laboratorní
+ komora, která má na všech stěnách, stropu i v podlaze speciálně tvarované
+ pohlcovače zvukových odrazů.
+ Je tedy téměř ideálním místem pro provádění akustických měření všeho druhu.
+ [11]
+\end_layout
+
+\begin_layout Subsubsection
+KEMAR HATS
+\end_layout
+
+\begin_layout Standard
+KEMAR (Knowles Electronics Mannequin for Acoustics Research) je speciální
+ model průměrné lidské busty se dvěmi mikrofony místo uší.
+ KEMAR patří do kategorie HATS (Head And Torso Simulator).
+ Lze ho používat k binaurálnímu zachytávání zvukových signálů.
+ KEMAR je mírně detailnější, než běžně používané binaurální mikrofony.
+ Ty téměř nikdy nezahrnují trup lidského těla a často jde jen o velmi zjednoduše
+ný model hlavy.
+ V některých případech jsou dokonce použity jen dva silikonové ušní laloky
+ na tyčkách, nebo prostá dřevěná koule.
+ Můžeme tedy tvrdit, že je KEMAR jeden z nejkvalitnějších binaurálních mikrofonů.
+ [11]
+\end_layout
+
+\begin_layout Standard
+V roce 1994 byl KEMAR použit v bezodrazové komoře multimediální laboratoře
+ MIT k získání souboru anatomických impulzních charakteristik (HRIR) pro
+ obě uši a signál přicházející ze stovek různých směrů.
+ Navíc byla provedena další kontrolní měření impulzní odezvy použitých reprodukt
+orů a mikrofonů (pomocí několika modelů sluchátek nasazených přímo na KEMAR).
+ Naměřená data byla poté zveřejněna na webu MIT pro veřejné využití a další
+ výzkum.
+ HRIR data je možné najít na webové adrese [11]
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+http://sound.media.mit.edu/resources/KEMAR.html
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/KEMAR.jpg
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Výzkumník Bill Gardner s modelem KEMAR v bezdozvukové komoře MIT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Binaurální syntéza prostorového zvuku
+\end_layout
+
+\begin_layout Standard
+Binaurální syntéza prostorového zvuku kombinuje výše popsané technologie
+ k syntéze binaurálního signálu s prostorovými vlastnostmi.
+ [8]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/binaural_synthesis.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schéma binaurální syntézy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplikací matematické konvoluce na vstupní signál a impulzní charakteristiku
+ můžeme snadno vyjádřit podobu signálu po průchodu přenosovým systémem.
+ To je pro tuto práci velmi důležité.
+ V praxi to znamená, že můžeme vzít téměř libovolný digitální záznam zvuku
+ 
+\begin_inset Formula $s_{in}(t)$
+\end_inset
+
+ a pomocí konvoluce s impulzní odezvou 
+\begin_inset Formula $i_{hrtf}(t)$
+\end_inset
+
+ ho přetransformovat na výsledný signál 
+\begin_inset Formula $s_{out}(t)$
+\end_inset
+
+ tak, jak by se přetransformoval při průchodu reálným prostorem.
+ [10]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{out}(t)=s_{in}(t)\ast\,i_{hrtf}(t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Rozšířená realita
+\end_layout
+
+\begin_layout Standard
+Anglicky augmented reality (AR).
+ Je termín používaný pro systém, který nám pomáhá rozšířit vnímání reality
+ o vjemy jinak nevnímatelné.
+ Nejčastěji je spojován s obrazovým systémem, ve kterém kamera snímá okolí,
+ počítač do obrazu z kamery přimíchá užitečná data a pak nám takto rozšířený
+ obraz prezentuje.
+ Jako jednoduchý příklad si můžeme představit 
+\begin_inset Quotes eld
+\end_inset
+
+chytré
+\begin_inset Quotes erd
+\end_inset
+
+ čelní sklo automobilu, které nám bude barevně zvýrazňovat rizikové faktory
+ na vozovce.
+ Tím dojde k rozšíření našeho vnímání reality a zlepšení schopnosti se v
+ realitě pohybovat.
+ [12]
+\end_layout
+
+\begin_layout Standard
+Na následujících obrázcích je možné vidět některé ze zajímavých využití
+ technologií rozšířené reality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/sandbox.jpg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pískoviště 
+\begin_inset Quotes pld
+\end_inset
+
+AR SandBox
+\begin_inset Quotes prd
+\end_inset
+
+ doplněné o dynamicky generované barevné vrstevnice pomocí technologie rozšířené
+ reality na festivalu umění 
+\begin_inset Quotes pld
+\end_inset
+
+FreezeFest 2012
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/ar_flight.jpg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Technologie rozšířené reality při testovacím letu vrtulníku pomáhá pilotovi
+ s navedením na přistání a orientací v důležitých bodech v krajině
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V této práci ale není jako prostředek rozšířené reality používán obraz.
+ Namísto toho je používán prostorový zvuk s cílem upozorňovat uživatele
+ na dění v okolním prostoru.
+ Konkrétně pomocí zvukových signálů zdánlivě přicházejících ze směru, na
+ který se snažíme uživatele upozornit.
+ [12]
+\end_layout
+
+\begin_layout Subsection
+Použité vybavení
+\end_layout
+
+\begin_layout Subsubsection
+Software 3DSound
+\end_layout
+
+\begin_layout Standard
+Počítačový program na binaurální syntézu prostorového zvuku napsaný v jazyce
+ Python 2.
+ V roce 2011 ho napsal Gary Bishop z Department of Computer Science na Universit
+y of North Carolina at Chapel Hill.
+ Zdrojový kód i povolení k bezplatnému využití pro libovolné účely jsou
+ dostupné na adrese 
+\family typewriter
+https://github.com/uncopenweb/3DSound
+\family default
+ .
+ Součástí programu jsou kromě hlavního skriptu 
+\family typewriter
+hrtf.py
+\family default
+ rovnou také HRIR naměřené na KEMARu, není tedy nutné je stahovat zvlášť.
+\end_layout
+
+\begin_layout Standard
+Implementuje dvoukanálovou konvoluci, která umožňuje na digitální zvukový
+ záznam aplikovat přenosové charakteristiky naměřené na KEMARu v multimediální
+ laboratoři MIT.
+ Výhodou tohoto softwaru je, že je přímo napsaný pro práci s HRIR daty z
+ MIT a není tedy nutné tato data převádět do jiného formátu.
+\end_layout
+
+\begin_layout Standard
+K samotné konvoluci vstupního mono signálu s HRIR se používá metoda 
+\family typewriter
+scipy.signal.lfilter
+\family default
+ z Python knihovny SciPy.
+ Také je dobré zmínit, že skript provádí konvoluci jen pro pravý půlkruh.
+ Levý půlkruh pak vygeneruje prostým přehozením levého a pravého kanálu
+ ve výstupních souborech.
+\end_layout
+
+\begin_layout Standard
+Tento software jsem drobně upravil, aby používal samplovací frekvenci 44.1
+ kHz, jakou mají i dostupná HRIR data.
+ Jeho původní autor totiž výsledné soubory v kódu downsamploval na 22.05
+ kHz, aby ušetřil přenosové pásmo při následném použití na webu.
+\end_layout
+
+\begin_layout Standard
+Pomocí tohoto softwaru jsem generoval zvukové soubory k dalšímu využití
+ při testování na lidech a k implementaci aplikace rozšířené reality.
+\end_layout
+
+\begin_layout Section
+Základní principy využití holofonního zvuku v práci
+\end_layout
+
+\begin_layout Standard
+V této části je popsána hypotéza, která bude v dalších částech testována
+ a aplikována v praxi.
+\end_layout
+
+\begin_layout Subsection
+Subjektivní pohled na vnímání prostorového zvuku člověkem
+\end_layout
+
+\begin_layout Standard
+Hned z počátku praktické práce se zvukovými vzorky jsem zjistil, že lidský
+ sluch není dokonalý.
+ Speciálně oblast prostorového vnímání zvuku má velká omezení.
+ Pravolevá lokalizace zdroje zvuku je pro člověka z principu mnohem snadnější,
+ než lokalizace předozadní nebo vertikální.
+ Navíc funkci sluchu ovlivňují také neurologické a psychologické aspekty
+ lidského vnímání.
+ Cílem této práce není jejich zkoumání.
+ Přesto je dobré alespoň stručně zmínit jeden fenomén, který jsem zaznamenal
+ při poslechu holofonních vzorků.
+ Je nesrovnatelně složitější lidské vnímání pomocí prostorového zvuku přesvědčit
+, že zvuk přichází zepředu, než že přichází zezadu.
+\end_layout
+
+\begin_layout Standard
+Je to jen můj laický odhad, ale osobně si myslím, že to souvisí s tím, že
+ mozek zdravého člověka je navyklý přijímat většinu informací o tom, co
+ se děje před ním, pomocí zraku.
+ Sluch nám tedy slouží z velké části k tomu, abysme měli přehled o dění,
+ které nemůžeme přímo vidět.
+ Z mých dosavadních zkušeností také vyplývá, že zavření očí v tomto případě
+ pomůže jen minimálně.
+ Zmiňovaná vlastnost sluchu bude přirozeně mít neblahé důsledky na výsledky
+ této práce.
+ Nicméně mi připadá velice zajímavá a rád bych se v budoucnu seznámil s
+ rozdíly ve vnímání prostorového zvuku mezi zdravými lidmi a lidmi s vrozenou
+ slepotou.
+ Výsledky zajímavé pro tuto problematiku by mohli poskytnout také lidé,
+ kteří oslepli až v pozdějším životě, nebo jsou slepí jen na jedno oko (a
+ tudíž mají omezené vnímání prostoru skrz vidění).
+ Další poněkud specifickou skupinou lidí, která by stála za pokusy s prostorovým
+ zvukem jsou účastníci závěrečné fáze terapie tmou.
+ Při terapii tmou lidé dobrovolně tráví dny, týdny a někdy i měsíce v naprosté
+ tmě.
+ Dá se tedy očekávat, že poslední den pobytu budou mít vlivem tmy zbystřené
+ ostatní smysly.
+\end_layout
+
+\begin_layout Subsection
+Kompenzace nedostatků lidského prostorového sluchu
+\end_layout
+
+\begin_layout Standard
+Zmíněné nedostatky lidského prostorového vnímání zvuků bych rád alespoň
+ z malé části kompenzoval a zvýšil tak užitnou hodnotu celé technologie
+ rozšířené zvukové reality.
+ K tomu chci využít několik naivních předpokladů, které mám o lidském sluchu.
+ V praxi bude pak kompenzace realizována aplikací jednoduchých zvukových
+ efektů modulovaných na základě jednoduchých geometrických pravidel.
+ Tyto efekty budou dodatečně aplikovány na vzorky vygenerované na základě
+ HRTF modelu z KEMARu.
+ Budou tedy jen jejich doplněním.
+ Jejich účelem je z velké části také, aby bylo možné určit směr zvuku pomocí
+ úvahy, než uživatel začne rozlišovat směrovost intuitivně.
+\end_layout
+
+\begin_layout Standard
+Je nutno poznamenat, že efekty této kompenzace z jisté části napodobují
+ efekty HRTF.
+ Jsou ale dovedené až do absurdní míry.
+ To je ale v našem případě spíše žádoucí.
+ Zatím co HRTF je model vzniklý za účelem generování věrného prostorového
+ zvuku.
+ V mojí aplikaci AR je na prvním místě prostorovost zvuku, nikoliv jeho
+ věrnost.
+\end_layout
+
+\begin_layout Subsubsection
+Kompenzace na úrovni HRIR
+\end_layout
+
+\begin_layout Standard
+Jak již jsem zmínil, tak kompenzaci provádím až po aplikaci HRTF modelu.
+ Přesto je nutné napsat, že by mělo být možné efekt HRTF matematicky zesílit
+ a tak určitou míru kompenzace přidat už během konvoluce.
+\end_layout
+
+\begin_layout Standard
+HRTF model také poskytuje HRIR měření pro různé elevace.
+ Já jsem pracoval pouze s daty pro nulovou elevaci (zvuk krouží kolem hlavy
+ posluchače pouze ve vodorovné rovině).
+ Je možné, že data měřená při jiných elevacích by mohla při budoucích pokusech
+ poskytnout lepší výsledky.
+\end_layout
+
+\begin_layout Standard
+Provedl jsem několik rychlých pokusů drobnou úpravou programu 
+\family typewriter
+hrtf.py
+\family default
+, který konvoluci provádí.
+ Žádných zajímavých výsledků se mi nepodařilo dosáhnout, takže jsem od těchto
+ experimentů prozatím upustil.
+ Tyto možnosti ale chci blíže prozkoumat až během práce následující po této,
+ až budu mít příležitost lépe prozkoumat matematickou teorii, která se v
+ procesu využívá.
+ Prozatím budu pracovat jen s kompenzací naivními metodami.
+\end_layout
+
+\begin_layout Subsubsection
+Modulace kompenzačních efektů
+\end_layout
+
+\begin_layout Standard
+K modulaci těchto naivních kompenzačních efektů budou použity goniometrické
+ funkce úhlových hodnot.
+ To umožní rovnoměrný nárůst míry efektu v závislosti na pravoúhlé složce
+ směrového úhlu.
+ Přesný matematický popis tohoto postupu je patrný ze vzorečků u popisu
+ jednotlivých kompenzačních metod.
+\end_layout
+
+\begin_layout Subsubsection
+Kompenzace předozadní
+\end_layout
+
+\begin_layout Standard
+Vychází z myšlenky, že ušní lalůčky brání šíření vyšších frekvencí ze zdrojů
+ umístěných za hlavou.
+ Pro delší vlny nižších frekvencí ale lalůčky nepředstavují tak významnou
+ překážku.
+ Na vzorky bude tedy aplikován low-pass filtr, kterému bude postupně snižována
+ mezní frekvence.
+ Mezní frekvence bude nejnižší u vzorků zvuku přicházejícího zezadu.
+ V tomto místě bude mezní frekvence stanovena na 500 Hz, směrem dopředu
+ se bude zvyšovat až za hranici slyšitelného pásma.
+\end_layout
+
+\begin_layout Standard
+Mezní frekvenci 
+\begin_inset Formula $f_{low}$
+\end_inset
+
+ počítám z úhlu 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ pomocí následujícího vzorečku:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{low}=500+5000\,(1+\cos(\alpha))^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kompenzaci jsem realizoval pomocí Python kódu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+fix_cos = round(math.cos(az*(math.pi/180)),2)
+\begin_inset Newline newline
+\end_inset
+
+fix_lowpass = 500+(5000*pow(1+fix_cos, 2))
+\end_layout
+
+\begin_layout Standard
+Tato frekvence je následně použita jako parametr efektu 
+\family typewriter
+lowpass
+\family default
+, který je poskytovaný programem SoX, který skript 
+\family typewriter
+hrtf.py
+\family default
+ interně používá ke kompresi výsledných zvukových vzorků.
+\end_layout
+
+\begin_layout Subsubsection
+Kompenzace pravolevá
+\end_layout
+
+\begin_layout Standard
+Vychází z jednoduchého principu, že čím blíže je zdroj zvuku pravé straně,
+ tím by měl být slaběji slyšitelný levým uchem a naopak.
+ Zesilování pravého kanálu pro zvuky přicházející z prava není možné, aby
+ nedošlo ke clipingu.
+ Bylo by možné se clipingu vyhnout pomocí zvukové komprese.
+ Pro potřeby této práce se ale lépe hodí zeslabení protilehlého zvukového
+ kanálu.
+ Protilehlý kanál byl v mém případě vždy jen levý, protože skript 
+\family typewriter
+hrtf.py
+\family default
+ generuje pouze vzorky pro úhly 0 až 180 stupňů (pravou stranu) a zbytek
+ vzorků se z nich odvodí zrcadlově.
+\end_layout
+
+\begin_layout Standard
+Koeficient zesílení protilehlého kanálu 
+\begin_inset Formula $c_{lr}$
+\end_inset
+
+ počítám z úhlu 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ pomocí následujícího vzorečku:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c_{lr}=0.5+0.5\left|\cos(\alpha)\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kompenzaci jsem realizoval pomocí Python kódu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+fix_cos = round(math.cos(az*(math.pi/180)),2)
+\begin_inset Newline newline
+\end_inset
+
+fix_left = 0.5+(0.5*abs(fix_cos)) 
+\end_layout
+
+\begin_layout Standard
+Následně je tímto koeficientem vynásoben celý signál protilehlého kanálu.
+\end_layout
+
+\begin_layout Subsubsection
+Kompenzace inerciální
+\end_layout
+
+\begin_layout Standard
+Jeden z mechanismů, který bude kompenzovat míru nejasnosti v předozadní
+ ose a potažmo i ve všech ostatních úhlech přímo vyplývá z celkového konceptu
+ technologie.
+ Pokud se zvuk pohybuje kolem hlavy uživatele, bude často procházet postupně
+ z jedné strany na druhou a prostorová představivost uživatele tak vhodně
+ doplní efekty prostorového zvuku.
+ Uživatel tak uslyší, jak se zvuk postupně přesouvá z jedné strany na druhou
+ a může předpovídat, kdy dosáhne bodu, ve kterém je směr složitější určit.
+ Tento princip bude fungovat ještě lépe, pokud bude zvuk fixovaný na světovou
+ stranu a uživatel se celý otočí.
+\end_layout
+
+\begin_layout Standard
+Například pokud bude uživatel slyšet zvuk z pravé strany, tak ho snadno
+ určí, protože pravolevá lokalizace je snadnější.
+ Potom se otočí o devadesát stupňů doprava, tedy směrem ke zdánlivému zdroji
+ zvuku.
+ To způsobí, že prostorová představivost výrazně pomůže lokalizovat tento
+ zvuk a zabrání se tak chybné lokalizaci zvuku dozadu.
+ Pokud budeme takový systém používat například během chůze terénem, bude
+ nám tento efekt průběžně pomáhat udržovat povědomí o směrovosti zdánlivého
+ zvuku.
+ Samozřejmě vycházíme z předpokladu, že uživatel nepůjde po přímce, ale
+ že se cesty budou průběžně klikatit a odbočovat.
+\end_layout
+
+\begin_layout Standard
+Tento princip se dá vzdáleně přirovnat k tzv.
+ inerciální navigaci, kterou používají například letadla pro orientaci za
+ zhoršené viditelnosti, nebo ke způsobu, jakým GPS navigace odhaduje pozici
+ ve chvíli, kdy je auto v tunelu bez signálu.
+ V tomto případě ovšem tato aproximace bude probíhat čistě intuitivně v
+ rámci prostorové představivosti uživatele systému rozšířené reality.
+ Bohužel tento efekt je poměrně obtížné měřit, protože předpokládá, že responden
+t předem zná odpověď, kterou od něj chceme získat (tedy směr).
+ Metodika měření použitá v této práci tedy tento efekt ignoruje a budeme
+ s ním počítat jen jako s předpokládaným vedlejším efektem, který možná
+ zlepší použitelnost celé technologie.
+\end_layout
+
+\begin_layout Section
+Objektivní měření vlivu lidského vnímání holofonního zvuku
+\end_layout
+
+\begin_layout Subsection
+Účel měření
+\end_layout
+
+\begin_layout Standard
+Cílem měření je ověřit, zda bude mnou vygenerované zvukové vzorky možné
+ použít pro potřeby rozšířené reality.
+ Měření bude posuzovat, do jaké míry je člověk schopný vnímat a interpretovat
+ směrovost binaurálního prostorového zvuku.
+\end_layout
+
+\begin_layout Subsection
+Metodika měření
+\end_layout
+
+\begin_layout Standard
+Na vstupu měření budu mít sadu binaurálních zvukových vzorků vygenerovaných
+ ze stejného mono vzorku, ale pro různé směry.
+ Tato sada vzorků potom bude přehrávána respondentům, kteří v odpovědi uvedou
+ úhel, ze kterého zvuk slyšeli.
+ Po očištění dat bude vypočítána hodnota MAE.
+ MAE (mean absolute error) je v našem případě průměr z absolutních hodnot
+ úhlových odchylek od úhlů z HRIR modelu.
+\end_layout
+
+\begin_layout Standard
+Abysme mohli spolehlivě rozlišit dva úhly (například světové strany) pomocí
+ prostorového zvuku, budeme potřebovat, aby se nepřekrývaly jejich odchylky.
+ Například mezi severem a jihem je rozdíl 180°, pokud budeme mít u severu
+ odchylku -90° a u jihu +90°, začínají se tyto odchylky překrývat a my nemůžeme
+ jednoznačně odlišit sever od jihu.
+ Budu tedy počítat s tím, že by absolutní úhlová odchylka neměla přesáhnout
+ polovinu rozdílu úhlů, které chceme od sebe odlišit.
+\end_layout
+
+\begin_layout Subsection
+Kontrolní měření
+\end_layout
+
+\begin_layout Standard
+Součástí dotazníku budou kontrolní zvukové vzorky.
+ Nejdůležitější kontrola jsou vzorky, které budou přehrávány jen do jednoho
+ ucha.
+ Na rozdíl od binaurálních vzorků nelze u takových kontrolních vzorků zpochybnit
+ ze které strany je má dotazovaný subjekt slyšet.
+ Budou tedy sloužit pro vyřazení špatných dat vzniklých případnou nedostatečnou
+ snahou respondenta, nebo jeho nekalými úmysly.
+ Primárně ale poslouží k ověření, že si respondent nenasadil sluchátka obráceně
+ a že zařízení na kterém dotazník vyplňuje má korektní podporu stereo zvuku.
+\end_layout
+
+\begin_layout Standard
+Při vyhodnocování výsledků se ale ukázalo, že obráceně nasazená sluchátka
+ jsou více než patrná i bez těchto kontrolních metod.
+\end_layout
+
+\begin_layout Subsection
+Příprava testovacích vzorků ke zpracování
+\end_layout
+
+\begin_layout Standard
+Jako výchozí zvukový vzorek jsem použil krátký jednokanálový zvukový záznam
+ psího štěknutí ve formátu WAV.
+ Z tohoto souboru jsem poté pomocí skriptu hrtf.py vygeneroval binaurální
+ vzorky pro všechny azimuty od -180 do 180 stupňů s intervalem 5 stupňů.
+ Skript hrtf.py byl modifikován, aby kromě HRTF aplikoval také naivní kompenzační
+ metody popsané výše.
+ Výstupem byly vzorky ve formátech OGG a MP3.
+ Já ve zbytku práce pracoval výhradně se vzorky ve formátu MP3.
+\end_layout
+
+\begin_layout Subsection
+Dotazníkový software použitý pro měření
+\end_layout
+
+\begin_layout Standard
+Chtěl jsem, aby dotazník mohli vyplnit respondenti bez mojí přítomnosti
+ jen s pomocí svého počítače a sluchátek.
+ Z tohoto důvodu jsem zvolil formu webové ankety.
+ Bohužel vzhledem ke specifickým vlastnostem tohoto dotazníku bylo poněkud
+ nepraktické využít běžně dostupný software, nebo existující webové stránky
+ pro vytváření anket.
+ Můj dotazník spočívá v tom, že je respondetovi přehrán zvuk a on následně
+ zvolí azimut na stupnici úhloměru nebo kompasu.
+ Při využití dnešní nejoblíbenější online služby na tvorbu dotazníků by
+ to znamenalo vložit do dotazníku video, ve kterém by se vzorky přehrávaly
+ po sobě, oddělené hlasovým pokynem s číslem vzorku a respondent by potom
+ na úhloměru musel najít patřičný úhel a napsat ho do příslušného políčka.
+\end_layout
+
+\begin_layout Standard
+Mým záměrem ale bylo získat dostatek dat a ne otrávit respondenty ještě
+ než data odešlou.
+ Proto jsem se rozhodl naprogramovat vlastní jednoduchý software na měření
+ prostorového zvuku.
+ Je relativně jednúčelový a rozsahem se pohybuje kolem 200 řádek kódu, který
+ naleznete v sekci příloh této práce.
+ Princip je jednoduchý.
+ Respondentovi jsou přehrávány zvuky a on jen kliká na kruhové stupnici
+ na směry, ze kterých tyto zvuky slyší.
+ Nejdůležitější část rozhraní aplikace vypadá zhruba takto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/screenshot_anketa.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Screenshot dotazníkové aplikace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Před spuštěním měření jsou respondentovi přehrávány prostorové zvuky v číselné
+ posloupnosti a na stupnici je mu ukazován úhel, aby mohl zkontrolovat nastavení
+ zvuku na svém zařízení a zorientovat se v systému.
+ Po spuštění jsou zvuky přehrávány v náhodném pořadí, aniž by se na stupnici
+ zobrazoval úhel.
+ V tuto chvíli je na respondentovi, aby na odpovídající úhel kliknul.
+\end_layout
+
+\begin_layout Standard
+Po zaznamenání 100 nebo více měření je možné data odeslat.
+ Ta jsou pak uložena do textového souboru oddělovaného tabelátory.
+ V souboru nalezneme úhel zvuku podle HRTF, úhel na který kliknul uživatel,
+ nejkratší úhlovou odchylku mezi těmito úhly a cestu k přehrávanému zvukovému
+ souboru.
+ Máme tedy dostatek dat i pro dohledání a řešení případných nejasností týkajícíc
+h se měření.
+ Navíc se zaznamenávají metadata sloužící k identifikaci respondenta a kontrolní
+ součet celého souboru.
+\end_layout
+
+\begin_layout Subsection
+Formát naměřených dat
+\end_layout
+
+\begin_layout Standard
+V následující tabulce je vidět krátký úryvek dat, která dotazníkový software
+ poskytuje.
+ Výstup obsahuje úhel přehraného zvukového vzorku, úhel na který respondent
+ kliknul, předpočítaný nejkratší rozdíl mezi předchozími dvěmi hodnotami
+ a pro případnou kontrolu i cestu k přehranému souboru.
+ Cesta ke konkrétnímu souboru může být obzvlášť užitečná, pokud by se porovnával
+o více sad zvukových vzorků.
+ Tomu se ale tato práce nevěnuje.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Audio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clicked
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diff
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+File
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+145
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a145.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a-150.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a-75.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+170
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a170.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a80.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-105
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a-105.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a155.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a-10.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+105
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a150.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-105
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+./dog3/a-70.mp3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ukázka naměřených dat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Zhodnocení výsledků měření
+\end_layout
+
+\begin_layout Subsection
+Shrnutí získaných dat
+\end_layout
+
+\begin_layout Standard
+Celkem jsem získal data od 15 respondentů.
+ Pro každého z nich jsem zaznamenal minimálně 100 měření, u některých ale
+ i více.
+ Každý respondent měl možnost po dosažení minimálního počtu 100 měření pokračova
+t dál a přispět větším množstvím dat.
+ Celkem jsem zaznamenal 1644 měření.
+\end_layout
+
+\begin_layout Subsection
+Import dat do statistického softwaru R
+\end_layout
+
+\begin_layout Standard
+Datové soubory je možné jednotlivě načíst do statistického softwaru R pomocí
+ následujícího příkazu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+data = read.table("mereni.csv", header=T)
+\end_layout
+
+\begin_layout Standard
+To je užitečné pro počáteční kontroly odpovědí od jednotlivých respondentů.
+ Kromě toho jsem ale potřeboval načíst najednou měření od všech respondentů.
+ Na to jsem použil následující R script:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+setwd("data");
+\begin_inset Newline newline
+\end_inset
+
+files = list.files(pattern="*.csv");
+\begin_inset Newline newline
+\end_inset
+
+data = NULL;
+\begin_inset Newline newline
+\end_inset
+
+for (i in 1:length(files)) data = rbind(data, read.table(files[i], header=T));
+\end_layout
+
+\begin_layout Standard
+Ten způsobí, že se do jedné tabulky zkombinují všechna měření ze souborů
+ s příponou 
+\family typewriter
+.csv
+\family default
+ v adresáři 
+\family typewriter
+data
+\family default
+.
+ Můžeme tak pohodlně do adresáře přidávat nové výsledky měření bez potřeby
+ upravovat obsah souborů.
+\end_layout
+
+\begin_layout Subsection
+Detekce chyb v naměřených datech
+\end_layout
+
+\begin_layout Subsubsection
+Histogram úhlových odchylek
+\end_layout
+
+\begin_layout Standard
+Respondenti se měřili sami přes internet, bylo tedy nutné provést alespoň
+ minimální kontrolu, jestli výsledky dávají smysl před tím, než jsem postoupil
+ k jejich dalšímu zpracování.
+ Výsledky od jednotlivých respondentů jsem tedy kontroloval, abych ověřil,
+ že nebyla porušena metodika měření.
+\end_layout
+
+\begin_layout Standard
+Nejužitečnějším nástrojem pro kontrolu sesbíraných dat se ukázal obyčejný
+ grafický histogram.
+ Ve statistickém softwaru R jsem ho generoval ze sloupce úhlových odchylek
+ pomocí následujícího příkazu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+hist(data$Diff, breaks=20);
+\end_layout
+
+\begin_layout Standard
+Následující odstavce popisují, jak lze na histogramech rozpoznat některé
+ problémy vzniklé během měření.
+\end_layout
+
+\begin_layout Subsubsection
+Náhodné odpovědi
+\end_layout
+
+\begin_layout Standard
+V rámci testu mého dotazníkového softwaru jsem zkoušel klikat na náhodné
+ úhly, abych získal nejhorší možná data.
+ Očekával jsem, že hodnota MAE se bude pohybovat okolo 90 stupňů.
+ Po zpracování pomocí statistického softwaru R se toto očekávání potvrdilo.
+ V mém případě vyšla MAE rovna 90,3 stupně.
+ Na histogramu můžeme vidět, že je rozložení odchylek víceméně rovnoměrné.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hist_random.svg
+	width 60text%
+	groupId grafy
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram úhlových odchylek pro náhodné kliky
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z tohoto pokusného měření tedy můžeme udělat závěr, že při každém měření,
+ při kterém vyjde MAE výrazně větší než 90 stupňů je potřeba blíže prozkoumat
+ a zjistit, čím to bylo způsobeno.
+ Může jít o sabotáž, nebo (což je samozřejmě častější) nedodržení metodiky.
+\end_layout
+
+\begin_layout Subsubsection
+Opačně nasazená sluchátka
+\end_layout
+
+\begin_layout Standard
+Hned u druhé respondentky vyšla hodnota MAE rovna 121,95 stupňů.
+ Nejprve jsem si myslel, že jde o celkově špatně navržený experiment a že
+ jsou na vinně základní předpoklady celé práce.
+ A že se na datech ukazuje nefunkčnost celého konceptu.
+ Nicméně potom jsem si dal data do souvislosti s ostatními výsledky a dospěl
+ jsem k závěru, že tyto výsledky nevypovídají o nefunkčnosti popisované
+ techniky.
+ Účelem zkoumané technologie je předání směrových dat k subjektu pomocí
+ prostorového zvuku.
+ Kdyby k této komunikaci nedocházelo, tak by subjekt nemohl vyprodukovat
+ výsledky s MAE výrazně větší než 90 stupňů, což se stalo.
+ Výsledky měření tedy svědčí o tom, že subjekt prostorový zvuk vnímá, ale
+ záměrně odpovídá opačně, než očekáváme.
+ A je už snadné se dovtípit, jaká je příčina takových odpovědí.
+ Samozřejmě šlo o nejočekávatelnější problém celého měření a tím jsou opačně
+ nasazená sluchátka.
+ Došlo tedy k přehození levé a pravé strany v měřených datech.
+\end_layout
+
+\begin_layout Standard
+Nyní, když známe příčinu tohoto problému, se můžeme na data podívat.
+ Na prvním histogramu vidíme odchylky pro odpovědi s přehozenými sluchátky.
+ Narozdíl od náhodných kliků na stupnici zde můžeme pozorovat vliv přehrávaných
+ zvuků na odpovědi respondentky.
+ Vidíme opak gaussovy křivky, kterou známe z normálního rozdělení.
+ Histogram tedy prudce roste u krajů, místo uprostřed.
+ Na druhou stranu ale je také nutné si všimnout mírného vyvýšení uprostřed
+ histogramu, které už tvarem normální rozdělení připomíná.
+ Tento pahrbek vznikl tím, že některé aspekty měření nebyly přehozením sluchátek
+ ovlivněny.
+ Prohození levého a pravého kanálu totiž nemá vliv na předozadní vnímání
+ směru zvuku.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hist_inverted.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram úhlových odchylek naměřených na respondentce s obrácenými sluchátky
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ve výsledku nám tedy tato poněkud komická chyba v postupu měření přinesla
+ velmi zajímavý výsledek.
+ Z toho, co by bylo původně snadné odmítnout jako neplatné měření se totiž
+ po krátkém pohledu stal žádaný indikátor.
+ Takový graf totiž potvrzuje, že předozadní lokalizace zvuku u lidí skutečně
+ funguje.
+ I když podle očekávání se v grafu projevuje méně, než lokalizace pravolevá.
+\end_layout
+
+\begin_layout Standard
+Data v této podobě jsou ale pro další zpracování nezajímavá, a tak bude
+ nutné je opravit.
+ Naštěstí jsem při měření kromě odchylky samotné zaznamenával i absolutní
+ úhlové hodnoty směru zvuku přehraného počítačem a vnímaného respondentem.
+ Není tedy problém vypočítat úhel zrcadlový.
+ Protože jsem hodnoty zaznamenával v podobě, kdy vepředu je úhel 0, tak
+ se levá a pravá strana liší jen znaménkem.
+ Znaménko je velmi snadné otočit a z takto opravených úhlů vypočítat opravené
+ úhlové odchylky.
+\end_layout
+
+\begin_layout Standard
+K tomu jsem použil následující R skript.
+ Nejdříve jsem si definoval funkci pro výpočet nejkratší vzdálenosti mezi
+ dvěmi úhly:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+angle_diff <- function(a, b){
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+diff = a - b;
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+while (diff < -180) { diff = diff + 360; }
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+while (diff > 180) { diff = diff - 360; }
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+diff
+\begin_inset Newline newline
+\end_inset
+
+}
+\family default
+ 
+\end_layout
+
+\begin_layout Standard
+Potom jsem funkci aplikoval na celou tabulku a výsledným vektorem jsem nahradil
+ chybná data:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+data$Diff <- mapply(angle_diff, -data$Clicked, data$Audio)
+\end_layout
+
+\begin_layout Standard
+Všiměte si záporného znaménka před 
+\family typewriter
+data$Clicked
+\family default
+, to efektivně převrací levou a pravou stranu stupnice u zaznamenaného výsledku.
+ Histogram opravených dat už vypadá velmi podobně jako histogram dat pořízených
+ se správně nasazenými sluchátky:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hist_inverted_fix.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram úhlových odchylek po opravě dat získaných s otočenými sluchátky
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jediný nedostatek tohoto postupu je, že s obrácenými sluchátky probíhalo
+ i seznámení subjektu s metodikou měření a přehrávání testovacích vzorků.
+ Přesto by však výsledky neměly být horší, než u subjektu, který při úvodu
+ měření nedává pozor, což se stejně nedá dokonale vyloučit.
+ S těmito daty tedy budu dále pracovat.
+\end_layout
+
+\begin_layout Subsection
+Analýza naměřených dat
+\end_layout
+
+\begin_layout Subsubsection
+Rozdělení pravděpodobnosti úhlové odchylky
+\end_layout
+
+\begin_layout Standard
+První pohled na celková data nám poskytne následující histogram.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/hist.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram naměřených úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stejné informace můžem vidět i na o něco hladším grafu jádrového odhadu
+ hustoty.
+ Ten jsem získal pomocí následujícího příkazu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+plot(density(data$Diff))
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/density.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Jádrový odhad hustoty pravděpodobnosti naměřených úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Boxplot absolutních úhlových odchylek
+\end_layout
+
+\begin_layout Standard
+Zajímavé informace také vidíme na boxplotu absolutních hodnot úhlových odchylek,
+ který jsem vygeneroval pomocí příkazu
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+boxplot(abs(data$Diff), notch=T)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/boxplot.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Boxplot naměřených úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na boxplotu je patrné, že máme několik málo desítek odlehlých hodnot.
+ Vzhledem k počtu měření jde o několik málo jednotek procent.
+ Můžeme ale prohlásit, že až na tyto výjimky nedosahuje odchylka více než
+ 70 úhlových stupňů.
+\end_layout
+
+\begin_layout Subsubsection
+Základní popisné statistiky
+\end_layout
+
+\begin_layout Standard
+Základní číselné statistiky o tomto souboru měření je možné získat příkazem
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+summary(abs(data$Diff))
+\end_layout
+
+\begin_layout Standard
+Výsledkem je následující tabulka
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Statistika
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hodnota
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minimum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ Kvartil
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medián
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Průměr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.
+ Kvartil
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Základní statistiky souboru absolutních hodnot úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Další statistiky, které nás jistě zajímají jsou různé kvantily.
+ Ty vypočítáme příkazem
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+quantile(abs(data$Diff), c(.50, .60, .75, .85, .90, .95, .97))
+\end_layout
+
+\begin_layout Standard
+Výsledek nalezneme v této tabulce:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kvantil
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hodnota
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+85%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kvantily absolutních hodnot úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Kumulovaná distribuční funkce absolutní úhlové odchylky
+\end_layout
+
+\begin_layout Standard
+Kvantilům také odpovídá graf kumulované distribuční funkce.
+ Ten jsem vykreslil příkazem
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+plot(ecdf(abs(data$Diff)))
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/ecdf.svg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kumulativní distribuční funkce absolutních úhlových odchylek
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pomocí stejné funkce jsem si naopak vypočítal, jakému kvantilu odpovídá
+ jaká absolutní úhlová odchylka.
+ Vypočítal jsem si to pro úhly 90, 45 a 22.5 stupně pomocí následujícího
+ příkazu
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+ecdf(abs(data$Diff))(c(22.5,45,90))
+\end_layout
+
+\begin_layout Standard
+Výsledek je následující:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Absolutní úhlová odchylka
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kumulativní pravděpodobnost
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<= 22.5°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<= 45°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.86
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<= 90°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Zleva kumulovaná pravděpodobnost
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Interpretace naměřených a vypočtených hodnot
+\end_layout
+
+\begin_layout Standard
+Pokud pro naše účely bude stačit odlišit sever od jihu, budeme tedy vyžadovat
+ absolutní úhlovou úchylku menší nebo rovnu 90°.
+ Z naměřených dat vyplývá, že pravděpodobnost, že správně rozlišíme sever
+ od jihu bude 97%.
+ To znamená, že při hladině významnosti 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ můžeme tvrdit, že je možné bezpečně rozlišit sever od jihu pomocí prostorového
+ zvuku vygenerovaného podle postupů popsaných v první části práce.
+\end_layout
+
+\begin_layout Standard
+Pravděpodobnost, že s odchylkou <= 45° rozlišíme všechny 4 světové strany
+ je 86%.
+\begin_inset Newline newline
+\end_inset
+
+Pravděpodobnost, že s odchylkou <= 22.5° rozlišíme kromě 4 světových stran
+ i 4 vedlejší směry (tj.
+ jihovýchod, jihozápad, atd...) je potom 60%.
+\end_layout
+
+\begin_layout Subsection
+Připomínky respondentů
+\end_layout
+
+\begin_layout Standard
+Kromě číselných dat jsem od některých respondentů dostal navíc připomínky
+ k průběhu měření.
+ Považuji za vhodné je zde alespoň zmínit.
+ Tři z respondentů měli dojem, že se zdánlivý zdroj zvuku místo dopředu
+ a dozadu pohybuje kolem hlavy spíše nahoru a dolů.
+ Dle mého názoru by mohlo být zajímavé tato tvrzení prozkoumat v rámci dalšího
+ výzkumu.
+\end_layout
+
+\begin_layout Section
+Návrh praktického využití na základě získaných dat
+\end_layout
+
+\begin_layout Standard
+Běžnou výbavou současných mobilních telefonů je stereo zvukový výstup pro
+ připojení sluchátek.
+ Navíc tato zařízení obsahují magnetometry založené na Hallovo jevu.
+ Ty umožňují využít mobilní telefon jako kompas.
+ Pokud známe relativní polohu severu vůči telefonu a mobil máme v jedné
+ přímce s hlavou uživatele se sluchátky, můžeme přehrávat odpovídající binauráln
+í vzorky.
+ U uživatele pak vznikne dojem, že nehledě na jeho pohyb a otáčení v prostoru
+ slyší zvuk přicházet ze severu.
+\end_layout
+
+\begin_layout Standard
+Z naměřených dat vyplývá, že ačkoliv není prostorový sluch člověka dokonalý,
+ bylo by možné ho za určitých okolností použít například k alespoň orientační
+ lokalizaci severu pomocí zvukových signálů.
+ Rozhodně není možné pomocí uživatelského rozhraní postaveného na prostorovém
+ zvuku nahradit přesné numerické displeje, úhloměry a digitální kompasy.
+ To ani není cílem práce.
+ V takovém případě by bylo možné číselná data uživateli prostě diktovat
+ pomocí text-to-speech systému.
+ V této práci se naopak snažím poskytnout čistě intuitivní uživatelský zážitek,
+ který bude fungovat bez přemýšlení o významu čísel a slov a dokonce i bez
+ znalosti mluveného jazyka.
+\end_layout
+
+\begin_layout Standard
+Také je nutné si uvědomit, že určování světových stran pomocí magnetické
+ interakce má také své limity.
+ V praxi jsem se nesetkal s kompasem (ať už mechanickým, nebo elektronickým
+ postaveným na Hallovo jevu), který by dokázal za chůze udržet větší přesnost
+ bez ztráty rychlosti odezvy.
+ Data která chceme uživateli prezentovat pomocí rozšířené reality také nebudou
+ tak přesná, aby bylo nutné si s nepřesnostmi způsobenými vnímáním prostorového
+ zvuku příliš lámat hlavu.
+\end_layout
+
+\begin_layout Subsection
+Inspirace
+\end_layout
+
+\begin_layout Standard
+Inspirací k tomuto řešení byl náramek BrmPaw, klon zařízení NorthPaw postavený
+ Janem Hrachem v pražském hackerspacu BrmLab.
+ Princip zařízení spočívá v tom, že si ho uživatel navlékne na nohu a náramek
+ pak vždy pomocí jednoho z osmi malých vibračních motorků signalizuje sever.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/northpaw-anklet.jpg
+	lyxscale 40
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prototyp taktilního kompasu BrmLab NorthPaw (BrmPaw)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tento design je jistě zajímavý a funkční, ale jde o specializovaný hardware,
+ který není komerčně dostupný a ne každý má možnost si zařízení vyrobit
+ sám.
+ Proto se nabízí řešení s běžně dostupným mobilním telefonem a 3D zvukem,
+ které jsem v této části navrhl.
+\end_layout
+
+\begin_layout Standard
+Další zkušeností, která mě přivedla na tuto myšlenku byl pěší výlet po Krkonošíc
+h.
+ Šel jsem sám jen s fenkou Pinďou a neměl jsem žádný konkrétní cíl.
+ V takovém případě chodím jen intuitivně a snažím se udržet si v mysli směr
+ odkud jsem přišel, abych se tam po čase zase vrátil po kružnici z druhé
+ strany bez nutnosti studovat mapu.
+ Jde tedy o takový mentální kompas, kdy pomocí intuice tuším, kam se vracet.
+ Proto mě napadlo, že by mohlo být zajímavé zkusit tuto intuitivní navigaci
+ rozšířit pomocí technických prostředků, které by nevyžadovaly pozornost
+ uživatele.
+ Tak vznikla tato myšlenka.
+ Pak jsem přemýšlel, který zvuk by v přírodě působil nejméně rušivě, ale
+ zároveň byl dostatečně čitelný.
+ Díky přítomnosti Piňdy ale bylo snadné zvolit zvuk psího štěkotu.
+\end_layout
+
+\begin_layout Section
+Praktické využití na ukázkovém případu
+\end_layout
+
+\begin_layout Subsection
+Platforma pro realizaci aplikace
+\end_layout
+
+\begin_layout Standard
+Mobilní aplikaci jsem programoval pro mobilní platformu Android.
+ Aplikace je napsána v programovacím jazyce Java.
+ K práci jsem použil vývojové prostředí Android Studio 3.0.1.
+ K sestavení aplikačního balíčku je použit build systém Gradle.
+\end_layout
+
+\begin_layout Subsection
+Použitá kódová základna
+\end_layout
+
+\begin_layout Standard
+Aplikace vznikla úpravou opensource aplikace 
+\begin_inset Quotes pld
+\end_inset
+
+Just a Damn Compass
+\begin_inset Quotes prd
+\end_inset
+
+, kterou v roce 2011 napsal James Baster na základě učebnicového příkladu
+ 
+\begin_inset Quotes pld
+\end_inset
+
+Compass
+\begin_inset Quotes prd
+\end_inset
+
+ z The Android Open Source Project (2007).
+ Tento projekt vyžaduje, aby celá aplikace byla šířena pod licencí 
+\begin_inset Quotes pld
+\end_inset
+
+Apache License 2
+\begin_inset Quotes prd
+\end_inset
+
+, která umožňuje volné šíření a úpravy za podmínky, že je zachována informace
+ o původním kódu a jeho autorech.
+\end_layout
+
+\begin_layout Subsection
+Obsluha aplikace
+\end_layout
+
+\begin_layout Standard
+Obsluha aplikace je velmi jednoduchá.
+ Po spuštění je zobrazena šipka ukazující na sever.
+ V jejím prostředku je vidět azimut na kterém leží sever vůči telefonu.
+ Ten je zaokrouhlený na přesnost 5 stupňů a tedy zarovnaný na názvy zvukových
+ souborů přibalených k aplikaci.
+ Odpovídající zvukové soubory jsou zároveň přehrávány.
+ Pokud je telefon v klidu a nedochází ke změnám magnetického pole, tak je
+ přehrávání pozastaveno až do další změny.
+ Pro plné využití je nutné použít stereo sluchátka.
+ Je nutné, aby byl mobil displayem ve vodorovné poloze a v jedné přímce
+ s hlavou uživatele.
+ Při správném použití by měl uživatel slyšet štěkání ze severu.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename obrazky/screenshot_kompas.jpg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mobilní telefon s aplikací NorthDog v0.1b (zvukový kompas)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Uvolnění aplikace pro využití veřejností
+\end_layout
+
+\begin_layout Standard
+Zdrojový kód aplikace je možné stáhnout na adrese https://github.com/Harvie/North
+Dog, kam budu postupně přidávat i další úpravy vzniklé po ukončení této
+ práce.
+\end_layout
+
+\begin_layout Standard
+Aplikaci jsem také pod názvem NorthDog (s identifikátorem cz.harvie.northdog)
+ zařadil k publikaci v repozitáři opensource aplikací F-Droid.org.
+ V době psaní tohoto textu čekala v pořadníku na schválení k začlenění.
+ Ve snaze o začlenění budu pokračovat i po uzavření této práce.
+\end_layout
+
+\begin_layout Section
+Subjektivní zhodnocení praktického přínosu technologie
+\end_layout
+
+\begin_layout Subsection
+Zkušenost s využitím aplikace v terénu
+\end_layout
+
+\begin_layout Standard
+Ihned po zprovoznění prototypu aplikace jsem se vydal na krátkou procházku
+ v okolí domova.
+ Měl jsem nasazená sluchátka a telefon jsem držel vodorovně před sebou,
+ aby orientace magnetometrů odpovídala poloze mojí hlavy.
+ Takto dekorován jsem obešel část čtvrti a pozoroval jsem jak moc mi aplikace
+ pomáhá s orientací vůči světovým stranám.
+\end_layout
+
+\begin_layout Standard
+Nebylo výjimkou, že se mi zdálo, že zvuk vnímám z jiného směru, než kde
+ jsem si myslel, že je sever, a po kontrole na displayi jsem zjistil, že
+ zvuk se ozýval ze správné strany.
+ Sever byl ve skutečnosti jinde, než jsem myslel.
+ To samo lze považovat za užitečnou vlastnost.
+ Byly ale i případy, kdy se mi sever pomocí zvuku nepodařilo určit úplně
+ správně.
+ Naštěstí více bylo případů, kdy aplikace fungovala korektně.
+ Vzhledem k tomu, že se sever nepohybuje, tak se přesnost jeho podvědomého
+ určení v průběhu pohybu terénem zlepšuje.
+ Je nutné poznamenat, že nejsnadnější je určit sever, pokud je přímo napravo
+ nebo nalevo od uživatele.
+ Také chvíle, kdy je vpředu a vzadu je snadné rozpoznat.
+ Naopak úhly mezi rameny tohoto pravoúhlého kříže se odhadují o něco hůře.
+ Není to však nemožné.
+ Při pohybu v terénu samozřejmě velmi pomáhá, pokud se uživatel i se zařízením
+ otočí kolem dokola.
+ V takovém případě jsem si udělal velice jasnou představu o poloze severu.
+ K podobnému efektu samořejmě dochází i při průchodu zatáčkami, nebo odbočení
+ z cesty, kdy jsem se přirozeně otočil do nového směru.
+\end_layout
+
+\begin_layout Standard
+Myslím, že jsem z deseti pokusů zhruba jednou nebo dvakrát nedokázal správně
+ určit sever pomocí zvukového signálu, což zhruba odpovídá naměřené 86%
+ úspěšnosti při určování světových stran.
+\end_layout
+
+\begin_layout Standard
+Přesnost a citlivost kompasu v mobilním telefonu byla překvapivě dobrá.
+ Alespoň při stání na místě.
+ Za chůze se vlivem pohybu kompas velmi vychyloval.
+ Je to jen doměnka, ale nemyslím si, že je to způsobeno pohybem mobilního
+ telefonu v magnetickém poli.
+ Výchylky při pohybu dosahovaly cca 20 a někdy až 40 úhlových stupňů.
+ To by dle mého názoru mohlo být způsobeno tím, že mobilní telefon interně
+ kompas kompenzuje nebo stabilizuje pomocí dalších senzorů nemagnetických
+ veličin.
+ Například pomocí akcelerometrů.
+ Tomu by tato reakce na pohyb odpovídala.
+\end_layout
+
+\begin_layout Standard
+Paradoxně nějvětší výhrady, které jsem k aplikaci měl při jejím používání
+ se netýkaly ani tak nedostatečné schopnosti lokalizovat zvuk.
+ Spíše jsem vnímal některé drobné praktické nedostatky, jako například nutnost
+ držet mobil v ruce, nebo příliš časté přehrávání vzorku.
+ Prototyp totiž neomezuje intervaly mezi jednotlivými zvukovými signály
+ a tak se používání aplikace může rychle stát otravným.
+ Prototyp měl samozřejmě sloužit primárně k ověření konceptu v praxi a tyto
+ drobné praktické nedostatky bude v možné poměrně snadno vyřešit.
+ Z velké části půjdou vyřešit pomocí softwarových úprav a už přemýšlím i
+ o možnostech mechanického řešení některých problémů.
+\end_layout
+
+\begin_layout Subsection
+Možná vylepšení mobilní aplikace
+\end_layout
+
+\begin_layout Standard
+Aplikace v současné formě nepodporuje provoz na pozadí se zhasnutým displayem,
+ což by jistě posunulo její užitečnost ze stavu funkčního prototypu do stavu
+ použitelného v každodení praxi.
+ Toto vylepšení plánuji realizovat po dokončení studia.
+ Následně odladěnou aplikaci zveřejním skrz některý z běžných kanálů.
+\end_layout
+
+\begin_layout Standard
+Další užitečnou vlastností aplikace by bylo, kdyby se místo předzpracovaných
+ zvuků nahraných z počítače bylo možné zvukové vzorky zpracovat přímo v
+ mobilním telefonu.
+ Tak by bylo pro uživatele výrazně snadnější měnit zvuky podle svého individuáln
+ího vkusu.
+\end_layout
+
+\begin_layout Standard
+V této práci bylo pracováno se zvukovým vzorkem psího štěkotu.
+ Také je možné, že jiné zvukové vzorky by byly pro tento účel vhodnější
+ a je na dalším výzkumu je vytvořit, porovnat a zvolit ten nejvhodnější.
+ Stejně tak se nabízí možnost experimentálně upravit postup generování binauráln
+ích vzorků a pomocí testů najít nejvhodnější pro tento účel.
+\end_layout
+
+\begin_layout Standard
+Vnímám také potenciál tuto aplikaci rozšířit o další funkcionalitu.
+ Například by bylo snadné přidat možnost měření vzdálenosti.
+ Aplikace by pak každých sto metrů cinkla, po kilometru by se ozval gong
+ a po deseti kilometrech fanfára.
+ To by spolu se zvukovým kompasem stačilo například na návrat z lesa.
+ Uživatel by si pamatoval, že šel dva gongy na sever a jeden gong na západ.
+ Potom by se snadno vrátil jeden gong na východ a dva gongy na jih, aniž
+ by musel kontrolovat displej navigace.
+ Pokud by tento systém měření vzdálenosti byl zamčen na geografické souřadnice,
+ docházelo by k užitečnému efektu.
+ Gong by byl slyšet vždy na konkrétním místě a bylo by tedy možné se navigovat
+ v takto rozšířené realitě pomocí symbolů jako 
+\begin_inset Quotes pld
+\end_inset
+
+gong u borovice
+\begin_inset Quotes prd
+\end_inset
+
+, nebo 
+\begin_inset Quotes pld
+\end_inset
+
+u třetího gongu od řeky do prava
+\begin_inset Quotes prd
+\end_inset
+
+.
+ V zásadě jde o podobný koncept, jako je 
+\begin_inset Quotes pld
+\end_inset
+
+geohashing
+\begin_inset Quotes prd
+\end_inset
+
+ vymyšlený Randallem Munroem - bývalým zaměstnancem NASA a autorem oblíbeného
+ komixu XKCD.
+ Ten také definuje síť virtuálních orientačních bodů v krajině a rozšiřuje
+ tak význam volného prostoru.
+\end_layout
+
+\begin_layout Subsection
+Možnosti aplikace technologie
+\end_layout
+
+\begin_layout Standard
+Technologii popsanou v této kapitole by po doladění počátečních neduhů mělo
+ být možné použít pro více různých účelů.
+ Celá myšlenka vznikla za účelem rekreačního využití při turistice pro snadnou
+ orientaci v terénu.
+ Spatřuji však i určitý potenciál ve využití této technologie lidmi se sníženou
+ schopností orientace.
+ To je ovšem nad rámec této práce.
+\end_layout
+
+\begin_layout Section
+Závěr
+\end_layout
+
+\begin_layout Standard
+V této práci bylo na základě objektivních měření i subjektivních pozorování
+ dokázáno, že je možné využít binaurální prostorový zvuk pro účely rozšířené
+ reality.
+ Je však nutné mít na paměti, že lokalizace zvuku lidským sluchem není zdaleka
+ tak jednoznačná, jako je například lokalizace objektů pomocí hmatu a zraku.
+ V práci byla také změřena míra, do jaké je možné se na tento systém spolehnout.
+\end_layout
+
+\begin_layout Standard
+Tento zjištěný fakt byl demonstrován v praxi na funkční mobilní aplikaci,
+ která umožňuje uživateli rozšířit svou realitu o pomyslný šestý smysl,
+ který umožňuje podvědomě vnímat světové strany.
+\end_layout
+
+\begin_layout Standard
+Jako vedlejší produkt této práce vznikl počítačový program vhodný pro provádění
+ podobných měření při budoucím výzkumu schopností lidského sluchu lokalizovat
+ zdroj prostorového zvuku.
+\end_layout
+
+\begin_layout Standard
+Za důležitý vedlejší přínos této práce také považuji otevření tohoto tématu.
+ V současnosti se většina snah na poli rozšířené reality zaměřuje na obrazové
+ systémy, které jsou pro většinu lidí pochopitelně lákavé.
+ To ale neznamená, že bysme se měli soustředit jen na zrak a celkově opomíjet
+ využití ostatních smyslů pro účely rozšířené reality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Seznam použitých zdrojů
+\end_layout
+
+\begin_layout Subsection
+Seznam literatury
+\end_layout
+
+\begin_layout Description
+[1] BAXTER, A.J., KEMP, David T., "Zuccarelli's Theory," New Scientist, 1983,
+ ISSN 606-606
+\end_layout
+
+\begin_layout Description
+[2] GILKEY, Robert H., ANDERSON, Timtohy A., "Binaural and Spatial Hearing
+ in Real and Virtual Environments
+\begin_inset Quotes prd
+\end_inset
+
+, ISBN 978-1138987852
+\end_layout
+
+\begin_layout Description
+[3] JEFFRESS, Lloyd A., "A place theory of sound localization", Journal of
+ Comparative and Physiological Psychology, 1948, doi:10.1037/h0061495.
+ PMID 18904764
+\end_layout
+
+\begin_layout Description
+[4] ZUCCARELLI, Hugo, "Process for forming an acoustic monitoring device",
+ US Patent 4,680,856
+\end_layout
+
+\begin_layout Description
+[5] ZUCCARELLI, Hugo, "Ears Hear by Making Sounds," New Scientist, 1983,
+ ISSN 438-440 
+\end_layout
+
+\begin_layout Description
+[6] BEGAULT, D.R., 
+\begin_inset Quotes pld
+\end_inset
+
+3D sound for virtual reality and multimedia
+\begin_inset Quotes prd
+\end_inset
+
+, AP Professional, 1994
+\end_layout
+
+\begin_layout Description
+[7] BLAUERT, J., 
+\begin_inset Quotes pld
+\end_inset
+
+Spatial hearing: the psychophysics of human sound localization, MIT Press,
+ 1997
+\end_layout
+
+\begin_layout Description
+[8] SO, R.H.Y., NGAN, B., HORNER, A., LEUNG, K.L., BRAASCH, J., BLAUERT, J., 
+\begin_inset Quotes pld
+\end_inset
+
+Toward orthogonal non-individualized head-related transfer functions for
+ forward and backward directional sound: cluster analysis and an experimental
+ study.
+ Ergonomics
+\begin_inset Quotes prd
+\end_inset
+
+, 2010 , 53(6), pp.767-781.
+\end_layout
+
+\begin_layout Description
+[9] ROSEN, Stuart, 
+\begin_inset Quotes pld
+\end_inset
+
+Signals and Systems for Speech and Hearing (2nd ed.)
+\begin_inset Quotes prd
+\end_inset
+
+, BRILL, 2011, p.
+ 163.
+\end_layout
+
+\begin_layout Description
+[10] ALTON, F., 
+\begin_inset Quotes pld
+\end_inset
+
+Master Handbook of Acoustics (Fourth ed.)
+\begin_inset Quotes prd
+\end_inset
+
+, McGraw-Hill Professional, Everest, 2000, ISBN 0-07-136097-2.
+\end_layout
+
+\begin_layout Description
+[11] GARDNER, Bill, MARTIN, Keith, 
+\begin_inset Quotes pld
+\end_inset
+
+HRTF Measurements of a KEMAR Dummy-Head Microphone
+\begin_inset Quotes prd
+\end_inset
+
+ [online], 2000, [cit.
+ 23.11.2017], Dostupné z: http://sound.media.mit.edu/resources/KEMAR.html
+\end_layout
+
+\begin_layout Description
+[12] BEHRINGER, R., KLINKER, G., MIZELL, D., 
+\begin_inset Quotes pld
+\end_inset
+
+Augmented Reality – Placing Artificial Objects in Real Scenes
+\begin_inset Quotes prd
+\end_inset
+
+, Proceedings of IWAR '98.
+ A.K.Peters, Natick, 1999.
+ ISBN 1-56881-098-9
+\end_layout
+
+\begin_layout Description
+[13] THAUT, Michael H., 
+\begin_inset Quotes pld
+\end_inset
+
+Rhythm, music, and the brain : scientific foundations and clinical applications
+ (1st in paperback ed.)
+\begin_inset Quotes prd
+\end_inset
+
+, New York, NY [u.a.]: Routledge, 2005, ISBN 0415973708
+\end_layout
+
+\begin_layout Description
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://en.wikipedia.org/wiki/Sound_localization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Přílohy
+\end_layout
+
+\begin_layout Subsection
+Kompletní soubor naměřených dat
+\end_layout
+
+\begin_layout Standard
+Je k dispozici na webu univerzity společně s touto prací.
+\end_layout
+
+\begin_layout Subsection
+Mobilní aplikace NorthDog
+\end_layout
+
+\begin_layout Standard
+Zdrojové kódy jsou k dispozici na webu univerzity společně s touto prací
+ a na github.com/harvie .
+ Časem by měla být k dispozici i zkompilovaná verze v online repozitáři
+ F-Droid.org .
+\end_layout
+
+\begin_layout Subsection
+Webová aplikace použitá při poslechových testech
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP,basicstyle={\tiny\rmfamily},breaklines=true,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Verbatim
+
+<?php
+\end_layout
+
+\begin_layout Verbatim
+
+	if(isset($_POST['data'])) {
+\end_layout
+
+\begin_layout Verbatim
+
+		echo("<h1>Děkuji za spolupráci</h1><a href='?'>Spustit znovu</a>
+\backslash
+n");
+\end_layout
+
+\begin_layout Verbatim
+
+		$data = '#Nick: '.$_POST['nick']."
+\backslash
+n".$_POST['data'];
+\end_layout
+
+\begin_layout Verbatim
+
+		$dir='./data/'.date("Y-m-d");
+\end_layout
+
+\begin_layout Verbatim
+
+		$file=$dir.'/'.md5($data).'.csv';
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+		@mkdir($dir, 0775, true);
+\end_layout
+
+\begin_layout Verbatim
+
+		file_put_contents($file, $data);
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+		echo('<hr /><pre>');
+\end_layout
+
+\begin_layout Verbatim
+
+		echo("
+\backslash
+n#Zapsano do souboru: ".$file."
+\backslash
+n");
+\end_layout
+
+\begin_layout Verbatim
+
+		print($data);
+\end_layout
+
+\begin_layout Verbatim
+
+		echo('</pre>');
+\end_layout
+
+\begin_layout Verbatim
+
+		die();
+\end_layout
+
+\begin_layout Verbatim
+
+	}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+?>
+\end_layout
+
+\begin_layout Verbatim
+
+<!DOCTYPE html>
+\end_layout
+
+\begin_layout Verbatim
+
+<html lang="cs">
+\end_layout
+
+\begin_layout Verbatim
+
+<head>
+\end_layout
+
+\begin_layout Verbatim
+
+	<title>Anketa</title>
+\end_layout
+
+\begin_layout Verbatim
+
+	<meta charset="utf-8" />
+\end_layout
+
+\begin_layout Verbatim
+
+</head>
+\end_layout
+
+\begin_layout Verbatim
+
+<body style="padding: 40px;">
+\end_layout
+
+\begin_layout Verbatim
+
+<div style="width: 50%; float: right; border:0px solid pink;">
+\end_layout
+
+\begin_layout Verbatim
+
+<h1>Průzkum - prostorové vnímání zvuku</h1>
+\end_layout
+
+\begin_layout Verbatim
+
+<ul>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Pro tento průzkum je <b>bezpodmínečně nutné využití sluchátek</b> a
+ tichého prostoru</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Během první části vám budou přehrávány prostorové zvuky a na kompasu
+ vlevo se bude ukazovat směr ze kterého zdánlivě přicházejí</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Při této příležitosti prosím upravte hlasitost na svém zařízení na pohodlnou
+ úroveň</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Zkontrolujte, zda <b>nemáte obráceně levé a pravé sluchátko</b> (90
+ stupnu na kompasu odpovida pravemu uchu, 270 levemu)</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Až budete připraveni spustit průzkum, klikněte na tlačítko [Spustit]</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Začnou se přehrávat zvuky z nahodnych uhlu, na kompasu klikejte na stupnici
+ na směr odkud podle vás zvuk přichází.
+ Využijte přitom <b>zkušenosti s poslechem v přípravné části</b>.</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Měření je zaznamenáno okamžitě po kliknutí na stupnici a <b>nelze ho
+ vrátit v případě chyby</b>.
+ Je ale možné smazat všechna měření tlačítkem [Smazat] a začít znovu.</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li>Po dosažení 100 měření je možné data odelslat tlačítkem [Odeslat], nebo
+ pokračovat v měření (výzkum se urychlí, pokud odešlete více než 100 měření,
+ ale preferována je kvalita odpovědí před kvantitou).</li>
+\end_layout
+
+\begin_layout Verbatim
+
+<li><b>Děkuji vám za účast na tomto výzkumu.</b> ~TM~</li>
+\end_layout
+
+\begin_layout Verbatim
+
+</ul>
+\end_layout
+
+\begin_layout Verbatim
+
+</div>
+\end_layout
+
+\begin_layout Verbatim
+
+<canvas id="myCanvas" width="300" height="300" style="border:0px solid pink;"></
+canvas>
+\end_layout
+
+\begin_layout Verbatim
+
+<!-- audio controls>
+\end_layout
+
+\begin_layout Verbatim
+
+  <source src="./dog3/a0.mp3" type="audio/ogg">
+\end_layout
+
+\begin_layout Verbatim
+
+</audio -->
+\end_layout
+
+\begin_layout Verbatim
+
+<br />
+\end_layout
+
+\begin_layout Verbatim
+
+<h1>Count: <span id="count">0</span>/100</h1>
+\end_layout
+
+\begin_layout Verbatim
+
+<span id="dbg"></span>
+\end_layout
+
+\begin_layout Verbatim
+
+<br />
+\end_layout
+
+\begin_layout Verbatim
+
+<button id="reset">Spustit</button>
+\end_layout
+
+\begin_layout Verbatim
+
+<input type="button" value="Reset" onClick="window.location.reload()" />
+\end_layout
+
+\begin_layout Verbatim
+
+<br />
+\end_layout
+
+\begin_layout Verbatim
+
+<br />
+\end_layout
+
+\begin_layout Verbatim
+
+<form method="POST">
+\end_layout
+
+\begin_layout Verbatim
+
+<input type="text" name="nick" placeholder="prezdivka (nepovinne)" />
+\end_layout
+
+\begin_layout Verbatim
+
+<input id="send" type="submit" disabled value="Odeslat" />
+\end_layout
+
+\begin_layout Verbatim
+
+<br />
+\end_layout
+
+\begin_layout Verbatim
+
+<textarea name="data" id="data" style="width: 600px; height: 600px; display:
+ none;">
+\end_layout
+
+\begin_layout Verbatim
+
+</textarea>
+\end_layout
+
+\begin_layout Verbatim
+
+</form>
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+<script>
+\end_layout
+
+\begin_layout Verbatim
+
+debug = true;
+\end_layout
+
+\begin_layout Verbatim
+
+drawing = new Image();
+\end_layout
+
+\begin_layout Verbatim
+
+drawing.src = "./compass.png"; // can also be a remote URL e.g.
+ http://
+\end_layout
+
+\begin_layout Verbatim
+
+var angle = 0;
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+function angle_norm(angle) {
+\end_layout
+
+\begin_layout Verbatim
+
+	angle = Math.round(angle/5)*5;
+\end_layout
+
+\begin_layout Verbatim
+
+        angle = ((angle+180)%360)-180;
+\end_layout
+
+\begin_layout Verbatim
+
+	return angle;
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+function compass_audiourl(angle) {
+\end_layout
+
+\begin_layout Verbatim
+
+	angle = angle_norm(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	var audiourl = './dog3/a'+angle+'.mp3';
+\end_layout
+
+\begin_layout Verbatim
+
+	//document.getElementById("dbg").innerHTML = audiourl;
+\end_layout
+
+\begin_layout Verbatim
+
+	return audiourl;
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+function compass_audio(angle) {
+\end_layout
+
+\begin_layout Verbatim
+
+	new Audio(compass_audiourl(angle)).play();
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+function compass(angle) {
+\end_layout
+
+\begin_layout Verbatim
+
+	var c = document.getElementById("myCanvas");
+\end_layout
+
+\begin_layout Verbatim
+
+	var ctx = c.getContext("2d");
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.clearRect(0, 0, c.width, c.height);
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.drawImage(drawing,0,0,c.width,c.height);
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.beginPath();
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.arc(c.width/2,c.height/2,100,0,2*Math.PI);
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.lineWidth = 3;
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.strokeStyle = '#000000';
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.stroke();
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.closePath();
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	if (!(typeof angle === 'undefined')) {
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.beginPath();
+\end_layout
+
+\begin_layout Verbatim
+
+	angle=angle_norm(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	rad=(angle-90)*(Math.PI/180);
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.moveTo(c.width/2,c.height/2);
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.lineTo(c.width/2+Math.cos(rad)*120,c.height/2+Math.sin(rad)*120);
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.lineWidth = 3;
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.strokeStyle = '#ff0000';
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.stroke();
+\end_layout
+
+\begin_layout Verbatim
+
+	ctx.closePath();
+\end_layout
+
+\begin_layout Verbatim
+
+	}
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+document.getElementById('myCanvas').addEventListener('click',function(evt){
+\end_layout
+
+\begin_layout Verbatim
+
+	if(running == 0) return;
+\end_layout
+
+\begin_layout Verbatim
+
+	var c = document.getElementById("myCanvas");
+\end_layout
+
+\begin_layout Verbatim
+
+	var rect = c.getBoundingClientRect();
+\end_layout
+
+\begin_layout Verbatim
+
+	var x = evt.clientX - rect.left - c.width/2;
+\end_layout
+
+\begin_layout Verbatim
+
+	var y = evt.clientY - rect.top - c.height/2;
+\end_layout
+
+\begin_layout Verbatim
+
+	var angle_click = Math.atan2(y,x)/(Math.PI/180)+90;
+\end_layout
+
+\begin_layout Verbatim
+
+	//angle_click=angle_norm(angle_click);
+\end_layout
+
+\begin_layout Verbatim
+
+	compass(angle_click);
+\end_layout
+
+\begin_layout Verbatim
+
+	//compass();
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	var diff = angle_norm(angle_click)-angle_norm(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	if(diff > 180) {
+\end_layout
+
+\begin_layout Verbatim
+
+		diff = angle_norm(angle_click)-360-angle_norm(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	} else {
+\end_layout
+
+\begin_layout Verbatim
+
+		if(diff < -180) diff = angle_norm(angle_click)+360-angle_norm(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("data").value += angle_norm(angle)+"
+\backslash
+t"+angle_norm(angle_click)+"
+\backslash
+t"+diff+"
+\backslash
+t"+compass_audiourl(angle)+"
+\backslash
+n";
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("count").innerHTML++;
+\end_layout
+
+\begin_layout Verbatim
+
+	if(document.getElementById("count").innerHTML >= 5) document.getElementById("send"
+).disabled = false;
+\end_layout
+
+\begin_layout Verbatim
+
+	next();
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+},false);
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+var preview;
+\end_layout
+
+\begin_layout Verbatim
+
+var running = 0;
+\end_layout
+
+\begin_layout Verbatim
+
+drawing.onload = function() {
+\end_layout
+
+\begin_layout Verbatim
+
+	compass();
+\end_layout
+
+\begin_layout Verbatim
+
+	preview = setInterval(function(){ compass(angle); compass_audio(angle);
+ angle+=10; }, 1000);
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+function next() {
+\end_layout
+
+\begin_layout Verbatim
+
+	clearInterval(preview);
+\end_layout
+
+\begin_layout Verbatim
+
+	angle = Math.random()*360;
+\end_layout
+
+\begin_layout Verbatim
+
+	//alert(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	compass(angle);
+\end_layout
+
+\begin_layout Verbatim
+
+	if(running == 0) {
+\end_layout
+
+\begin_layout Verbatim
+
+		setInterval(function(){ compass_audio(angle); }, 1000);
+\end_layout
+
+\begin_layout Verbatim
+
+		running = 1;
+\end_layout
+
+\begin_layout Verbatim
+
+	}
+\end_layout
+
+\begin_layout Verbatim
+
+}
+\end_layout
+
+\begin_layout Verbatim
+
+document.getElementById('reset').addEventListener('click',function(evt){
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("reset").disabled = true;
+\end_layout
+
+\begin_layout Verbatim
+
+	clearInterval(preview);
+\end_layout
+
+\begin_layout Verbatim
+
+	compass();
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("count").innerHTML = "0";
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("data").value = "#Audio
+\backslash
+tClicked
+\backslash
+tDiff
+\backslash
+tFile
+\backslash
+n";
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("reset").innerHTML = "Smazat
+\backslash
+n";
+\end_layout
+
+\begin_layout Verbatim
+
+	document.getElementById("send").disabled = true;
+\end_layout
+
+\begin_layout Verbatim
+
+	next();
+\end_layout
+
+\begin_layout Verbatim
+
+},false);
+\end_layout
+
+\begin_layout Verbatim
+
+</script>
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+</body>
+\end_layout
+
+\begin_layout Verbatim
+
+</html>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\end_body
+\end_document

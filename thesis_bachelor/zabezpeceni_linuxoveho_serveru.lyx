@@ -1,0 +1,5921 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\end_preamble
+\options idxtotoc
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 35mm
+\topmargin 30mm
+\rightmargin 20mm
+\bottommargin 30mm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Česká zemědělská univerzita v Praze
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Provozně ekonomická fakulta
+\begin_inset Newline newline
+\end_inset
+
+Katedra informačního inženýrství
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Graphics
+	filename logo.png
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+Bakalářská práce
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Zabezpečení Linuxového serveru
+\end_layout
+
+\begin_layout Author
+Autor práce: 
+\series bold
+Tomáš Mudruňka
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Vedoucí práce: 
+\series bold
+doc.
+ Ing.
+ Arnošt Veselý, CSc.
+\end_layout
+
+\begin_layout Date
+\begin_inset VSpace vfill
+\end_inset
+
+©2014 ČZU v Praze
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Section*
+>>> Tento list nahradit zadáním BP z badisu <<<
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename zadani.pdf
+	extra LaTeX "pages={1,2}"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset VSpace vfill
+\end_inset
+
+Čestné prohlášení
+\end_layout
+
+\begin_layout Standard
+Prohlašuji, že svou bakalářskou práci "Zabezpečení Linuxového serveru" jsem
+ vypracoval samostatně pod vedením vedoucího bakalářské práce a
+\begin_inset space ~
+\end_inset
+
+s
+\begin_inset space ~
+\end_inset
+
+použitím odborné literatury a
+\begin_inset space ~
+\end_inset
+
+dalších informačních zdrojů, které jsou citovány v práci a
+\begin_inset space ~
+\end_inset
+
+uvedeny v seznamu literatury na konci práce.
+ Jako autor uvedené bakalářské práce dále prohlašuji, že jsem v
+\begin_inset space ~
+\end_inset
+
+souvislosti s
+\begin_inset space ~
+\end_inset
+
+jejím vytvořením neporušil autorská práva třetích osob.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Podepsán Tomáš Mudruňka dne 23.11.
+ 2014
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset VSpace vfill
+\end_inset
+
+Poděkování
+\end_layout
+
+\begin_layout Standard
+Rád bych poděkoval vedoucímu bakalářské práce panu doc.
+ Ing.
+ Arnoštu Veselému, CSc.
+ za konzultace a
+\begin_inset space ~
+\end_inset
+
+odborné vedení práce.
+ Poděkování patří též rodině a
+\begin_inset space ~
+\end_inset
+
+všem ostatním, kteří mě při psaní této práce podporovali.
+ Taktéž děkuji autorům svobodného softwaru, který je v
+\begin_inset space ~
+\end_inset
+
+práci popisován, stejně jako autorům softwaru, který byl při psaní práce
+ použit (sémantický editor LyX a
+\begin_inset space ~
+\end_inset
+
+verzovací systém Git).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zabezpečení Linuxového serveru
+\begin_inset Newline newline
+\end_inset
+
+Security of Linux server
+\end_layout
+
+\begin_layout Subsection*
+Abstrakt
+\end_layout
+
+\begin_layout Standard
+V práci jsou stručně zmapovány současné bezpečnostní hrozby týkající se
+ serverů využívajících operační systém Linux a
+\begin_inset space ~
+\end_inset
+
+možné obrany proti nim.
+ Dále je v práci popsán bezpečnostní modul AppArmor a
+\begin_inset space ~
+\end_inset
+
+je demonstrováno jeho použití na praktickém příkladu.
+\end_layout
+
+\begin_layout Subsection*
+Abstract
+\end_layout
+
+\begin_layout Standard
+This thesis briefly informs about contemporary security threats related
+ to computer servers running Linux operating system and possible defense
+ against them.
+ Thesis also describes AppArmor security module and demonstrates it's use
+ on practical example.
+\end_layout
+
+\begin_layout Subsection*
+Klíčová slova
+\end_layout
+
+\begin_layout Standard
+Linux, server, bezpečnost, zabezpečení, jádro, modul, LSM, AppArmor
+\end_layout
+
+\begin_layout Subsection*
+Keywords
+\end_layout
+
+\begin_layout Standard
+Linux, server, security, kernel, module, LSM, AppArmor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setstretch{-1}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Práce neobsahuje žádné obrázky.
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Práce neobsahuje žádné tabulky.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Úvod
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že operační systém Linux je velmi často používán na síťových
+ serverech dostupných přes mezinárodní síť internet a
+\begin_inset space ~
+\end_inset
+
+je tak potenciálně vystaven případným útokům, je zabezpečení Linuxových
+ systémů vždy vděčné téma.
+ Proto se tato práce zabývá základními aspekty zabezpečení Linuxových systémů.
+\end_layout
+
+\begin_layout Standard
+Kromě toho také existuje mnoho technologií, které umožňují zabezpečení Linuxovéh
+o systému posílit nad rámec základní konfigurace.
+ Jednou z
+\begin_inset space ~
+\end_inset
+
+těchto technologií je bezpečnostní modul AppArmor, který je v
+\begin_inset space ~
+\end_inset
+
+práci rovněž popsán včetně ukázky jeho praktického nasazení.
+\end_layout
+
+\begin_layout Section
+Cíl práce a metodika
+\end_layout
+
+\begin_layout Standard
+Cílem práce je stručně seznámit čtenáře s
+\begin_inset space ~
+\end_inset
+
+problematikou zabezpečení Linuxových systémů.
+ V práci budou popsány nejvýznamnější slabiny, se kterými se na Linuxových
+ serverech můžeme běžně setkat, a
+\begin_inset space ~
+\end_inset
+
+hrozby, kterým tyto slabiny podléhají.
+ Součástí práce bude i
+\begin_inset space ~
+\end_inset
+
+popis nějčastějších opatření, která se používají k odvrácení těchto hrozeb.
+ Poté se práce zaměří na bezpečnostní modul AppArmor, zmapuje jeho oficiální
+ dokumentaci a
+\begin_inset space ~
+\end_inset
+
+další prameny, které se po teoretické stránce zabývají jeho funkcionalitou.
+ Následně bude demonstrováno nasazení tohoto modulu v
+\begin_inset space ~
+\end_inset
+
+praxi na modelovém případu.
+ Zhodnocena bude také funkčnost celého řešení.
+\end_layout
+
+\begin_layout Standard
+Tato práce je zpracována na základě analýzy odborné literatury a
+\begin_inset space ~
+\end_inset
+
+praktických zkušeností s
+\begin_inset space ~
+\end_inset
+
+nasazením popisovaných technologií.
+ Vzhledem k povaze zvoleného tématu je velký důraz kladen na online zdroje
+ a
+\begin_inset space ~
+\end_inset
+
+technickou dokumentaci popisovaných technologií.
+\end_layout
+
+\begin_layout Section
+Zabezpečení OS Linux (Přehled řešené problematiky)
+\end_layout
+
+\begin_layout Standard
+V této kapitole je shrnuta problematika Linuxu a
+\begin_inset space ~
+\end_inset
+
+jeho zabezpečení.
+\end_layout
+
+\begin_layout Subsection
+Seznámení s OS Linux
+\end_layout
+
+\begin_layout Standard
+Linux je jádro operačního systému, které pak spolu s dalšími programy v
+ uživatelském prostoru
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Uživatelský prostor (neboli 
+\begin_inset Quotes eld
+\end_inset
+
+user space
+\begin_inset Quotes erd
+\end_inset
+
+) je oddělená část paměti vyhrazená pro všechny procesy, které nejsou součástí
+ jádra OS.
+ Opakem tohoto termínu je termín jaderný prostor (také 
+\begin_inset Quotes eld
+\end_inset
+
+kernel space
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ tvoří operační systém jako celek užitečný pro uživatele.
+ Ačkoliv je Linux nezávislý na konkrétních userspace programech, je téměř
+ výhradně provozován spolu s programy vytvořenými pod záštitou projektu
+ GNU
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Rekurzivní akronym 
+\begin_inset Quotes eld
+\end_inset
+
+GNU's Not Unix!
+\begin_inset Quotes erd
+\end_inset
+
+, tedy 
+\begin_inset Quotes eld
+\end_inset
+
+GNU není Unix!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Tato kombinace softwaru se potom označuje jako GNU/Linux.
+ GNU/Linux je potom dodáván a
+\begin_inset space ~
+\end_inset
+
+šířen formou tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+distribucí
+\begin_inset Quotes erd
+\end_inset
+
+, což je většinou konkrétní kombinace Linuxového jádra a
+\begin_inset space ~
+\end_inset
+
+uživatelských programů předpřipravená a
+\begin_inset space ~
+\end_inset
+
+odladěná k použití tak, jak to koncový uživatel očekává.
+ [1]
+\end_layout
+
+\begin_layout Subsection
+Zabezpečení počítačových systémů
+\end_layout
+
+\begin_layout Standard
+O aspektech zabezpečení počítačových systémů toho bylo a
+\begin_inset space ~
+\end_inset
+
+ještě bude napsáno velmi mnoho.
+ Ve své práci bych proto rád rozebral pouze společné jmenovatele všech bezpečnos
+tních rizik, kterým Linux a
+\begin_inset space ~
+\end_inset
+
+podobné systémy podléhají.
+ 
+\end_layout
+
+\begin_layout Standard
+Pro začátek lze bezpečnostní hrozby rozdělit do následujících skupin:
+\end_layout
+
+\begin_layout Enumerate
+Bezpečnostní nedostatky hardwaru
+\end_layout
+
+\begin_layout Enumerate
+Bezpečnostní chyby v jádře OS
+\end_layout
+
+\begin_layout Enumerate
+Bezpečností chyby v uživatelském prostoru
+\end_layout
+
+\begin_layout Standard
+Rozdělení je částečně dáno i samotnou architekturou použitého počítače.
+ Veškeré nedostatky hardwaru a
+\begin_inset space ~
+\end_inset
+
+jejich aspekty jsou nad rámec této práce, protože není možné je ovlivnit
+ pomocí žádného operačního systému.
+ Naopak pokud by to možné bylo, už se nejedná o
+\begin_inset space ~
+\end_inset
+
+chybu HW, ale o
+\begin_inset space ~
+\end_inset
+
+chybu OS, který ji neošetřil
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Toto tvrzení je nutné brát s rezervou, protože není správné vždy řešit špatný
+ návrh HW pomocí obezliček v OS.
+\end_layout
+
+\end_inset
+
+.
+ Pro běžné uživatele a
+\begin_inset space ~
+\end_inset
+
+správce systémů je problematika HW bezpečnosti prakticky nedostupná a
+\begin_inset space ~
+\end_inset
+
+většinou nezbývá, než se spolehnout na kvalitu HW poskytnutého dodavatelem.
+ Pochopitelně by bylo velmi náročné a
+\begin_inset space ~
+\end_inset
+
+nákladné například ověřovat funkcionalitu mikrokódu procesoru, nebo dokonce
+ samotného integrovaného obvodu, na kterém existuje
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Přesto se v poslední době (po tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+aféře Snowden
+\begin_inset Quotes erd
+\end_inset
+
+) tyto aspekty velmi řeší alespoň na úrovni národní bezpečnosti a
+\begin_inset space ~
+\end_inset
+
+šíří se například nepodložené zvěsti, že se tajné služby v Kremlu rozhodly
+ nejcitlivější informace zpracovávat výhradně na psacích strojích až do
+ doby, než bude Rusko schopné si pro státní účely vyrábět vlastní procesory
+ založené na architektuře ARM.
+\end_layout
+
+\end_inset
+
+.
+ Nicméně je přinejmenším dobré řídit se zásadami fyzické bezpečnosti a
+\begin_inset space ~
+\end_inset
+
+omezit fyzický přístup nepovolaných osob k serverům a
+\begin_inset space ~
+\end_inset
+
+okolní infrastruktuře, protože to je často jedno z největších bezpečnostních
+ rizik.
+ [2][6]
+\end_layout
+
+\begin_layout Standard
+Stejně tak bezpečnostní chyby v jádře OS v této práci nebudou příliš rozebírány,
+ protože v
+\begin_inset space ~
+\end_inset
+
+okamžiku, kdy je z bezpečnostního hlediska kompromitován samotný operační
+ systém, nemá smysl se o dalším zabezpečení bavit.
+ Proto je nutné udržovat v systému nejnovější otestovanou verzi jádra, u
+\begin_inset space ~
+\end_inset
+
+které byly opraveny všechny (veřejně známé) bezpečnostní chyby.
+ Je velmi nepravděpodobné, že by správce serveru měl na odhalení a
+\begin_inset space ~
+\end_inset
+
+opravu případných chyb v jádře větší kapacitu, než všichni aktivní vývojáři
+ dohromady.
+ Z tohoto důvodu většina správců spoléhá se zabezpečním jádra právě na jeho
+ vývojáře.
+\end_layout
+
+\begin_layout Standard
+Poslední skupinou jsou bezpečnostní rizika v uživatelském prostoru.
+ Právě těmi se bude tato práce zaobírat.
+ Pokud vyjdeme z předpokladu, že máme k dispozici ideálně bezpečný HW a
+\begin_inset space ~
+\end_inset
+
+ideálně bezpečnou verzi jádra Linux, můžeme uvažovat o bezpečnosti programů,
+ které pod tímto jádrem běží.
+ Těmto programům v uživatelském prostoru budeme v praxi přirozeně chtít
+ omezit pravomoce.
+ Budeme chtít, aby každý uživatel (nebo služba), měl přístup výhradně k
+ datům a
+\begin_inset space ~
+\end_inset
+
+prostředkům systému, které potřebuje a
+\begin_inset space ~
+\end_inset
+
+neohrozil tak soukromí, nebo funkčnost dalších uživatelů či služeb.
+\end_layout
+
+\begin_layout Standard
+Největší potřebu hlídat tyto bezpečnostní aspekty máme u podsystémů, které
+ jsou ve styku s nedůvěryhodnými osobami a
+\begin_inset space ~
+\end_inset
+
+dalšími systémy.
+ Typicky jsou to služby využívané třetími osobami, služby veřejně dostupné
+ přes počítačovou síť, nebo dokonce přes internet.
+\end_layout
+
+\begin_layout Subsection
+Základní návrh Linuxu z hlediska zabezpečení
+\end_layout
+
+\begin_layout Standard
+Jak již bylo naznačeno, tak OS Linux umožňuje spouštět pod svojí kontrolou
+ další programy a
+\begin_inset space ~
+\end_inset
+
+jako každý OS umožňuje jejich vzájemnou koexistenci a
+\begin_inset space ~
+\end_inset
+
+interakci, sdílení prostředků mezi těmito programy a
+\begin_inset space ~
+\end_inset
+
+řízení přístupu k jednotlivým částem systému.
+ Právě toto řízení přístupu je pro tuto práci důležité.
+\end_layout
+
+\begin_layout Subsubsection
+Uživatelské účty a skupiny
+\end_layout
+
+\begin_layout Standard
+Základním kamenem řízení přístupu na Linuxu (nikoliv však samospásným) jsou
+ tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+uživatelské účty
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Nemusí se jednat o účty skutečných uživatelů ve smyslu konkrétní osoby
+ přihlášené do systému a
+\begin_inset space ~
+\end_inset
+
+využívající jeho prostředky.
+ Velmi často jde také o účty určené pro běh více nebo méně interaktivní
+ služby (tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+démona
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Podstatné je to, že proces spuštěný pod uživatelským účtem s omezenými
+ pravomocemi nemůže tyto pravomoce získat zpět, pokud nejsou splněny určité
+ okolnosti - např.
+ získání práv od jiného programu, který těmito právy disponuje (např.
+ na základě zadání hesla nebo zneužití bezpečnostní chyby).
+ [3]
+\end_layout
+
+\begin_layout Subsubsection
+SuperUživatel (root)
+\end_layout
+
+\begin_layout Standard
+Na typickém Linuxovém systému existuje uživatel pojmenovaný 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+, který má maximální možná přístupová práva k celému systému a
+\begin_inset space ~
+\end_inset
+
+pokud je něčím omezen, tak jsou to spíše omezení rázu technického, než administr
+ativního.
+ Tak jako je každý uživatel označen svým uživatelským číslem, tak je i uživatel
+ 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ označen číslem 0.
+\end_layout
+
+\begin_layout Subsubsection
+Přístupová práva k souborům
+\end_layout
+
+\begin_layout Standard
+Samotné rozdělení spuštěných procesů pod uživatelské účty by nestačilo,
+ také je nutné, aby systém daným procesům na základě těchto uživatelských
+ účtů selektivně odmítal přístup k jednotlivým prostředkům.
+ Typickým případem jsou soubory.
+ Každý soubor v systému nese kromě svého názvu a
+\begin_inset space ~
+\end_inset
+
+obsahu také informaci o svém vlastníku a
+\begin_inset space ~
+\end_inset
+
+přístupových právech.
+ Tato práva definují, kdo s tímto souborem smí manipulovat a
+\begin_inset space ~
+\end_inset
+
+jak.
+ V základě lze oprávnění rozdělit na tato tři práva:
+\end_layout
+
+\begin_layout Enumerate
+čtení (značí se 
+\begin_inset Quotes eld
+\end_inset
+
+r
+\begin_inset Quotes erd
+\end_inset
+
+ jako 
+\begin_inset Quotes eld
+\end_inset
+
+Read
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+zápis (značí se 
+\begin_inset Quotes eld
+\end_inset
+
+w
+\begin_inset Quotes erd
+\end_inset
+
+ jako 
+\begin_inset Quotes eld
+\end_inset
+
+Write
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+spouštění (značí se 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ jako 
+\begin_inset Quotes eld
+\end_inset
+
+eXecute
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Tyto tři druhy práv je potom možné nezávisle přidělovat těmto třem skupinám
+ uživatelů:
+\end_layout
+
+\begin_layout Enumerate
+vlastník souboru (
+\begin_inset Quotes eld
+\end_inset
+
+user
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+skupina souboru (
+\begin_inset Quotes eld
+\end_inset
+
+group
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+všichni ostatní (
+\begin_inset Quotes eld
+\end_inset
+
+other
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Vlastník souboru je ten, kdo soubor vytvořil, nebo komu byl přiřazen do
+ vlastnictví správcem systému.
+ [3][4]
+\end_layout
+
+\begin_layout Standard
+Ke skupinám je nutné ještě doplnit, že každý uživatelský účet na Linuxu
+ může být ještě navíc členem různých uživatelských skupin.
+ Účel těchto skupin je dán potřebou sdílet některé soubory mezi více uživateli,
+ ale zároveň nepovolit přístup úplně všem.
+ [3][4]
+\end_layout
+
+\begin_layout Subsubsection
+Přístupová práva k dalším zdrojům
+\end_layout
+
+\begin_layout Standard
+Kromě přístupu k
+\begin_inset space ~
+\end_inset
+
+souborům je samozřejmě také nutné řídit i přístup k dalším zdrojům.
+ K tomu Linux používá dva dále popsané přístupy.
+\end_layout
+
+\begin_layout Standard
+Jednak některé zdroje prezentuje jako soubory pomocí tzv.
+ VFS
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Virtuální systém souborů (Virtual File System) je technika, kdy OS 
+\begin_inset Quotes eld
+\end_inset
+
+předstírá
+\begin_inset Quotes erd
+\end_inset
+
+ existenci souborů, které ve skutečnosti neexistují v klasické podobě na
+ datovém úložišti.
+ Místo toho jsou definovány čistě softwarově.
+ Manipulace s nimi (čtení nebo zápis) nemá význam ve smyslu uchování dat,
+ ale místo toho zprostředkuje komunikaci uživatelského prostoru s některým
+ z podsystémů jádra, nebo hardwarovým vybavením.
+ To umožňuje programům v uživatelském prostředí komunikovat s jádrem pomocí
+ dobře známých metod pro práci se soubory.
+\end_layout
+
+\end_inset
+
+, což umožňuje používat pro tyto zdroje stejný systém přístupových práv
+ jako pro obyčejné soubory (např.
+ právo na zápis do virtuálního souboru, který představuje tiskárnu, odpovídá
+ právu na tisk na této tiskárně).
+ [7]
+\end_layout
+
+\begin_layout Standard
+A dále práva pro některé pokročilejší a
+\begin_inset space ~
+\end_inset
+
+více specifické úkony definuje jádro naprosto nezávisle na právech k
+\begin_inset space ~
+\end_inset
+
+souborům.
+ Jako zástupce tohoto individuálně definovaného privilegia lze uvést možnost
+ otevřít naslouchající síťový socket TCP na čísle portu nižším než 1024,
+ což může výhradně uživatel root
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+nebo proces s capabilitou 
+\family typewriter
+CAP_NET_BIND_SERVICE
+\end_layout
+
+\end_inset
+
+.
+ [8]
+\end_layout
+
+\begin_layout Subsubsection
+Capabilities
+\end_layout
+
+\begin_layout Standard
+Ačkoliv uživatel root má v systému všechna myslitelná práva, je někdy vhodné
+ jeho pravomoce omezit a
+\begin_inset space ~
+\end_inset
+
+někdy je naopak vhodné, aby proces měl některou z pravomocí tradičně patřící
+ rootovi, ale jinak práva roota neměl.
+ Proto Linux od verze 2.2 využívá navíc ještě tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Capabilities
+\begin_inset Quotes erd
+\end_inset
+
+.
+ To jsou příznaky, které se nastavují jednotlivým běžícím vláknům a
+\begin_inset space ~
+\end_inset
+
+které umožňují dále omezovat práva i procesům běžícím pod uživatelským účtem
+ root a
+\begin_inset space ~
+\end_inset
+
+naopak dávat speciální oprávnění procesům, které pod rootem neběží.
+ Lze tedy nastavovat přístupová práva s větší granularitou, než tomu bylo
+ před zavedením capabilities.
+\end_layout
+
+\begin_layout Standard
+Různé funkce kernelu, u kterých vývojáři získali pocit, že by bylo vhodné
+ jejich užití omezit jen na procesy se speciálními privilegii, byly opatřeny
+ testem, který odmítne jejich provedení, pokud volající proces nemá nastavené
+ patřičné capabilities.
+ Bohužel mezi vývojáři kernelu panují nejasnosti ohledně toho, jakou konkrétní
+ 
+\begin_inset Quotes eld
+\end_inset
+
+capabilitu
+\begin_inset Quotes erd
+\end_inset
+
+ přiřadit konkrétní vlastnosti jádra.
+ A
+\begin_inset space ~
+\end_inset
+
+tak někteří vytvářejí pro každou funkci novou capabilitu, což ovšem může
+ při nasazení nové verze kernelu způsobit znefunkčnění systémů se stávající
+ konfigurací.
+ Jiní přiřazují novým funkcím existující capability, což zase potencionálně
+ způsobí nečekané zvýšení privilegií.
+ Poslední skupina vývojářů nastavuje většině funkcí požadavek na capabilitu
+ 
+\family typewriter
+CAP_SYS_ADMIN
+\family default
+.
+ To bohužel popírá důvody nasazení tohoto systému, protože to vůbec neumožní
+ jemné nastavení práv k jednotlivým akcím v systému, ale vrací nás to do
+ stavu, kdy buď uživatel může všechno, nebo naopak nemůže skoro nic.
+ [5]
+\end_layout
+
+\begin_layout Standard
+Capability mohou být procesům nastaveny například pomocí PAM modulu 
+\family typewriter
+pam_cap.so 
+\family default
+při přihlášení do systému.
+ Také je možné příkazem 
+\family typewriter
+setcap 
+\family default
+nastavit capability přímo spustitelným souborům podobně jako SUID
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+viz.
+ níže
+\end_layout
+
+\end_inset
+
+ bit a
+\begin_inset space ~
+\end_inset
+
+umožnit tak i neprivilegovaným uživatelům využívat programy vyžadující tato
+ privilegia
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Učebnicovým příkladem je program 
+\family typewriter
+ping
+\family default
+, viz níže.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Na této funkcionalitě taktéž staví mnoho dalších systémů.
+ O capabilities tato práce bude ještě pojednávat v další části v souvislosti
+ s modulem AppArmor.
+\end_layout
+
+\begin_layout Subsection
+Slabá místa a rizika
+\end_layout
+
+\begin_layout Subsubsection
+Síťové služby a pravděpodobnost jejich napadení
+\end_layout
+
+\begin_layout Standard
+Síťové služby jsou programy, které vystavují své rozhraní do počítačové
+ sítě a
+\begin_inset space ~
+\end_inset
+
+umožňují tak vzdálený přístup k prostředkům systému.
+ To bohužel často znamená, že pokud je v
+\begin_inset space ~
+\end_inset
+
+takovém programu bezpečnostní nedostatek, je také možné ho zneužít na dálku.
+\end_layout
+
+\begin_layout Standard
+Mnoho začínajících správců serverů má pocit, že je jejich server příliš
+ nevýznamný na
+\begin_inset space ~
+\end_inset
+
+to, aby ho někdo napadal a
+\begin_inset space ~
+\end_inset
+
+nevěnují proto zabezpečení dostatečnou pozornost.
+ To je však omyl, protože drtivá většina napadení je prováděna automaticky
+ z různých zavirovaných, nebo jinak napadených počítačů, které dle více
+ či méně náhodných vzorů prohledávají internet a
+\begin_inset space ~
+\end_inset
+
+hledají zranitelné síťové služby.
+\end_layout
+
+\begin_layout Subsubsection
+SUID programy
+\end_layout
+
+\begin_layout Standard
+Typickým příkladem pontenciální bezpečnostní zranitelnosti v uživatelském
+ prostoru jsou programy s nastaveným tzv.
+ SetUID bitem.
+ SetUID bit je další z příznaků, které je možné nastavit spustitelnému souboru
+ v rámci dalších rozšíření k výše uvedeným přístupovým právům pro čtení,
+ zápis a
+\begin_inset space ~
+\end_inset
+
+spouštění.
+ Programy, které mají nastavený SetUID jsou systémem spuštěny pod uživatelským
+ účtem jejich vlastníka, nikoliv pod uživatelským účtem, který dal pokyn
+ k jejich spuštění.
+ [3]
+\end_layout
+
+\begin_layout Standard
+Takové programy pak často umožňují neprivilegovaným uživatelům provádět
+ privilegované operace.
+ Typickým příkladem může být příkaz 
+\family typewriter
+ping
+\family default
+, který ač je dostupný všem uživatelům, tak umožňuje odesílání ICMP Echo
+ Requestů, což vyžaduje přímý a
+\begin_inset space ~
+\end_inset
+
+neomezený přístup k síťovému rozhraní.
+ Dalším příkladem je program 
+\family typewriter
+passwd
+\family default
+, který umožňuje uživatelům změnit svoje heslo, které je přitom uložené
+ v souboru, kam běžný uživatel jinak nemá přístup.
+ [3]
+\end_layout
+
+\begin_layout Standard
+Bezpečnostní riziko potom spočívá v tom, že pokud se uživateli podaří takový
+ program donutit, aby udělal něco, co jeho autor nezamýšlel.
+ Představme si například situaci, kdy by výše zmíněný program na změnu hesla
+ obsahoval chybu, která by způsobila, že by za určitých okolností změnil
+ heslo jinému uživateli než tomu, který ho spustil.
+ A
+\begin_inset space ~
+\end_inset
+
+nebo ještě horší případ, že by bylo možné tento program donutit spustit
+ jiný příkaz, dle volby útočníka, právě ve chvíli, kdy běží s právy superuživate
+le.
+ K tomu by mohlo dojít buď chybou v logice progamu, nebo například tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+přetečením bufferu
+\begin_inset Quotes erd
+\end_inset
+
+.
+ To si pro zjednodušení můžeme zatím představit jako situaci, kdy by uživatel
+ takovému programu např.
+ zadal heslo delší, než na jaké je stavěný a
+\begin_inset space ~
+\end_inset
+
+tento program obsahoval chybu, která by v takové situaci způsobila jeho
+ pád nebo další nezvyklé nebo nepředvídatelné chování.
+\end_layout
+
+\begin_layout Subsubsection
+Přetečení bufferu
+\end_layout
+
+\begin_layout Standard
+Jednou z nejznámějších zranitelností, se kterou se hojně setkáváme v programech
+ nejen na Linuxu je přetečení bufferu.
+ Jak již bylo naznačeno výše, tak typickým příkladem je situace, kdy programátor
+ očekával vstupní data o určité délce, ale program pak za běhu dostal dat
+ více.
+ Problém nastává ve chvíli, kdy autor programu pevně stanovil velikost paměti,
+ která je určená pro uložení vstupních dat před dalším zpracováním, nicméně
+ kód samotný umožňuje načtení většího množství dat do této oblasti v paměti,
+ protože délku dat nekontroluje nebo nelimituje.
+\end_layout
+
+\begin_layout Standard
+Vstupní data se pak postupně zapisují na vyhrazené místo v paměti (tzv.
+ buffer) a
+\begin_inset space ~
+\end_inset
+
+ve chvíli, kdy už se tam nevejdou, tak se zapisují stále dál do následujících
+ oblastí v paměti, které však již byly vyhrazeny pro jiné účely.
+ Takové situace lze potenciálně zneužít k ovlivnění chování programu.
+ Například takovému programu lze podstrčit data do dalších bufferů uložených
+ za bufferem přeteklým, a
+\begin_inset space ~
+\end_inset
+
+dokonce je možné mu podstrčit i
+\begin_inset space ~
+\end_inset
+
+úplně jiný spustitelný kód.
+ Buffer se totiž nachází ve stejné oblasti (v tzv.
+ stacku), kde se také nachází návratová adresa aktuálně běžící funkce, což
+ je zjednodušeně adresa další části programu, která se má provést po dokončení
+ aktuálně prováděné funkce.
+ Útočníkovi pak stačí tuto adresu přepsat adresou přeteklého bufferu, do
+ kterého podstrčil svůj vlastní spustitelný kód.
+ [9]
+\end_layout
+
+\begin_layout Standard
+Problematika tohoto druhu útoků proti spustitelnému kódu je ovšem složitější
+ a
+\begin_inset space ~
+\end_inset
+
+její detailní popis je nad rámec této práce.
+ Pro tuto práci je důležitý pouze fakt, že existuje možnost, jak donutit
+ některé chybně napsané programy, ke spuštění kódu dle volby útočníka.
+ Další část práce se totiž bude zabývat tím, jak zamezit takovým útokům
+ a
+\begin_inset space ~
+\end_inset
+
+především nežádoucím důsledkům, které z nich mohou plynout.
+ To vše bude rozebráno tak, aby nezáleželo na druhu útoku nebo jeho konkrétním
+ provedení, ale pouze na tom, jaká aplikace bude napadena.
+\end_layout
+
+\begin_layout Subsubsection
+Typický scénář kompromitace systému
+\end_layout
+
+\begin_layout Standard
+Pokud dojde ke kompromitaci zabezpečení serveru, typicky k tomu dojde ve
+ dvou krocích.
+ Nejdříve útočník získá nějakou minimální kontrolu nad systémem, což může
+ být například omezený shellový přístup k neprivilegovanému uživatelskému
+ účtu.
+ K tomu dojde nejčastěji kompromitací některé síťové služby.
+ V takovém případě má pak útočník stejné pravomoce, jako měla služba, kterou
+ se mu podařilo kompromitovat.
+ Následně se útočník buď pokusí tento omezený přístup k některým prostředkům
+ serveru využít ve svůj prospěch (např.
+ k
+\begin_inset space ~
+\end_inset
+
+rozesílání spamu a
+\begin_inset space ~
+\end_inset
+
+podobným aktivitám) nebo má ještě vyšší ambice a
+\begin_inset space ~
+\end_inset
+
+pokusí se prolomit další vrstvu zabezpečení a
+\begin_inset space ~
+\end_inset
+
+získat přístup k uživatelskému účtu s vyšími pravomocemi.
+ Druhou možností se vyznačují především cílené útoky, při kterých jde útočníkovi
+ o získání větší výhody, než jen možnosti zneužít cizích prostředků.
+ Může jít například o osobní zájem na získání, poškození nebo zfalšování
+ dat uložených na
+\begin_inset space ~
+\end_inset
+
+serveru.
+\end_layout
+
+\begin_layout Standard
+Je nutné poznamenat, že jednou kompromitovaný server je nutné už vždy považovat
+ za kompromitovaný.
+ Existuje velmi mnoho technik, pomocí kterých si útočník může v systému
+ ukrýt zadní vrátka.
+ Některé z nich může být neúměrně složité odhalit a
+\begin_inset space ~
+\end_inset
+
+proto je často lepší a
+\begin_inset space ~
+\end_inset
+
+snadnější celý systém přeinstalovat.
+\end_layout
+
+\begin_layout Subsection
+Prostředky pro posílení zabezpečení kódu v uživatelském prostoru
+\end_layout
+
+\begin_layout Standard
+Již byly zmíněny možnosti napadení spustitelného kódu pomocí přetečení bufferu
+ ve
+\begin_inset space ~
+\end_inset
+
+stacku.
+ Proto zde budou stručně zmíněny také možnosti obrany proti tomuto typu
+ útoků přímo v
+\begin_inset space ~
+\end_inset
+
+kódu programů samotných.
+ Na tomto místě budou zmíněny pouze stručně, protože později ještě uvedu
+ komplexnější způsoby obrany.
+\end_layout
+
+\begin_layout Subsubsection
+Umístění bufferů a chráněných dat ve stacku
+\end_layout
+
+\begin_layout Standard
+Jednou z prvních věcí, která se nabízí pro ochranu citlivých částí stacku
+ (ukazatele, parametry funkcí,...) před přetečením bufferu, je jejich strategické
+ umístění vůči bufferu.
+ Může pomoci jejich umístění před buffer, nebo do náhodné vzdálenosti za
+ buffer.
+ Pokud je totiž pointer pokaždé v jiné vzdálenosti za koncem bufferu, je
+ pro útočníka mnohem těžší správně umístit vlastní data na jeho místo.
+\end_layout
+
+\begin_layout Subsubsection
+Canaries
+\end_layout
+
+\begin_layout Standard
+Využití tzv.
+ canaries (doslova 
+\begin_inset Quotes eld
+\end_inset
+
+kanárků
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Jde o narážku na využití živých kanárků horníky pro testování dýchatelnosti
+ vzduchu v dolech.
+\end_layout
+
+\end_inset
+
+) je technika, kdy se do stacku za buffer vloží náhodná hodnota, nebo kontrolní
+ součet chráněných dat.
+ Přetečení se potom kontroluje tak, že se testuje, jestli 
+\begin_inset Quotes eld
+\end_inset
+
+kanárek
+\begin_inset Quotes erd
+\end_inset
+
+ nebyl přepsán.
+ [10]
+\end_layout
+
+\begin_layout Subsubsection
+GCC Stack Protector
+\end_layout
+
+\begin_layout Standard
+Výše uvedené metody jsou většinou implementovány v rámci kompilátorů.
+ Lze uvést alespoň jeden typický příklad.
+\end_layout
+
+\begin_layout Standard
+GCC
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+GNU C Compiler
+\end_layout
+
+\end_inset
+
+ je kompilátor programovacího jazyka C (případně C++), který je velmi hojně
+ využíván ke kompilaci programů v rámci projektu GNU.
+ Pomocí něj je sestavována i značná část programů využívaných v rámci GNU/Linuxu.
+ Tento kompilátor má možnost aktivovat tzv.
+ stack protector, což je soubor technik, které pomáhají zlepšit odolnost
+ výsledného binárního kódu vůči přetečení ve stacku.
+ Stack protector lze aktivovat nastavením překladače bez potřeby upravovat
+ samotné zdrojové kódy programu.
+ Přesto je i tak více než vhodné dodržet při programování v jazycích tohoto
+ typu zásady bezpečného kódu a
+\begin_inset space ~
+\end_inset
+
+zabránit tak přetečení dokonale.
+ [10]
+\end_layout
+
+\begin_layout Subsubsection
+Seccomp
+\end_layout
+
+\begin_layout Standard
+Seccomp (zkráceně 
+\begin_inset Quotes eld
+\end_inset
+
+secure computing mode
+\begin_inset Quotes erd
+\end_inset
+
+) je funkce kernelu, která umožňuje kódu v
+\begin_inset space ~
+\end_inset
+
+uživatelském prostoru uzavřít se z hlediska jádra do sandboxu.
+ Tento režim se aktivuje pro proces, který si ho vyžádal pomocí volání 
+\family typewriter
+prctl()
+\family default
+ s argumentem 
+\family typewriter
+PR_SET_SECCOMP
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Pokud si některý proces vyžádá vstup do seccomp režimu, kernel mu odmítne
+ veškerá systémová volání až na výjimky.
+ Tyto výjimky mohou být určeny pomocí dvou režimů seccompu.
+\end_layout
+
+\begin_layout Standard
+První z těchto režimů se nastavuje argumentem 
+\family typewriter
+SECCOMP_MODE_STRICT
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+povoluje pouze volání 
+\family typewriter
+read()
+\family default
+, 
+\family typewriter
+write()
+\family default
+, 
+\family typewriter
+_exit()
+\family default
+, a
+\family typewriter
+
+\begin_inset space ~
+\end_inset
+
+sigreturn()
+\family default
+.
+ Což zjednodušeně znamená, že proces může pouze zapisovat nebo číst z předem
+ otevřených souborů a
+\begin_inset space ~
+\end_inset
+
+socketů, potom se může také ukončit.
+ V případě, že se kód pokusí zavolat jiné systémové volání, je kernelem
+ ukončen pomocí signálu 
+\family typewriter
+SIGKILL
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Druhý režim, který seccomp nabízí je nastaven argumentem 
+\family typewriter
+SECCOMP_MODE_FILTER
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+umožňuje programátorovi nastavit, která systémová volání mají být povolena
+ a
+\begin_inset space ~
+\end_inset
+
+která ne.
+ K tomu se používá systém Berkeley Packet Filter, což je systém původně
+ vyvinutý na filtrování síťového provozu, ale nalezl svoje využití i v této
+ poněkud odlišné oblasti.
+ Pokud je v tomto filtru povoleno procesu spouštět další procesy pomocí
+ 
+\family typewriter
+fork()
+\family default
+ nebo 
+\family typewriter
+execve()
+\family default
+, přenáší se nastavení seccompu i na takto spuštěné procesy, aby nebylo
+ možné se z jeho vlivu takto vymanit.
+\end_layout
+
+\begin_layout Standard
+Ve výsledku umožňuje seccomp programátorům zajistit procesy potencionálně
+ vystavené bezpečnostním hrozbám před zneužitím případným útočníkem.
+ Příkladem může být proces, který pouze přijme data ze sítě, provede nad
+ nimi výpočet a
+\begin_inset space ~
+\end_inset
+
+výsledek opět vrátí po síti.
+ U takového procesu se nepočítá s tím, že by měl například zapisovat do
+ souborů na disku, nebo spouštět další programy.
+ Proto může být žádoucí se takové možnosti vzdát úplně.
+ V případě, že by se pak útočníkovi podařilo proces kompromitovat nalezením
+ chyby ve zpracování vstupu, bude tento proces zabit při první snaze takto
+ získané nadvlády zneužít.
+ [11]
+\end_layout
+
+\begin_layout Standard
+Základní ukázku použití seccompu při programování v jazyce C naleznete v
+ příloze
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Při studiu základů Seccompu jsem naprogramoval tento testovací program,
+ abych si Seccomp prakticky vyzkoušel a
+\begin_inset space ~
+\end_inset
+
+zároveň si ověřil jeho funkčnost.
+ I přesto, že se tato práce Seccompem primárně nezabývá, přišlo mi zajímavé
+ ho k práci přiložit pro případné zájemce.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Prostředky pro posílení zabezpečení ze strany jádra
+\end_layout
+
+\begin_layout Standard
+V této části budou rozebrány metody zabezpečení, které poskytuje Linuxové
+ jádro a
+\begin_inset space ~
+\end_inset
+
+které mohou fungovat bez ohledu na typ útoku a
+\begin_inset space ~
+\end_inset
+
+to dokonce nejen v případě, že aplikace obsahuje bezpečnostní chybu, ale
+ také v případě, že sama aplikace je (potenciálně) záměrně škodlivá.
+ To však vyžaduje dostatečné pochopení dané problematiky, volbu správné
+ metody a
+\begin_inset space ~
+\end_inset
+
+její korektní nasazení.
+\end_layout
+
+\begin_layout Subsubsection
+Firewall
+\end_layout
+
+\begin_layout Standard
+Jeden ze základních prostředků, jak může Linuxové jádro omezit chování programů
+ v
+\begin_inset space ~
+\end_inset
+
+uživatelském prostoru je firewall.
+ Firewall slouží výhradně k omezení síťového provozu a
+\begin_inset space ~
+\end_inset
+
+ostatním aktivitám aplikace zabránit nemůže.
+ Přesto bývá často vítaným doplňkem, protože umožňuje například omezit dostupnos
+t některých síťových služeb na vybrané klienty a
+\begin_inset space ~
+\end_inset
+
+zamezit tak potenciálním rizikům ze zbytku internetu.
+\end_layout
+
+\begin_layout Standard
+Na Linuxu se firewall nalézá přímo v jádru pod názvem 
+\begin_inset Quotes eld
+\end_inset
+
+netfilter
+\begin_inset Quotes erd
+\end_inset
+
+ a
+\begin_inset space ~
+\end_inset
+
+není ho potřeba instalovat.
+ Je potřeba pouze userspace software k jeho nastavení.
+ Základní nastavení firewallu se provádí pomocí programu 
+\family typewriter
+iptables
+\family default
+ (případně 
+\family typewriter
+ip6tables
+\family default
+ pro IPv6, 
+\family typewriter
+arptables
+\family default
+ pro ARP a
+\family typewriter
+
+\begin_inset space ~
+\end_inset
+
+ebtables
+\family default
+ pro nastavení firewallu na bridgích).
+ To jsou také názvy jaderných rozhraní pro konfiguraci netfilteru z uživatelskéh
+o prostoru.
+ V současné době se však zvažuje nahrazení tohoto rozhraní pomocí rozhraní
+ 
+\family typewriter
+nftables
+\family default
+, které má sjednotit všechny rozhraní firewallu.
+\end_layout
+
+\begin_layout Standard
+Zajímavostí netfilteru je také to, že umí síťový provoz jednotlivých aplikací
+ zpracovávat i
+\begin_inset space ~
+\end_inset
+
+na základě toho, pod jakým uživatelským účtem aplikace běží.
+ Netfilter neslouží jen k
+\begin_inset space ~
+\end_inset
+
+omezování procesů běžících v userspacu, ale taktéž samozřejmě zvládá řídit
+ provoz například routovaný nebo bridgeovaný přes Linuxový systém.
+ To však není pro tuto práci příliš zajímavé, protože takový provoz jen
+ zřídka znamená bezpečnostní trhlinu a
+\begin_inset space ~
+\end_inset
+
+pokud ano, tak způsobí většinou spíše přetížení systému, než aby umožnil
+ útočníkovi získat skutečnou kontrolu nad systémem.
+ [12]
+\end_layout
+
+\begin_layout Subsubsection
+Chroot
+\end_layout
+
+\begin_layout Standard
+Další z vlastností jádra, která je často zmiňovaná v souvislosti se zabezpečením
+, je tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+chroot
+\begin_inset Quotes erd
+\end_inset
+
+, což je zkratka, která znamená 
+\begin_inset Quotes eld
+\end_inset
+
+change root
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Pro pochopení toho co chroot dělá, je nutné nejříve pochopit, že výraz
+ 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ není v souvislosti s Linuxem používán pouze pro označení superuživatele.
+ Je také používán k označení kořenu systému souborů
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+tj.
+ adresář 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, ve kterém se pak do podsložek připojují další systémy souborů.
+ Chroot je funkce Linuxového jádra, která umožňuje změnit tento adresář
+ pro nově spouštěný proces
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Z toho tedy vyplívá, že kořenový adresář nemusí být pro všechny procesy
+ stejný.
+\end_layout
+
+\end_inset
+
+.
+ To například umožňuje s jistými omezeními v rámci jednoho Linuxového systému
+ spustit druhý.
+ Oba poté běží pod stejným jádrem a
+\begin_inset space ~
+\end_inset
+
+sdílí stejné prostředky.
+ Programová výbava uživatelského prostoru takto spuštěného systému je pak
+ naprosto nezávislá, používá vlastní knihovny
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Můžeme například spustit pod již běžícím systémem jinou distribuci GNU/Linuxu,
+ nebo dokonce v
+\begin_inset space ~
+\end_inset
+
+64b systému spustit 32b chroot a
+\begin_inset space ~
+\end_inset
+
+používat tak programy nedostupné pro 64b systémy.
+\end_layout
+
+\end_inset
+
+, atd...
+ [13]
+\end_layout
+
+\begin_layout Standard
+Problém s chrootem však je, že víceméně nepředstavuje žádné skutečné zabezpečení
+ navíc a
+\begin_inset space ~
+\end_inset
+
+je možné se z omezení systému ohraničeného chrootem vymanit a
+\begin_inset space ~
+\end_inset
+
+získat zpět kontrolu na nadřazeným systémem, ze kterého byl tento chroot
+ spuštěn.
+ Obzvlášť, pokud uvnitř chrootu existuje možnost získat práva uživatele
+ root.
+ Taktéž je nutné poznamenat, že chroot upravuje pouze přístup k systému
+ souborů a
+\begin_inset space ~
+\end_inset
+
+nikoliv k ostatním prostředkům systému.
+ [13][16]
+\end_layout
+
+\begin_layout Standard
+Chroot je tedy spíše praktickým nástrojem v rukou správce systému.
+ Osobně nedoporučuji využívat ho jako základní kámen zabezpečení systému.
+ Přesto však může být v některých případech chroot žádaným doplňkem k zabezpečen
+í či izolaci některých procesů na serverech.
+\end_layout
+
+\begin_layout Subsubsection
+Nice, limits
+\end_layout
+
+\begin_layout Standard
+Tyto dvě vlastnosti jádra zmíním jen stručně, protože samy o sobě neposkytují
+ opravdové zabezpečení.
+ Umožňují zabezpečení posílit a
+\begin_inset space ~
+\end_inset
+
+nastavit určité mantinely pro jednotlivé uživatele a
+\begin_inset space ~
+\end_inset
+
+procesy.
+ Toho často využívají další komplexnější bezpečnostní technologie k
+\begin_inset space ~
+\end_inset
+
+doplnění svojí funkcionality.
+ Samostatné využití těchto funkcí je však také velmi časté, nehraje však
+ zásadní roli pro zabezpečení.
+\end_layout
+
+\begin_layout Paragraph
+Nice
+\end_layout
+
+\begin_layout Standard
+určuje převrácenou prioritu procesu z hlediska plánovače procesů.
+ Čím větší hodnotu nice má proces, tím nižší má prioritu
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+a tím je tedy 
+\begin_inset Quotes eld
+\end_inset
+
+hodnější
+\begin_inset Quotes erd
+\end_inset
+
+ (odtud 
+\begin_inset Quotes eld
+\end_inset
+
+nice
+\begin_inset Quotes erd
+\end_inset
+
+) při dělení se o prostředky s ostatními procesy
+\end_layout
+
+\end_inset
+
+.
+ Tato hodnota může nabývat hodnot od -20 do 19, přičemž krajní hodnoty může
+ procesu nastavit jen uživatel root.
+ Vysoké hodnoty nice znamenají, že jádro provádění takového procesu naplánuje
+ pouze pokud nemá vůbec nic jiného na práci.
+ Záporné hodnoty naopak procesu umožňují na vytíženém systému získat přednost.
+ To se hodí například, pokud uživatel chce provádět náročné výpočty a
+\begin_inset space ~
+\end_inset
+
+zároveň poslouchat hudbu nebo sledovat film.
+ Pokud se provádění hodinu trvajícího výpočtu občas zastaví, tak to nepředstavuj
+e problém, ale přerušovaná reprodukce hudby může být pro uživatele nepříjemná.
+ Stejně tak na serverových systémech může být požadováno v rámci údržby
+ provádět nějakou náročnější operaci, ale zároveň nesmí být narušena dostupnost
+ poskytované služby.
+ Také je nutné dát velký pozor na procesy s extrémně nízkou hodnotou nice.
+ Pokud proces s nice -20 (tzv.
+ real-time režim) skončí v nekonečné smyččce, je velmi obtížné až nemožné
+ ho ukončit.
+ Tento proces totiž vytlačí z provádění ostatní procesy, přes které by ho
+ bylo možné ukončit.
+ Většina procesů v systému má po startu hodnotu nice 0.
+ Výjimky jsou nastaveny spíše dle potřeb uživatelů pro pohodlnou práci se
+ systémem.
+ Hodnota nice se nastavuje procesům nejčastěji příkazy 
+\family typewriter
+nice
+\family default
+ (pro nově spouštěné procesy) a
+\begin_inset space ~
+\end_inset
+
+
+\family typewriter
+renice
+\family default
+ (pro procesy již spuštěné).
+ [14]
+\end_layout
+
+\begin_layout Paragraph
+Limity
+\end_layout
+
+\begin_layout Standard
+jsou funkce Linuxu umožňující nastavit procesům a
+\begin_inset space ~
+\end_inset
+
+uživatelům omezení ve využívání snadno počitatelných prostředků systému.
+ Na typickém Linuxovém systému se nastavují v souboru 
+\family typewriter
+/etc/security/limits.conf
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+v platnost je nejčastěji zavádí pam modul 
+\family typewriter
+pam_limits.so
+\family default
+.
+ Současně umožňují nastavit asi 30 různých parametrů, z nichž lze jako zástupce
+ zvolit maximální počet otevřených souborů, využití paměti, maximální počet
+ využitých procesů, maximální počet současných přihlášení uživatele do systému
+ a
+\begin_inset space ~
+\end_inset
+
+krajní hodnoty nice, jaké může proces nebo uživatel nastavit.
+ [3]
+\end_layout
+
+\begin_layout Subsubsection
+Cgroups
+\end_layout
+
+\begin_layout Standard
+Cgroups je systém, který umožňuje sdružovat procesy do skupin, kterým je
+ následně možné nastavovat další pravidla.
+ Základní funkcionalita umožňuje procesy omezovat podobně jako to dělají
+ limity nebo nice.
+ Nastavení však probíhá poněkud komplexněji.
+\end_layout
+
+\begin_layout Standard
+Tím však možnosti cgroups zdaleka nekončí.
+ Velice zajímavá je například izolace těchto skupin pomocí jmenných prostorů
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+tzv.
+ namespaců
+\end_layout
+
+\end_inset
+
+.
+ Ta umožňuje různé pohledy na sdílené prostředky systému.
+ Například je možné zajistit, že procesy uvnitř takové skupiny vidí jen
+ ostatní procesy v této skupině, ale zbytek procesů v systému už nevidí.
+ Nebo je možné přesměrovat adresáře na disku, takže například každá služba,
+ která přistupuje k dočasnému adresáři 
+\family typewriter
+/tmp
+\family default
+, uvidí ve skutečnosti jiný adresář vyhrazený jen pro ni a
+\begin_inset space ~
+\end_inset
+
+tudíž neuvidí dočasné soubory jiných služeb zařazených do jiných skupin.
+ [15]
+\end_layout
+
+\begin_layout Standard
+Ačkoli je takto snadné zvýšit zabezpečení z hlediska oddělení jednotlivých
+ služeb, tak toto nastavení lze provést zcela transparentně bez nutnosti
+ úpravy jejich spustitelného kódu.
+ Podobně se dá odstínit například i přístup k síťovým rozhraním, atd...
+\end_layout
+
+\begin_layout Standard
+Další zajímavou možností je tzv.
+ checkpoint/restore celé cgroupy.
+ Novější verze jádra umožňují uložit stav běžícího procesu na disk a
+\begin_inset space ~
+\end_inset
+
+později se k němu vrátit.
+ To lze použít buď lokálně, nebo je dokonce možné takto přenést běžící proces
+ na úplně jiný systém.
+ Případně je takto možné provést restart systému bez nutnosti ukončit proces,
+ který se pak dá načíst do paměti, aby mohl pokračovat tam, kde předtím
+ přestal.
+ Cgroups toto rozšiřují o možnost udělat checkpoint celé skupiny procesů.
+\end_layout
+
+\begin_layout Standard
+To vše je často využito jako základ různých kontejnerových technologií,
+ které budu rozebírat dále.
+\end_layout
+
+\begin_layout Subsubsection
+Kontejnery
+\end_layout
+
+\begin_layout Standard
+Existuje několik technologií, které vzaly některé myšlenky chrootu a
+\begin_inset space ~
+\end_inset
+
+dotáhly je téměř k
+\begin_inset space ~
+\end_inset
+
+dokonalosti v tom smyslu, že jsou vhodné i pro bezpečné oddělení dvou a
+\begin_inset space ~
+\end_inset
+
+více systémů.
+ Většinou jde o sady patchů do jádra, které umožňují pod Linuxem spouštět
+ další skutečně nezávislé Linuxové userspace systémy.
+ V takovém případě tyto sice sdílí jádro, ale už mají lépe oddělený i
+\begin_inset space ~
+\end_inset
+
+přístup dalším prostředkům jádra.
+ Jsou navrženy tak, aby z nich nebylo možné vystoupit ani v případě, že
+ má uživatel uvnitř práva uživatele root a
+\begin_inset space ~
+\end_inset
+
+aby se nemohly vzájemně ovlivňovat.
+ Takové kontejnery lze proto použít k oddělení aplikací, které zajistí,
+ že v případě bezpečnostní chyby v jedné aplikaci nezíská útočník přístup
+ mimo kontejner a
+\begin_inset space ~
+\end_inset
+
+k
+\begin_inset space ~
+\end_inset
+
+aplikacím ostatním.
+ To ale vyžaduje, aby každá aplikace měla kompletní vlastní systém, což
+ nemusí být vždy žádoucí a
+\begin_inset space ~
+\end_inset
+
+efektivní.
+ Jindy to naopak může být velmi výhodné a
+\begin_inset space ~
+\end_inset
+
+je běžné, že se takové kontejnery pronajímají k libovolnému použití zákazníkům,
+ kteří si nechtějí kupovat celý server.
+\end_layout
+
+\begin_layout Standard
+Mezi tyto kontejnerové technologie patří dnes již zastaralý Linux vServer,
+ momentálně nejrozšířenější OpenVZ a
+\begin_inset space ~
+\end_inset
+
+nakonec projekt LXC (Linux Containers), který je přímo součástí oficiální
+ verze jádra.
+ Poslední jmenovaný má ambice nahradit dva předchozí jmenované projekty,
+ ale v době psaní této práce zatím bohužel není připraven k produkčnímu
+ použití a
+\begin_inset space ~
+\end_inset
+
+obsahuje ještě jisté nedostatky.
+\end_layout
+
+\begin_layout Subsubsection
+Bezpečnostní sady patchů do jádra
+\end_layout
+
+\begin_layout Standard
+Existují projekty, které poskytují sady patchů, které si kladou za cíl zlepšit
+ zabezpečení Linuxu pomocí různých druhů úprav zdrojových kódů a
+\begin_inset space ~
+\end_inset
+
+nastavení.
+ Jde především o
+\begin_inset space ~
+\end_inset
+
+úpravy, které jinak vývojáři nechtějí do jádra zařazovat.
+ Důvodem je například, že narušují některou jinak žádanou funkcionalitu
+ pro některé krajní případy, nebo jsou jinak v
+\begin_inset space ~
+\end_inset
+
+rozporu se záměry vývojářů jádra.
+ Jejich nasazení často vyžaduje, aby si správce jádro sám sestavil ze zdrojových
+ kódů, na které předtím tyto patche aplikoval.
+ [21]
+\end_layout
+
+\begin_layout Standard
+Je však nutno podotknout, že samotné nasazení takových patchů samo o sobě
+ není dostatečné zabezpečení.
+ Jde spíše o doplněk, protože použití takto upraveného jádra nijak nedefinuje
+ žádná omezení pro jednotlivé procesy.
+ Stejně jako použití zimních pneumatik na vozidle nijak nezaručí, že nedojde
+ k havárii.
+\end_layout
+
+\begin_layout Standard
+Některé z
+\begin_inset space ~
+\end_inset
+
+těchto projektů však poskytují poměrně sofistikované nástroje nad rámec
+ pouhého vyčištění jádra od potenciálních hrozeb.
+\end_layout
+
+\begin_layout Standard
+Mezi nejznámější projekty tohoto typu patří grsecurity a
+\begin_inset space ~
+\end_inset
+
+PaX.
+ [21]
+\end_layout
+
+\begin_layout Subsubsection
+LSM - Linuxové bezpečnostní moduly
+\end_layout
+
+\begin_layout Standard
+Poslední a
+\begin_inset space ~
+\end_inset
+
+asi nejzajímavější možností, jak zlepšit zabezpečení aplikace v uživatelském
+ prostoru, jsou takzvané LSM (Linux Security Modules).
+ Jde o framework, který je dostupný v
+\begin_inset space ~
+\end_inset
+
+Linuxovém jádře od verze 2.6 a
+\begin_inset space ~
+\end_inset
+
+který umožňuje implementaci různých bezpečnostních politik typu MAC (Mandatory
+ Access Control - Mandatorní řízení přístupu).
+ To umožňuje správci systému jednotlivým procesům ještě přesněji a
+\begin_inset space ~
+\end_inset
+
+závazněji nadefinovat přístupová práva a
+\begin_inset space ~
+\end_inset
+
+privilegia, ve srovnání například se souborovými právy.
+ [17]
+\end_layout
+
+\begin_layout Standard
+Výhoda tohoto systému spočívá kromě možnosti jemněji definovat množinu povolenýc
+h operací a
+\begin_inset space ~
+\end_inset
+
+přístupných zdrojů také v tom, že uživatel nemůže sám (ať už záměrně nebo
+ omylem
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Typicky se stává, že neznalí uživatelé ve snaze vyřešit problém s přístupovými
+ právy jednoduše nastaví souboru plná práva pro všechny uživatele.
+ To téměř vždy jejich problém vyřeší, ale může to mít i
+\begin_inset space ~
+\end_inset
+
+nepříjemné následky.
+\end_layout
+
+\end_inset
+
+) dát práva jiným uživatelům.
+ [17]
+\end_layout
+
+\begin_layout Standard
+Mezi nejznámější LSM patří AppArmor, SELinux
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Ten byl mimochodem vyvinut Národní bezpečnostní agenturou (NSA) Spojených
+ států amerických.
+\end_layout
+
+\end_inset
+
+, Smack a
+\begin_inset space ~
+\end_inset
+
+TOMOYO Linux.
+ V další části této práce bude podrobněji popisováno fungování a
+\begin_inset space ~
+\end_inset
+
+užití pouze systému AppArmor.
+ Ten sice není tak komplexní jako SELinux a
+\begin_inset space ~
+\end_inset
+
+některé politiky nedokáže definovat tak přesně, ale je nesrovnatelně snažší
+ ho začít používat bez potřeby hlubokých znalostí.
+ To ho možná v některých případech činí i bezpečnějším.
+ Bezpečnost systému totiž není daná jen tím, jak silný LSM správce použije,
+ ale také tím, jak se ho naučí používat a
+\begin_inset space ~
+\end_inset
+
+jak dobře mu porozumí.
+\end_layout
+
+\begin_layout Section
+AppArmor (úvod)
+\end_layout
+
+\begin_layout Standard
+Tato část se zabývá teoretickým rozborem fungování AppArmoru.
+\end_layout
+
+\begin_layout Subsection
+Co je AppArmor
+\end_layout
+
+\begin_layout Standard
+Jak jsem již uvedl, AppArmor je Linuxový bezpečnostní modul (LSM), který
+ implementuje mandatorní řízení přístupu (MAC) k prostředkům systému.
+ [18]
+\end_layout
+
+\begin_layout Subsection
+Instalace modulu AppArmor
+\end_layout
+
+\begin_layout Standard
+Některé distribuce Linuxu již mají kernel sestavený s alespoň základní podporou
+ AppArmoru.
+ Pokud ovšem potřebujete kernel sestavit sami, nebo se jen chcete dozvědět
+ více, přečtěte si tuto část.
+\end_layout
+
+\begin_layout Subsubsection
+Sestavení jádra s podporou AppArmoru
+\end_layout
+
+\begin_layout Standard
+AppArmor je sice již nyní součástí hlavní větve kernelu, nicméně pouze částečně.
+ Ne všechny jeho součásti se do jádra dostaly a
+\begin_inset space ~
+\end_inset
+
+pokud budeme chtít využít AppArmor naplno, bude nutné aplikovat patche přímo
+ od jeho vývojářů.
+ Pokud se rozhodneme využít pouze 
+\begin_inset Quotes eld
+\end_inset
+
+vanilkový kernel
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+vanilla kernel
+\begin_inset Quotes erd
+\end_inset
+
+ je označení pro jádro z hlavní větve, která je momentálně spravovaná původním
+ autorem Linuxu (Linusem Torvaldsem) a
+\begin_inset space ~
+\end_inset
+
+celosvětovou komunitou vývojářů, kteří jsou s ním v úzké spolupráci.
+ Tato verze neobsahuje žádné úpravy, které neprošly jejich schvalovacím
+ procesem.
+ Není ovšem vyjímkou, že uživatelé používají jádra s neoficiálními úpravami
+ od třetích stran.
+ [19] Označení má svůj původ ve vanilkové příchuti zmrzliny, která tvoří
+ jakýsi základ, ke kterému se pak mohou přidávat další polevy.
+\end_layout
+
+\end_inset
+
+, musíme se připravit na to, že přijdeme o novější a
+\begin_inset space ~
+\end_inset
+
+pokročilejší funkce, jako je například limitování síťového provozu pomocí
+ AppArmoru.
+ Linux se vyvíjí velmi rychle a
+\begin_inset space ~
+\end_inset
+
+je pravděpodobné, že tato informace nebude již krátce po publikaci této
+ práce platit.
+ Pravděpodobně však také vzniknou nové verze AppArmoru, které budou na zařazení
+ čekat.
+ [19]
+\end_layout
+
+\begin_layout Standard
+Při kompilaci je nutné kernel správně nastavit
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Při sestavování binárního obrazu z jádra se nabízí opravdu velké množství
+ voleb, kterými můžeme obraz přizpůsobit pro svoje potřeby.
+ Volit můžeme jak zásadní věci jako je např.
+ cílová architektura procesoru, pro kterou obraz sestavujeme, tak i jednotlivé
+ vlastnosti, které chceme do kernelu zahrnout ať už přímo, nebo formou dynamicky
+ zaveditelných modulů.
+ Toto nastavení se bude pochopitelně lišit například pro osobní počítač
+ a
+\begin_inset space ~
+\end_inset
+
+nebo pro mobilní telefon, ve kterém nebudeme chtít zbytečně zabírat paměť
+ zařízení velkým kernelem se spoustou funkcí a
+\begin_inset space ~
+\end_inset
+
+ovladačů na hardware, který pravděpodobně k takovému zařízení nikdy nepřipojíme.
+ Toto nastavení samozřejmě poté už nelze měnit bez rekompilace celého kernelu.
+ Konfiguraci aktuálně nabootovaného systému můžeme přečíst ze souboru 
+\family typewriter
+/proc/config
+\family default
+ nebo 
+\family typewriter
+/proc/config.gz
+\family default
+, pokud to ovšem není v configu zakázáno.
+ V takovém případě záleží na distribuci systému, jakým způsobem její správci
+ o konfiguraci uvědomí koncové uživatele.
+\end_layout
+
+\end_inset
+
+, aby se AppArmor do kernelu zakompiloval.
+ To provedeme pomocí následujících parametrů:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CONFIG_SECURITY_APPARMOR=y
+\end_layout
+
+\begin_layout Plain Layout
+
+CONFIG_SECURITY_APPARMOR_BOOTPARAM_VALUE=0
+\end_layout
+
+\begin_layout Plain Layout
+
+#CONFIG_DEFAULT_SECURITY_APPARMOR is not set
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+První parametr způsobí, že se AppArmor do kernelu vůbec zakompiluje.
+ Zbylé parametry způsobí, že bude AppArmor ve výchozím stavu vypnutý, dokud
+ ho nepovolíme v zavaděči pomocí parametru kernelu
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Narozdíl od konfigurace kernelu, kterou provedeme při kompilaci, je kernelu
+ navíc možné předat množství dalších parametrů během bootu.
+ Tyto parametry předává kernelu typicky zavaděč a
+\begin_inset space ~
+\end_inset
+
+aktuální parametry, se kterými je systém nabootován můžeme většinou přečíst
+ z virtuálního souboru 
+\family typewriter
+/proc/cmdline
+\family default
+.
+\end_layout
+
+\end_inset
+
+ 
+\family typewriter
+apparmor=1 security=apparmor
+\family default
+, ale lze také použít následující nastavení:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CONFIG_SECURITY_APPARMOR=y
+\end_layout
+
+\begin_layout Plain Layout
+
+CONFIG_SECURITY_APPARMOR_BOOTPARAM_VALUE=1
+\end_layout
+
+\begin_layout Plain Layout
+
+CONFIG_DEFAULT_SECURITY_APPARMOR=y
+\end_layout
+
+\begin_layout Plain Layout
+
+CONFIG_DEFAULT_SECURITY="apparmor"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kernel sestavený s takovým nastavením naopak bude mít AppArmor zapnutý i
+ bez dodatečných parametrů zadaných při bootu, nicméně bude pak možné AppArmor
+ zakázat ze zavaděče pomocí parametrů 
+\family typewriter
+apparmor=0 security=""
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Po nabootování do takto sestaveného kernelu použijeme následující příkaz
+ pro ověření podpory AppArmoru:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+cat /sys/module/apparmor/parameters/enabled
+\end_layout
+
+\begin_layout Standard
+Mohou nastat tři situace:
+\end_layout
+
+\begin_layout Enumerate
+Je vypsána chybová hláška o neexistujícím souboru.
+ Kernel nepodporuje AppArmor, nebo nebyl zkompilován s nastavením 
+\family typewriter
+CONFIG_SECURITY_APPARMOR=y
+\family default
+.
+\end_layout
+
+\begin_layout Enumerate
+Je vypsáno písmeno 
+\begin_inset Quotes eld
+\end_inset
+
+N
+\begin_inset Quotes erd
+\end_inset
+
+, AppArmor nebyl při bootu povolen, nebo byl naopak zakázán (viz.
+ výše).
+\end_layout
+
+\begin_layout Enumerate
+Je vypsáno písmeno 
+\begin_inset Quotes eld
+\end_inset
+
+Y
+\begin_inset Quotes erd
+\end_inset
+
+, AppArmor je zaveden v jádře a
+\begin_inset space ~
+\end_inset
+
+připraven k použití.
+\end_layout
+
+\begin_layout Standard
+Při dodržení tohoto postupu bude mít uživatel nabootovaný systém s podporou
+ AppArmoru a
+\begin_inset space ~
+\end_inset
+
+připravený na jeho nastavení.
+\end_layout
+
+\begin_layout Subsection
+Konfigurace AppArmoru
+\end_layout
+
+\begin_layout Standard
+Nastavení pravidel AppArmoru se provádí pomocí tzv.
+ profilů, které se vždy vztahují k
+\begin_inset space ~
+\end_inset
+
+jednotlivým spustitelným souborům.
+ Tyto spustitelné soubory jsou v profilech odkazovány pomocí cesty v souborovém
+ systému.
+ Tyto profily je nutné zavést do kernelu, který je uvede v účinnost ve chvíli
+ spuštění daného programu.
+ [20]
+\end_layout
+
+\begin_layout Standard
+K práci s profily slouží sada user-space nástrojů, jejichž názvy většinou
+ začínají 
+\begin_inset Quotes eld
+\end_inset
+
+aa-
+\begin_inset Quotes erd
+\end_inset
+
+ nebo 
+\begin_inset Quotes eld
+\end_inset
+
+apparmor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Tyto nástroje často komunikují se samotným jaderným modulem AppArmoru skrz
+ rozhraní zpřístupněná do uživatelského prostoru.
+ Z hlediska uživatele pak tvoří nepostradatelnou součást AppArmoru.
+ Spolu s těmito nástroji jsou většinou taktéž instalovány příslušné manuálové
+ stránky dostupné přes příkaz 
+\family typewriter
+man
+\family default
+.
+ [23]
+\end_layout
+
+\begin_layout Subsubsection
+Zavádění profilů do jádra
+\end_layout
+
+\begin_layout Standard
+Jednotlivé profily jsou uložené na disku v textové podobě a
+\begin_inset space ~
+\end_inset
+
+následně předzpracovány do binární podoby vyžadované jádrem pomocí programu
+ 
+\family typewriter
+apparmor_parse
+\family default
+.
+ Tento program zároveň zajistí jejich zavedení do (paměti) jádra a
+\begin_inset space ~
+\end_inset
+
+nastavení požadovaného režimu vynucování (viz.
+ dále).
+ [23]
+\end_layout
+
+\begin_layout Standard
+V produkčním prostředí je samozřejmě žádoucí profily zavést do jádra co
+ nejdříve během spouštění systému.
+ Typicky je to prováděno spouštěcím (init) skriptem, který automaticky při
+ startu systému zavede všechny profily uložené v adresáři 
+\family typewriter
+/etc/apparmor.d/
+\family default
+.
+ Je důležité, aby tento skript proběhl co nejdříve v pořadí, protože všechny
+ procesy spuštěné ještě před zavedením příslušného profilu nejsou tímto
+ profilem omezeny (tedy ani pokud je profil zaveden později, kdy proces
+ již běží a
+\begin_inset space ~
+\end_inset
+
+je tedy vhodné takový proces restartovat).
+ Tyto procesy bývají ve výpisech označovány jako 
+\begin_inset Quotes eld
+\end_inset
+
+unconfined
+\begin_inset Quotes erd
+\end_inset
+
+, opakem je označení 
+\begin_inset Quotes eld
+\end_inset
+
+confined
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Kritické jsou logicky pouze 
+\begin_inset Quotes eld
+\end_inset
+
+unconfined
+\begin_inset Quotes erd
+\end_inset
+
+ procesy, které mají zavedený profil.
+ To je možné vyčíst například z přehledu stavu zavedených profilů a
+\begin_inset space ~
+\end_inset
+
+spuštěných procesů, který poskytuje program 
+\family typewriter
+aa-status
+\family default
+.
+ Zajímavý je také výpis programu 
+\family typewriter
+aa-unconfined
+\family default
+, který obsahuje seznam unconfined procesů, které komunikují po síti.
+\end_layout
+
+\begin_layout Standard
+Jedna z poměrně častých kritik AppArmoru se zaměřuje právě na to, že (např.
+ narozdíl od SELinuxu) nevynucuje definovanou bezpečnostní politiku ihned
+ po zavedení jádra, ale až po zavedení všech profilů patřičnými init skripty.
+ Navíc načtení profilů je možné až po připojení souborového systému, který
+ je obsahuje.
+ Tudíž je velmi běžné, že se spouští množství procesů ještě předtím než
+ AppArmor začne vůbec fungovat.
+ Nicméně při korektním nastavení, které s touto vlastností počítá, to nelze
+ považovat za příliš velkou nevýhodu.
+ Stačí profily zavést co nejdříve před spuštěním všech služeb a
+\begin_inset space ~
+\end_inset
+
+ideálně i
+\begin_inset space ~
+\end_inset
+
+předtím než je nastavena síť nebo zobrazena přihlašovací obrazovka.
+ Běžně to není problém, protože přesně takto je to ve většině linuxových
+ distribucí také implementováno již od instalace.
+\end_layout
+
+\begin_layout Subsubsection
+Režimy vynucování profilů
+\end_layout
+
+\begin_layout Standard
+Každý AppArmor profil zavedený do jádra může být v jednom ze dvou režimů.
+ [20]
+\end_layout
+
+\begin_layout Standard
+Režim 
+\begin_inset Quotes eld
+\end_inset
+
+enforce
+\begin_inset Quotes erd
+\end_inset
+
+ udává, že je profil vynucován a
+\begin_inset space ~
+\end_inset
+
+procesy, kterých se profil týká (v ideálním případě) nemají možnost tato
+ pravidla porušit.
+ Neúspěšné pokusy o přístup k prostředkům systému jsou zapsány do logu
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Log je obecný název pro záznam systémových událostí.
+ Výraz má pravděpodobně svůj původ v primitivním způsobu záznamu, kdy si
+ lidé dělali zářezy do dřevěné klády (anglicky 
+\begin_inset Quotes eld
+\end_inset
+
+log
+\begin_inset Quotes erd
+\end_inset
+
+), za účelem zaznamenat například počet uplynulých dní nebo ulovených zvířat.
+\end_layout
+
+\end_inset
+
+.
+ Do tohoto režimu přepneme profil příkazem 
+\family typewriter
+aa-enforce
+\family default
+.
+ [20][23]
+\end_layout
+
+\begin_layout Standard
+Druhý režim je tzv.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+complain
+\begin_inset Quotes erd
+\end_inset
+
+.
+ V tomto režimu jsou pravidla sice zavedena, ale nejsou vynucována.
+ Při porušení pravidel v 
+\begin_inset Quotes eld
+\end_inset
+
+complain
+\begin_inset Quotes erd
+\end_inset
+
+ režimu je tato událost pouze zalogována, což může pomoci při vytváření
+ profilů.
+ Z takového logu lze zjistit k jakým prostředkům daný proces přistupuje
+ a
+\begin_inset space ~
+\end_inset
+
+lze je tedy přidat do profilu, který následně bude vynucován.
+ Pokud se pak takový proces pokusí přistupovat k prostředkům, ke kterým
+ během toho 
+\begin_inset Quotes eld
+\end_inset
+
+učení
+\begin_inset Quotes erd
+\end_inset
+
+ nepřistupoval, bude mu to zamítnuto a
+\begin_inset space ~
+\end_inset
+
+samozřejmě opět zalogováno.
+ Tento režim lze aktivovat pro jednotlivé profily příkazem 
+\family typewriter
+aa-complain
+\family default
+.
+ [20][23]
+\end_layout
+
+\begin_layout Standard
+Zároveň s libovolným z těchto dvou režimů je také možné aktivovat tzv.
+ režim 
+\begin_inset Quotes eld
+\end_inset
+
+audit
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ten způsobí, že se do logu nezapisují jen neúspěšné pokusy o přístup k
+ prostředkům, ale také úspěšné.
+ To umožňuje sledovat, jak jsou přidělená práva využívána jednotlivými procesy
+ až do důsledků.
+ K zapínání a
+\begin_inset space ~
+\end_inset
+
+vypínání auditovacího režimu slouží program 
+\family typewriter
+aa-audit
+\family default
+.
+ [20][23]
+\end_layout
+
+\begin_layout Standard
+Navíc je samozřejmě možné profil nastavit, aby se nezaváděl vůbec.
+ V takovém případě se nic neomezuje ani neloguje.
+ Toho lze dosáhnout příkazem 
+\family typewriter
+aa-disable
+\family default
+.
+ [23]
+\end_layout
+
+\begin_layout Subsubsection
+Textová reprezentace profilu
+\end_layout
+
+\begin_layout Standard
+Již bylo zmíněno, že nastavení jednotlivých profilů apparmoru je uloženo
+ v textové podobě v souboru na disku.
+ Jako příklad lze uvést profil pro velmi běžný program 
+\family typewriter
+/bin/ping
+\family default
+, který v nějaké podobě obsahuje téměř každý operační systém s připojením
+ do sítě.
+ Tento program je ideální jako příklad, protože není příliš komplexní.
+ Navíc je to jeden z nejrozšířenějších programů, které mají na Linuxu typicky
+ nastavený příznak SUID.
+ Proto i
+\begin_inset space ~
+\end_inset
+
+při spuštění neprivilegovaným uživatelem má tento program práva uživatele
+ root, aby mohl po síti posílat speciální druh packetů.
+ [22]
+\end_layout
+
+\begin_layout Standard
+Vzhledem k běžným zvyklostem se textové soubory s profily jmenují tak, že
+ např.
+ profil pro program 
+\family typewriter
+/bin/ping
+\family default
+ je uložen v souboru 
+\family typewriter
+/etc/apparmor.d/bin.ping
+\family default
+, jehož typický obsah je uveden zde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <tunables/global>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/bin/ping flags=(complain) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/base>
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/consoles>
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/nameservice>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability net_raw,
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability setuid,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	network inet raw,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/bin/ping mixr,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/etc/modules.conf r,
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jeho obsah je možno vysvětlit takto:
+\end_layout
+
+\begin_layout Itemize
+Řádek 
+\family typewriter
+/bin/ping flags=(complain)
+\family default
+ uvozuje sekci pravidel pro spustitelný soubor 
+\family typewriter
+/bin/ping
+\family default
+ (která následuje uzavřená ve složených závorkách) a
+\begin_inset space ~
+\end_inset
+
+navíc určuje, že tato pravidla mají být zavedena pouze v režimu 
+\begin_inset Quotes eld
+\end_inset
+
+complain
+\begin_inset Quotes erd
+\end_inset
+
+.
+ V případě, že by šlo o režim 
+\begin_inset Quotes eld
+\end_inset
+
+enforce
+\begin_inset Quotes erd
+\end_inset
+
+, je možné sekci 
+\family typewriter
+flags=(...)
+\family default
+ vynechat úplně.
+\end_layout
+
+\begin_layout Itemize
+Řádky začínající 
+\family typewriter
+#include
+\family default
+ způsobí načtení doplňujících nastavení ze souborů, jejichž název následuje.
+ To je výhodné, protože tak lze na jednom místě spravovat pravidla společná
+ pro více profilů bez potřeby tato nastavení po každé změně kopírovat do
+ všech profilů (typicky v adresáří 
+\begin_inset Quotes eld
+\end_inset
+
+abstractions
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Také tam mohou být definovány různé proměnné, které pak autor konkrétního
+ profilu může využít, aniž by je musel ručně definovat (typicky v adresáři
+ 
+\begin_inset Quotes eld
+\end_inset
+
+tunables
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Například je možné prostě 
+\begin_inset Quotes eld
+\end_inset
+
+nainkludovat
+\begin_inset Quotes erd
+\end_inset
+
+ soubor, který zajistí, že daná aplikace bude smět přehrávat zvuk, aniž
+ by bylo nutné u každé takové aplikace ručně vypisovat všechna konkrétní
+ práva, která jsou k
+\begin_inset space ~
+\end_inset
+
+tomu potřeba (komunikace se zvukovou kartou, čtení a
+\begin_inset space ~
+\end_inset
+
+zápis systémového nastavení hlasitosti zvuku, spouštění zvukových daemonů,
+ a
+\begin_inset space ~
+\end_inset
+
+mnoho dalšího).
+\end_layout
+
+\begin_layout Itemize
+Řádky začínající 
+\family typewriter
+capability
+\family default
+ umožní programu využít vyjmenované capability.
+ V
+\begin_inset space ~
+\end_inset
+
+uvedeném případě capabilita 
+\family typewriter
+setuid
+\family default
+ umožňuje skutečně nastavit práva roota a
+\begin_inset space ~
+\end_inset
+
+capabilita 
+\family typewriter
+net_raw
+\family default
+ umožňuje pracovat se síťovou kartou v nízkoúrovňovém 
+\begin_inset Quotes eld
+\end_inset
+
+raw
+\begin_inset Quotes erd
+\end_inset
+
+ režimu, který umožní posílat a
+\begin_inset space ~
+\end_inset
+
+přijímat prakticky cokoliv po IP síti (včetně speciálních ICMP packetů vyžadovan
+ých pingem).
+\end_layout
+
+\begin_layout Itemize
+Řádka 
+\family typewriter
+network inet raw
+\family default
+ opět povoluje komunikaci v IP sítích prostřednictvím síťového socketu typu
+ raw.
+ Není to ale na úrovni capabilit (které fungují přímo v jádře nezávisle
+ na AppArmoru), ale na úrovni omezování síťového provozu samotným apparmorem
+ pomocí jeho interních mechanismů.
+ Je nutné dodat, že tím není povolen žádný jiný druh síťové komunikace,
+ který není tímto druhem komunikace vyžadován.
+\end_layout
+
+\begin_layout Itemize
+Zbylé řádky umožňují programu čtení (
+\begin_inset Quotes eld
+\end_inset
+
+r
+\begin_inset Quotes erd
+\end_inset
+
+) souboru 
+\family typewriter
+/etc/modules.conf
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+čtení (
+\begin_inset Quotes eld
+\end_inset
+
+r
+\begin_inset Quotes erd
+\end_inset
+
+), spuštění (
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+) souboru 
+\family typewriter
+/bin/ping
+\family default
+ s tím, že nově spuštěný proces zdědí (
+\begin_inset Quotes eld
+\end_inset
+
+i
+\begin_inset Quotes erd
+\end_inset
+
+) definovaná omezení a
+\begin_inset space ~
+\end_inset
+
+bude možné ho namapovat do paměti přes 
+\family typewriter
+mmap()
+\family default
+ (
+\begin_inset Quotes eld
+\end_inset
+
+m
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Vše ostatní je zakázáno, protože to není výslovně povoleno.
+\end_layout
+
+\begin_layout Standard
+Veškeré možnosti nastavení profilu, které AppArmor umožňuje, jsou nad rámec
+ této práce.
+ Je jich mnoho a
+\begin_inset space ~
+\end_inset
+
+k plnému pochopení jejich funkcionality by nestačil pouhý výčet.
+ Kromě toho se AppArmor i samotný Linux stále vyvíjí.
+ Proto se doporučuje, obrátit se na dokumentaci (např.
+ [20]) nejnovější verze AA.
+ [20][22]
+\end_layout
+
+\begin_layout Standard
+Pro zajímavost uvádím, že AppArmor umožňuje i používat různé pokročilé funkce
+ jako například použití různých profilů jedním programem v závislosti na
+ tom, jaký program ho spustil, nebo dokonce nadefinování více podprofilů
+ pro jeden program.
+ Program pak může aktivně spolupracovat a
+\begin_inset space ~
+\end_inset
+
+podprofily si vybírat například napříč thready podle toho, co který thread
+ zrovna obstarává pomocí knihovny 
+\family typewriter
+libapparmor
+\family default
+.
+ Tak je možné, že program sice má právo používat některé prostředky systému,
+ ale dobrovolně se jich vzdá ve chvílích, kdy provádí některé operace rizikové
+ z bezpečnostního hlediska (typicky zpracování dat z
+\begin_inset space ~
+\end_inset
+
+nedůvěryhodného vstupu).
+ [20]
+\end_layout
+
+\begin_layout Subsubsection
+Vytváření profilu
+\end_layout
+
+\begin_layout Standard
+Kromě toho, že je možné AppArmor profil napsat ručně pomocí textového editoru,
+ je také možné ho nechat automaticky vygenerovat.
+ To se provádí příkazem 
+\family typewriter
+aa-genprof
+\family default
+, kterému se jako parametr předá jméno programu, který má být AppArmorem
+ 
+\begin_inset Quotes eld
+\end_inset
+
+obrněn
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+AppArmor
+\begin_inset Quotes erd
+\end_inset
+
+ přeci jen ve volném překladu znamená 
+\begin_inset Quotes eld
+\end_inset
+
+brnění pro aplikace
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ Ten potom zvolenému programu vytvoří (téměř) prázdný profil pomocí 
+\family typewriter
+aa-autodep
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+zavede ho do jádra v 
+\begin_inset Quotes eld
+\end_inset
+
+complain
+\begin_inset Quotes erd
+\end_inset
+
+ režimu.
+ Program 
+\family typewriter
+aa-autodep
+\family default
+ zjistí jaké dynamické knihovny jsou k běhu programu potřeba pomocí programu
+ 
+\family typewriter
+ldd
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+přidá do profilu právo je načíst.
+ Pokud program není spustitelný nativně, ale jde o skript, je do profilu
+ přidáno právo spustit patřičný interpreter uvedený v hlavičce skriptu.
+ Protože v AppArmoru platí, že co není povoleno, to je zakázáno, je tedy
+ zakázáno naprosto vše ostatní, co AppArmor umí zakázat.
+\end_layout
+
+\begin_layout Standard
+Nyní je vhodný čas, daný program skutečně spustit a
+\begin_inset space ~
+\end_inset
+
+pracovat s ním, tak jak je obvyklé.
+ Toto nastavení logicky vyústí v to, že si AppArmor začne 
+\begin_inset Quotes eld
+\end_inset
+
+stěžovat
+\begin_inset Quotes erd
+\end_inset
+
+, že daný program porušuje svoje (zatím velmi nízké) pravomoce a
+\begin_inset space ~
+\end_inset
+
+tyto stížnosti zapíše do logu.
+ Program 
+\family typewriter
+aa-genprof
+\family default
+, který stále ještě běží si tyto stížnosti v logu přečte pomocí programu
+ 
+\family typewriter
+aa-logprof
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+umožní je přetransformovat do podoby pravidel, která programu přidají potřebné
+ pravomoce.
+ Stejně tak lze v budoucnu pomocí programu 
+\family typewriter
+aa-logprof
+\family default
+ projít log a
+\begin_inset space ~
+\end_inset
+
+doladit s jeho pomocí v profilu případné problémy, které budou zjištěny
+ při pozdějším provozu programu.
+\end_layout
+
+\begin_layout Standard
+Tyto postupy však vyžadují, aby správce jednotlivá práva vyžadovaná programem
+ poučeně zhodnotil a
+\begin_inset space ~
+\end_inset
+
+následně se zodpovědně rozhodl, zda je programu přidělí, nebo ne.
+ Naštěstí odmítnutí některých rizikových pravomocí, které se program snaží
+ využít, se často obejde bez úplného pádu nebo znefunkčnění programu jako
+ celku.
+ Pokud však takový krajní případ nastane, pak je jen na správci, jak se
+ rozhodne situaci řešit.
+\end_layout
+
+\begin_layout Standard
+Poté, co je použit tento částečně automatizovaný přístup k vytvoření profilů,
+ může být vhodné se nad vzniklým profilem zamyslet a
+\begin_inset space ~
+\end_inset
+
+zoptimalizovat ho pomocí ruční úpravy textovým editorem.
+ Například pokud si program vyžádá přístup k jedné konkrétní zvukové kartě,
+ dá se předpokládat, že by mohlo být žádoucí dát mu přístup ke všem zvukovým
+ kartám jako k celku, ideálně pomocí nainkludování existujícího souboru
+ 
+\begin_inset Quotes eld
+\end_inset
+
+abstrakce
+\begin_inset Quotes erd
+\end_inset
+
+ (viz.
+ výše), atd...
+ Stejně tak pokud program přistupuje k nějakému souboru, je pravděpodobné,
+ že bude mít někdy potřebu přistupovat i
+\begin_inset space ~
+\end_inset
+
+k
+\begin_inset space ~
+\end_inset
+
+dalším souborům ve stejném adresáři.
+ Zmíněné programy pro automatické generování profilů nám často takové optimaliza
+ce nabídnou samy.
+ Při tom pomáhá program 
+\family typewriter
+aa-cleanprof
+\family default
+, který umí odstranit příliš konkrétní pravidla, která definují práva, která
+ jsou již podchycena některým více obecným pravidlem.
+ Taktéž může být nápomocný program 
+\family typewriter
+aa-mergeprof
+\family default
+, který umožňuje sloučit dva profily do jednoho.
+ Nelze však vyloučit, že i poté budou žádoucí drobné ruční úpravy profilu.
+ I
+\begin_inset space ~
+\end_inset
+
+zde opět platí, že pokud deset pravidel můžeme nahradit jedním univerzálnějším,
+ znamená to přínos nejen pro výkon systému při zpracování těchto pravidel,
+ ale i pro bezpečnost samotnou, protože kratší a
+\begin_inset space ~
+\end_inset
+
+tedy přehlednější profil můžeme snáze auditovat a
+\begin_inset space ~
+\end_inset
+
+odhalit v něm případné nedostatky.
+\end_layout
+
+\begin_layout Section
+AppArmor (případová studie)
+\end_layout
+
+\begin_layout Standard
+V této části budu demonstrovat praktické využití AppArmoru na modelovém
+ případu a
+\begin_inset space ~
+\end_inset
+
+proto v ní z velké části vycházím téměř výlučně z empirických poznatků o
+ chování systému, který jsem v předchozí části popsal po stránce teoretické.
+\end_layout
+
+\begin_layout Subsection
+Popis modelového problému
+\end_layout
+
+\begin_layout Standard
+Existuje server s OS Linux (konkrétně budu proces demonstrovat na distribuci
+ Ubuntu Linux 14.04.1 LTS
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Ubuntu má AppArmor funkční ihned po instalaci, patří mezi rozšířenější distribuc
+e (i když ne nutně na serverech) a
+\begin_inset space ~
+\end_inset
+
+navíc jsem jeden takový server již před krátkým časem nainstaloval a
+\begin_inset space ~
+\end_inset
+
+proto se jeho využití při psaní této práce přímo samo nabízelo.
+\end_layout
+
+\end_inset
+
+) a
+\begin_inset space ~
+\end_inset
+
+webovým démonem Apache, na kterém běží interaktivní služba poskytovaná nedůvěryh
+odným skriptem v jazyce PHP.
+ Skript považujeme za nedůvěryhodný, protože neznáme přesný záměr jeho autora
+ a
+\begin_inset space ~
+\end_inset
+
+nevíme, zda se v
+\begin_inset space ~
+\end_inset
+
+jeho návrhu nedopustil bezpečnostní chyby.
+ Tento program je také příliš rozsáhlý, než aby pro nás bylo výhodné si
+ ho celý přečíst a
+\begin_inset space ~
+\end_inset
+
+manuálně zkontrolovat.
+ Kromě této služby na serveru mají další uživatelé uloženy soubory s citlivými
+ daty, u kterých si nemůžeme být jisti, že se při užívání nedopustí špatného
+ nastavení přístupových práv
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Je nutné poznamenat, že poněkud tradičněji s k těmto účelům používalo přímo
+ nastavení interpreteru PHP (tzv.
+ safe mode, konkrétně direktiva 
+\family typewriter
+open_basedir
+\family default
+), které mělo za účel omezit skriptu přístup ke konkrétním adresářům.
+ Praxe ukázala tento přístup jako nevyhovující vzhledem k velkému množství
+ možností jak ho obejít.
+ Dokonce i samotní vývojáři PHP od této možnosti postupně upouští a
+\begin_inset space ~
+\end_inset
+
+má být v budoucnu zrušena úplně.
+ Proto bylo zvoleno zabezpečení přímo na úrovni jádra systému, které nejen
+ že je nesrovnatelně účinnější, ale také je možné ho aplikovat v množství
+ jiných případů, na aplikace, které nejsou psány v PHP, ale i úplně mimo
+ kontext vzorového problému.
+\end_layout
+
+\end_inset
+
+.
+ Rádi bychom tedy zajistili, že ani při fatální chybě v nastavení uživatelských
+ oprávnění nebude možné tato data získat skrze zmíněnou webovou službu.
+\end_layout
+
+\begin_layout Standard
+Pro modelové účely jsem na serveru vytvořil uživatele 
+\begin_inset Quotes eld
+\end_inset
+
+uzivatel
+\begin_inset Quotes erd
+\end_inset
+
+ a
+\begin_inset space ~
+\end_inset
+
+jeho jménem jsem v
+\begin_inset space ~
+\end_inset
+
+jeho domácím adresáři vytvořil soubor 
+\family typewriter
+/home/uzivatel/tajemstvi.txt
+\family default
+, jehož obsah se budeme snažit získat.
+ Aby šlo o model skutečně lehkovážného uživatele, tak jsem k
+\begin_inset space ~
+\end_inset
+
+souboru nastavil 
+\begin_inset Quotes eld
+\end_inset
+
+plná
+\begin_inset Quotes erd
+\end_inset
+
+ přístupová práva
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+V osmičkovém zápisu 777, tedy: s obsahem souboru může manipulovat libovolný
+ uživatel systému
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Kromě toho jsem do kořenového adresáře webserveru dal modelový skript
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+/var/www/test.php
+\family default
+, který bude naše zabezpečení pokoušet.
+ Jeho zdrojový kód je prostý:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php
+\end_layout
+
+\begin_layout Plain Layout
+
+echo(file_get_contents('/home/uzivatel/tajemstvi.txt'));
+\end_layout
+
+\begin_layout Plain Layout
+
+system('cat /home/uzivatel/tajemstvi.txt 2>&1'); 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+První řádek je standartní uvození PHP kódu, druhý řádek se pokouší informace
+ získat pomocí interních funkcí PHP a
+\begin_inset space ~
+\end_inset
+
+pro případ, že by to nestačilo, jsem ještě přidal řádek třetí, který se
+ pokusí soubor přečíst pomocí externího programu 
+\family typewriter
+cat
+\family default
+.
+ To je program, který mimo jiné umožňuje výpis obsahu zvoleného souboru.
+ Volání tohoto programu jsem ještě doplnil o řetězec 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+2>&1
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+, který zajistí, že se v případě neúspěchu do PHP skriptu předá i výpis
+ případného chybového hlášení programu 
+\family typewriter
+cat
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Nyní není nic snažšího, než se pokusit k webu připojit.
+ Toho docílíme použitím webového prohlížeče, nebo například i příkazem 
+\family typewriter
+curl http://localhost/test.php
+\family default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+curl
+\family default
+ je jednoduchý příkaz, který stáhne a
+\begin_inset space ~
+\end_inset
+
+vypíše obsah webové stránky zadané pomocí její URL, je možné ho tedy použít
+ k simulaci otevření stránky v prohlížeči.
+\end_layout
+
+\end_inset
+
+.
+ V mém případě jsem obdržel následující výpis:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Warning: file_get_contents(): open_basedir restriction in effect.
+\begin_inset Newline newline
+\end_inset
+
+File(/home/uzivatel/tajemstvi.txt) is not within the allowed path(s):
+\begin_inset Newline newline
+\end_inset
+
+(/var/www/) in /var/www/test.php on line 2
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Warning: file_get_contents(/home/uzivatel/tajemstvi.txt):
+\begin_inset Newline newline
+\end_inset
+
+failed to open stream:
+\begin_inset Newline newline
+\end_inset
+
+Operation not permitted in /var/www/test.php on line 2
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Odpoved je 42! 
+\end_layout
+
+\begin_layout Standard
+Jak je vidět, tak PHP samotné se skriptu pokoušelo zabránit díky nastavení
+ 
+\family typewriter
+open_basedir
+\family default
+, ale ve výsledku to nebylo nic platné, protože skript potom spustil externí
+ program, na který se již toto omezení nevztahuje.
+ Druhý pokus byl tedy úspěšný a
+\begin_inset space ~
+\end_inset
+
+správně odhalil, že obsah souboru 
+\family typewriter
+tajemstvi.txt
+\family default
+ je 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Odpoved je 42!
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ V další části se pokusím mu v tom zabránit nadobro.
+\end_layout
+
+\begin_layout Subsection
+Modul AppArmor v praxi
+\end_layout
+
+\begin_layout Standard
+Víme, že zákeřný skript, který vyzradil tajemství našeho uživatele, byl
+ spuštěn prostřednictvím služby Apache.
+ Pokusíme se ji tedy lépe izolovat od zbytku systému a
+\begin_inset space ~
+\end_inset
+
+tedy i
+\begin_inset space ~
+\end_inset
+
+od střeženého tajemství.
+ V první řadě potřebujeme vědět, který spustitelný soubor je za službu odpovědný.
+ Toho docílíme například příkazem
+\family typewriter
+ ps aux | grep -i apache.
+
+\family default
+ Z jeho výpisu se dozvíme, že démon běží pod uživatelem 
+\family typewriter
+www-data
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+jde o spustitelný soubor 
+\family typewriter
+/usr/sbin/apache2
+\family default
+.
+ Protože je ve standartní cestě, bude nám ve většině případů stačit psát
+ jen 
+\family typewriter
+
+\begin_inset Quotes eld
+\end_inset
+
+apache2
+\begin_inset Quotes erd
+\end_inset
+
+.
+
+\family default
+ Spustíme tedy příkaz 
+\family typewriter
+aa-genprof apache2.
+\end_layout
+
+\begin_layout Standard
+Nyní byl do kernelu zaveden téměř prázdný AppArmor profil pro binárku
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+/usr/sbin/apache2
+\family default
+, prozatím v režimu 
+\begin_inset Quotes eld
+\end_inset
+
+complain
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Nyní je příhodný čas na to, abychom Apache restartovali např.
+ příkazem 
+\family typewriter
+service apache2 restart
+\family default
+.
+ Budeme to ale muset udělat v novém okně, protože příkaz 
+\family typewriter
+aa-genprof
+\family default
+ stále ještě běží.
+ Proces restartu Apache nejdříve ukončí starý již běžící proces a
+\begin_inset space ~
+\end_inset
+
+poté spustí nový.
+ Tentokrát již v 
+\begin_inset Quotes eld
+\end_inset
+
+confined
+\begin_inset Quotes erd
+\end_inset
+
+ režimu a
+\begin_inset space ~
+\end_inset
+
+tedy pod dohledem AppArmoru.
+ To si také lze ověřit příkazem 
+\family typewriter
+aa-status
+\family default
+, v
+\begin_inset space ~
+\end_inset
+
+jehož výpisu najdeme (mimo jiné) řádky podobné těmto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+6 processes are in complain mode.
+\end_layout
+
+\begin_layout Plain Layout
+
+/usr/sbin/apache2 (4644) 
+\end_layout
+
+\begin_layout Plain Layout
+
+/usr/sbin/apache2 (4648) 
+\end_layout
+
+\begin_layout Plain Layout
+
+/usr/sbin/apache2 (4649)
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní je čas Apache trochu 
+\begin_inset Quotes eld
+\end_inset
+
+procvičit
+\begin_inset Quotes erd
+\end_inset
+
+, aby se pokusil přistupovat k různým prostředkům a
+\begin_inset space ~
+\end_inset
+
+bylo to zaznamenáno do logu.
+ Velmi pomůže Apache zrestartovat, což již bylo učiněno.
+ Dále můžeme zopakovat například příkaz 
+\family typewriter
+curl http://localhost/test.php
+\family default
+, který na serveru opět spustí skript 
+\family typewriter
+test.php
+\family default
+, který si přejeme spolu Apachem profilovat.
+ Když se vrátíme zpět do terminálu, kde stále ještě běží příkaz 
+\family typewriter
+aa-genprof
+\family default
+, zjistíme, že se nabízí možnost automaticky prohledat log a
+\begin_inset space ~
+\end_inset
+
+vygenerovat profily z toho, kam již Apache přistoupil.
+ Tato možnost se zvolí klávesou 
+\begin_inset Quotes eld
+\end_inset
+
+S
+\begin_inset Quotes erd
+\end_inset
+
+, ale je v ní drobný háček.
+ Okamžitě po stisku této klávesy totiž na uvedeném systému celý program
+ havaruje s chybovým hlášením, které odhalí, že je napsán v jazyce Python.
+\end_layout
+
+\begin_layout Standard
+Není potřeba se tím znepokojovat, protože stejného průvodce vytvářením profilů
+ můžeme spustit i pomocí příkazu 
+\family typewriter
+aa-logprof
+\family default
+.
+ To také uděláme.
+ Za pár okamžiků se již první část logu zpracuje a
+\begin_inset space ~
+\end_inset
+
+my budeme postupně informováni o všech aktivitách programu Apache a
+\begin_inset space ~
+\end_inset
+
+u každé dostaneme na výběr, jestli ji chceme v budoucnu povolit nebo ne.
+\end_layout
+
+\begin_layout Standard
+Například budeme informováni o tom, že Apache přistoupil k
+\begin_inset space ~
+\end_inset
+
+souboru 
+\family typewriter
+/var/www/test.php
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+bude nám zobrazena následující textová nabídka:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+(A)llow, (D)eny, (I)gnore, (N)ew, (G)lob last piece, (Q)uit
+\end_layout
+
+\begin_layout Standard
+Písmenkem 
+\begin_inset Quotes eld
+\end_inset
+
+G
+\begin_inset Quotes erd
+\end_inset
+
+ můžeme pravidlo zevšeobecnit z 
+\family typewriter
+/var/www/test.php
+\family default
+ například na 
+\family typewriter
+/var/www/*
+\family default
+, což se nám bude jistě hodit, pokud budeme provozovat skriptů více.
+ Poté přístup k této cestě povolíme tlačítkem 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Podobně postupujeme i u dalších pravidel.
+ Cílem je momentálně povolit vše, co se netýká adresáře 
+\family typewriter
+/home/
+\family default
+, ve kterém se hluboko skrývá naše 
+\family typewriter
+tajemstvi.txt
+\family default
+.
+ Kromě přístupů k
+\begin_inset space ~
+\end_inset
+
+souborům AppArmor taktéž ohlásí další akce, jako je využívání
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+AppArmor není určen k tomu, aby programu capability přiděloval.
+ Pouze monitoruje a
+\begin_inset space ~
+\end_inset
+
+omezuje jejich používání u programů, které je již mají.
+\end_layout
+
+\end_inset
+
+ capabilit, spouštění dalších programů, atd...
+\end_layout
+
+\begin_layout Standard
+V případě, že sledovaná aplikace spouští další program, nabídne 
+\family typewriter
+aa-logprof
+\family default
+ několik možností.
+ Asi nejzajímavější jsou 
+\begin_inset Quotes eld
+\end_inset
+
+inherit
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+profile
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+child
+\begin_inset Quotes erd
+\end_inset
+
+ a
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+unconfined
+\begin_inset Quotes erd
+\end_inset
+
+.
+ V případě 
+\begin_inset Quotes eld
+\end_inset
+
+inherit
+\begin_inset Quotes erd
+\end_inset
+
+ se s nově spuštěným programem nakládá tak, jako by byl součástí programu,
+ který ho spustil a
+\begin_inset space ~
+\end_inset
+
+platí pro něj i
+\begin_inset space ~
+\end_inset
+
+stejné pravomoce a
+\begin_inset space ~
+\end_inset
+
+omezení.
+ Pokud zvolíme 
+\begin_inset Quotes eld
+\end_inset
+
+profile
+\begin_inset Quotes erd
+\end_inset
+
+, bude pro daný program zvolen jeho vlastní profil.
+ Podobnou možnost nabízí volba 
+\begin_inset Quotes eld
+\end_inset
+
+child
+\begin_inset Quotes erd
+\end_inset
+
+, která umožní nadefinovat speciální profil pro případ, kdy je program spouštěn
+ tímto konkrétním rodičovským programem.
+ Jde tedy asi o nejflexibilnější volbu, ale její použití může někdy být
+ zbytečně složité.
+ Poslední volba 
+\begin_inset Quotes eld
+\end_inset
+
+unconfined
+\begin_inset Quotes erd
+\end_inset
+
+ samozřejmě znamená, že nově spuštěný program nebude omezen nijak.
+ To je v drtivé většině případů velmi nebezpečná a
+\begin_inset space ~
+\end_inset
+
+naprosto nemyslitelná volba.
+ Také bych podotknul, že userspace pomůcky AppArmoru jsou o poznání více
+ problematické, než samotný jaderný modul AppArmoru.
+ Například verze 
+\family typewriter
+aa-logprof
+\family default
+ nainstalovaná na mnou testovaném systému padala vždy, když byla v
+\begin_inset space ~
+\end_inset
+
+logu nalezena informace o spuštění dalšího programu.
+ I
+\begin_inset space ~
+\end_inset
+
+proto je dobré se naučit profily editovat ručně, bez těchto pomocných programů.
+\end_layout
+
+\begin_layout Standard
+Kromě toho 
+\family typewriter
+aa-logprof
+\family default
+ po celou dobu informuje, pokud je některá z pravomocí vyžadovaných confined
+ programem již obsažená v některé z abstrakcí a
+\begin_inset space ~
+\end_inset
+
+odpovídající abstrakce nám nabízí k přidání.
+ To taktéž usnadňuje práci.
+ Pokud se tedy program pokusí přistoupit například k
+\begin_inset space ~
+\end_inset
+
+souboru 
+\family typewriter
+/etc/php/apache2/php.ini
+\family default
+, může nám být automaticky nabídnuta abstrakce, která obsahuje vše potřebné
+ k provozu PHP (pokud taková abstrakce ovšem v
+\begin_inset space ~
+\end_inset
+
+našem systému existuje).
+\end_layout
+
+\begin_layout Standard
+Poté, co pomocí 
+\family typewriter
+aa-logprof 
+\family default
+projdeme všechny nové položky v
+\begin_inset space ~
+\end_inset
+
+logu, se program zeptá, zda chceme změny profilu uložit, nebo ho ukončit
+ bez uložení.
+ Pravděpodobně bude nutné po každém uložení znovu restartovat Apache a
+\begin_inset space ~
+\end_inset
+
+celou proceduru 
+\begin_inset Quotes eld
+\end_inset
+
+učení
+\begin_inset Quotes erd
+\end_inset
+
+ opakovat tak dlouho, dokud nepřestanou v logu přibývat nová upozornění.
+ V mém případě jsem celý proces absolvoval asi třikrát po sobě, než začal
+ Apache dělat vše, co jsem potřeboval a
+\begin_inset space ~
+\end_inset
+
+aniž by si AppArmor na něco stěžoval.
+ V průběhu toho procesu mi bylo nabídnuto do profilu i nainkludování některých
+ abstrakcí.
+ Z těch jsem si po jejich prozkoumání zvolil pouze abstrakce 
+\family typewriter
+apache2-common
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+
+\family typewriter
+php5
+\family default
+, které obsahují oprávnění k
+\begin_inset space ~
+\end_inset
+
+souborům s nastavením, knihovnám a
+\begin_inset space ~
+\end_inset
+
+dalším základním prostředkům, které Apache a
+\begin_inset space ~
+\end_inset
+
+PHP vyžadují.
+\end_layout
+
+\begin_layout Standard
+Nyní nastal čas na přepnutí profilu do 
+\begin_inset Quotes eld
+\end_inset
+
+enforce
+\begin_inset Quotes erd
+\end_inset
+
+ režimu.
+ To provedeme příkazem 
+\family typewriter
+aa-enforce apache2
+\family default
+.
+ Okamžitě po provedení tohoto příkazu začne být Apache (i běžící) svazován
+ svým AppArmor profilem.
+ To se projeví mimo jiné tak, že při opětovném použití příkazu 
+\family typewriter
+curl http://localhost/test.php
+\family default
+ již neuvidíme obsah souboru 
+\family typewriter
+tajemstvi.txt
+\family default
+.
+ To je dáno jednak tím, že k danému souboru není v profilu povolen přístup.
+ Navíc není ani povoleno spouštět externí programy, jako je 
+\family typewriter
+cat
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Může být žádoucí ještě několikrát zkontrolovat log a
+\begin_inset space ~
+\end_inset
+
+doplnit profil o případná další pravidla.
+ Nejsem si jistý, čím je to způsobeno, ale často se v režimu enforce projeví
+ potřeba některých pravomocí, které režim complain neodhalil.
+ Všeobecně platí, že je dobré log pravidelně kontrolovat a
+\begin_inset space ~
+\end_inset
+
+aktualizovat na jeho základě profil.
+ Nelze to však dělat bezmyšlenkovitě.
+ Nejen, že tak odhalíme nedostatky v profilech, které by mohly bránit našemu
+ programu v korektním fungování, ale také nám to pomůže odhalit případné
+ pokusy o průnik.
+ Pokud například AppArmor do logu zaznamená, že se hlídaný program snaží
+ provádět operaci, ke které nikdy nebyl nevržený, můžeme si být téměř jisti,
+ že jde o bezpečnostní incident.
+\end_layout
+
+\begin_layout Subsection
+Hotový profil
+\end_layout
+
+\begin_layout Standard
+Po provedení výše popsaného postupu by měl vzniknout profil v souboru
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+/etc/apparmor.d/usr.sbin.apache2
+\family default
+, který je možné zavést příkazem 
+\family typewriter
+aa-enforce apache2
+\family default
+.
+ Jeho obsah by měl být
+\family typewriter
+ 
+\family default
+přinejmenším podobný
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Mám zkušenost, že automatické generování profilů často nevytvoří pokaždé
+ úplně stejný profil i když se podruhé snažíme dodržet stejný postup.
+ Zřejmě asi do hry vstupuje velké množství různých okolností.
+ Na to jsem narazil, když jsem se snažil vyzkoušený postup zopakovat a
+\begin_inset space ~
+\end_inset
+
+zdokumentovat ho v této práci.
+ Proto byl také uvedený kód profilu mírně upraven pomocí textového editoru.
+ Přesto byl však plně otestován.
+\end_layout
+
+\end_inset
+
+ následujícímu:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Last Modified: Tue Nov 25 20:33:01 2014
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <tunables/global>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/usr/sbin/apache2 {
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/apache2-common>
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/base>
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/mysql>
+\end_layout
+
+\begin_layout Plain Layout
+
+	#include <abstractions/php5>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability dac_override,
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability kill,
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability setgid,
+\end_layout
+
+\begin_layout Plain Layout
+
+	capability setuid,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	deny /bin/dash x,
+\end_layout
+
+\begin_layout Plain Layout
+
+	deny /bin/cat x,
+\end_layout
+
+\begin_layout Plain Layout
+
+	deny /home/** r, 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/etc/apache2/** r,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/etc/mime.types r,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/run/apache2/* rw,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/run/lock/apache2/* rw,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/tmp/* rwk,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/usr/lib{,32,64}/** mr,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/var/log/apache2/* w,
+\end_layout
+
+\begin_layout Plain Layout
+
+	/var/www/* r,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	^DEFAULT_URI flags=(complain) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	^HANDLING_UNTRUSTED_INPUT flags=(complain) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oproti profilu, který jsem si rozebíral v předchozí části práce, je v tomto
+ několik dalších výrazů.
+ Například jsou zde pravidla uvozená klíčovým slovem 
+\begin_inset Quotes eld
+\end_inset
+
+deny
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Tyto znamenají, že je daná operace zakázaná.
+ Ve skutečnosti by nebylo třeba tato pravidla uvádět, protože co není AppArmorem
+ povoleno, to je zakázáno.
+ Pravidla 
+\begin_inset Quotes eld
+\end_inset
+
+deny
+\begin_inset Quotes erd
+\end_inset
+
+ slouží jen k tomu, aby bylo jasně dáno, že o jejich povolení nemáme zájem
+ a
+\begin_inset space ~
+\end_inset
+
+jejich hlavní účel je, že pokusy o jejich využití jsou tiše zamítnuty a
+\begin_inset space ~
+\end_inset
+
+nezaplňují log.
+ To také znamená, že je nemusíme opakovaně zamítat při průběhu programu
+ 
+\family typewriter
+aa-logprof
+\family default
+, ale stačí je zamítnout jednou.
+\end_layout
+
+\begin_layout Standard
+Již jsem zmiňoval, že pokud je u cesty k
+\begin_inset space ~
+\end_inset
+
+souboru písmenko 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+, definuje se jím právo soubor spustit.
+ Kromě toho je vhodné před 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ uvést ještě jedno z písmenek 
+\begin_inset Quotes eld
+\end_inset
+
+p
+\begin_inset Quotes erd
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ nebo 
+\begin_inset Quotes erd
+\end_inset
+
+i
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Tato písmenka odpovídají možnostem 
+\begin_inset Quotes eld
+\end_inset
+
+profile
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+child
+\begin_inset Quotes erd
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+unconfined
+\begin_inset Quotes erd
+\end_inset
+
+ a
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+inherit
+\begin_inset Quotes erd
+\end_inset
+
+, které jsem popsal výše.
+ Případně lze tato písmenka napsat jako velká.
+ Potom se ještě před spuštěním daného programu vymažou všechny proměnné
+ prostředí
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Environment variables
+\begin_inset Quotes erd
+\end_inset
+
+ jsou proměnné v paměti, do kterých mohou programy ukládat textové řetězce,
+ které jsou poté přístupné jak jim samotným, tak dalším programům, které
+ jsou jimy spuštěny jako potomci.
+ Na Linuxu se typicky používají k uložení desítek informací.
+ Například se do nich ukládá jazykové nastavení, takže jakmile se uživatel
+ přihlásí do systému a
+\begin_inset space ~
+\end_inset
+
+nastaví si např.
+ češtinu, jsou automaticky všechny programy, které si spustí z této relace
+ přihlášení taktéž nastaveny do češtiny.
+ Důvod, proč AppArmor umožňuje jejich 
+\begin_inset Quotes eld
+\end_inset
+
+sanitizaci
+\begin_inset Quotes erd
+\end_inset
+
+ je ten, že představují další možnost, jak programům podstrkávat potenciálně
+ škodlivá vstupní data.
+\end_layout
+
+\end_inset
+
+.
+ Je potřeba dát pozor na to, abychom tato rozšiřující nastavení neuváděli
+ v pravidlech 
+\begin_inset Quotes eld
+\end_inset
+
+deny
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Tam musí být vždy jen samotné 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+, jinak zavedení profilu selže.
+\end_layout
+
+\begin_layout Standard
+Dále je v profilu pravidlo vztahující se k 
+\family typewriter
+/etc/apache2/**
+\family default
+.
+ Poučenější uživatel ví, že hvězdička ve výrazu nahrazuje libovolný soubor
+ nebo adresář.
+ AppArmor ale navíc ještě zavádí hvězdičky dvě, které znamenají, že se pravidla
+ mají vztahovat i rekurzivně na podadresáře.
+ Pokud ale uvedeme hvězdičku jen jednu, tak se pravidla vztahují pouze na
+ položky v tomto adresáři a
+\begin_inset space ~
+\end_inset
+
+na ty v podadresářích již ne.
+ To umožní pravidla definovat o
+\begin_inset space ~
+\end_inset
+
+něco přesněji.
+\end_layout
+
+\begin_layout Standard
+Na konci profilu jsou ještě dvě pojmenované, ale prázdné sekce uzavřené
+ ve složených závorkách.
+ Jde o subprofily typu 
+\begin_inset Quotes eld
+\end_inset
+
+hat
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Pod tyto profily může program dobrovolně přecházet pomocí knihovny 
+\family typewriter
+libapparmor
+\family default
+.
+ V našem případě jsou prázdné, protože pod nimi Apache při profilování neprovádě
+l žádné zajímavé akce.
+ Nicméně v profilu jsou uvedeny, protože je program 
+\family typewriter
+aa-autodep
+\family default
+ automaticky vyčetl z binárky 
+\family typewriter
+apache2
+\family default
+.
+ Též je možno si všimnout, že i když profil jako celek je v enforce režimu,
+ tak podprofily jsou stále v režimu complain a
+\begin_inset space ~
+\end_inset
+
+čekají na otestování a
+\begin_inset space ~
+\end_inset
+
+explicitní vypntí režimu complain.
+ Podobným způsobem se dají definovat také subprofily pro programy spouštěné
+ s nastavením 
+\begin_inset Quotes eld
+\end_inset
+
+child
+\begin_inset Quotes erd
+\end_inset
+
+.
+ V této práci se subprofily nepracuji, ale považuji za vhodné se o jejich
+ existenci zmínit, protože se s nimi v práci okrajově setkáváme právě díky
+ 
+\family typewriter
+aa-autodep
+\family default
+.
+\end_layout
+
+\begin_layout Subsection
+Ověření funkčnosti konfigurace
+\end_layout
+
+\begin_layout Standard
+Nyní zabezpečení skriptu ještě snížím odstraněním nastavení 
+\family typewriter
+open_basedir
+\family default
+ v PHP.
+ Po opakovaném pokusu o přístup skript vypíše následující:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Warning: file_get_contents(/home/uzivatel/tajemstvi.txt):
+\begin_inset Newline newline
+\end_inset
+
+failed to open stream: Permission denied in /var/www/test.php on line 2
+\end_layout
+
+\begin_layout Standard
+To, že PHP místo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Operation not permitted
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ nyní hlásí 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Permission denied
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+, je matným znamením toho, že k zablokování přístupu nedošlo na úrovni PHP,
+ ale na úrovni operačního systému.
+ Stejnou chybu by totiž PHP vypsalo i v případě, že by uživatel práva k
+\begin_inset space ~
+\end_inset
+
+souboru nastavil korektně.
+\end_layout
+
+\begin_layout Standard
+Je důležité si všimnout i toho, že pokus o přečtení souboru pomocí externího
+ programu nevypíše žádnou chybu.
+ To je dáno tím, že volání 
+\family typewriter
+system()
+\family default
+ v jazyce PHP zřejmě implicitně chyby nevypisuje a
+\begin_inset space ~
+\end_inset
+
+to jak správně ošetřovat v PHP chyby není pro tuto práci zásadní.
+ Budeme tedy předpokládat, že pokud se nevypíše nic, bylo zabezpečnění úspěšné.
+ Tuto hypotézu lze ověřit přečtením systémového logu, kde najdeme řádky
+ podobné těmto:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+[467668.042615] type=1400 audit(1416934306.887:394181):
+\begin_inset Newline newline
+\end_inset
+
+apparmor="DENIED" operation="open" profile="/usr/sbin/apache2"
+\begin_inset Newline newline
+\end_inset
+
+name="/home/uzivatel/tajemstvi.txt" pid=13997 comm="apache2"
+\begin_inset Newline newline
+\end_inset
+
+requested_mask="r" denied_mask="r" fsuid=33 ouid=1023
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+[467668.043972] type=1400 audit(1416934306.887:394182):
+\begin_inset Newline newline
+\end_inset
+
+apparmor="DENIED" operation="exec" profile="/usr/sbin/apache2"
+\begin_inset Newline newline
+\end_inset
+
+name="/bin/dash" pid=29871 comm="apache2"
+\begin_inset Newline newline
+\end_inset
+
+requested_mask="x" denied_mask="x" fsuid=33 ouid=0 
+\end_layout
+
+\begin_layout Standard
+Z toho vyrozumíme, že se Apache (skrz PHP) nejdříve pokusil přečíst (
+\begin_inset Quotes eld
+\end_inset
+
+r
+\begin_inset Quotes erd
+\end_inset
+
+) soubor 
+\family typewriter
+tajemstvi.txt
+\family default
+ a
+\begin_inset space ~
+\end_inset
+
+potom se pokusil spustit (
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+) program 
+\family typewriter
+/bin/dash
+\family default
+.
+ To ovšem může překvapit, jelikož jsme od PHP skriptu chtěli spustit pouze
+ program 
+\family typewriter
+cat
+\family default
+, nikoliv 
+\family typewriter
+dash
+\family default
+.
+ Lze již vytušit k čemu došlo.
+ Volání 
+\family typewriter
+system()
+\family default
+ nespouští program 
+\family typewriter
+cat
+\family default
+ přímo, ale pomocí výchozího interpreteru příkazů
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Typicky 
+\family typewriter
+/bin/sh
+\family default
+, v případě Ubuntu je nastavený, aby odkazoval na 
+\family typewriter
+/bin/dash
+\end_layout
+
+\end_inset
+
+, který umožňuje kromě obyčejného spouštění programů i některé pokročilejší
+ příkazy
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+V našem testovacím skriptu toho využívám k přesměrování chybové hlášky (viz
+ výše).
+ Chyba při spouštění 
+\family typewriter
+/bin/dash
+\family default
+ se tedy nezobrazí, ale chyby, ke kterým dojde v programu 
+\family typewriter
+/bin/cat
+\family default
+ při přístupu k
+\begin_inset space ~
+\end_inset
+
+
+\family typewriter
+tajemstvi.txt,
+\family default
+ by se již zobrazily
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Abych si ještě jednou vyzkoušel, že AppArmor skutečně funguje, zkusil jsem
+ v profilu ručně nahradit následující řádky:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+  deny /bin/dash x,
+\end_layout
+
+\begin_layout Plain Layout
+
+  deny /bin/cat x,
+\end_layout
+
+\begin_layout Plain Layout
+
+  deny /home/** r, 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+tímto kódem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+  /bin/dash ix,
+\end_layout
+
+\begin_layout Plain Layout
+
+  /bin/cat ix,
+\end_layout
+
+\begin_layout Plain Layout
+
+  /home/** r, 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ten umožní přístup k celému adresáři 
+\family typewriter
+/home/
+\family default
+ i spuštění programů 
+\family typewriter
+dash 
+\family default
+a
+\begin_inset space ~
+\end_inset
+
+
+\family typewriter
+cat
+\family default
+.
+ Po uložení profilu ho lze znovu zavvést do kernelu příkazem 
+\family typewriter
+aa-enforce apache2
+\family default
+.
+ Ihned lze vyzkoušet co se stane při přístupu na webovou stránku příkazem
+\family typewriter
+
+\begin_inset Newline newline
+\end_inset
+
+curl http://localhost/test.php
+\family default
+
+\begin_inset Newline newline
+\end_inset
+
+Uvidíme, že 
+\family typewriter
+tajemstvi.txt
+\family default
+ je vyzrazeno hned dvakrát:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Odpoved je 42!
+\end_layout
+
+\begin_layout Plain Layout
+
+Odpoved je 42! 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tím bylo prokázáno, že AppArmor má skutečně vliv na to, zda se problematická
+ webová aplikace dostane k citlivým datům a
+\begin_inset space ~
+\end_inset
+
+dokáže tomu efektivně zabránit za předpokladu, že je správně nastaven a
+\begin_inset space ~
+\end_inset
+
+není kompromitován samotný kernel.
+\end_layout
+
+\begin_layout Standard
+Změny v textu profilu vrátíme zpět a
+\begin_inset space ~
+\end_inset
+
+pomocí 
+\family typewriter
+aa-enforce apache2
+\family default
+ tuto otestovanou verzi zavedeme do jádra.
+\end_layout
+
+\begin_layout Section
+Zhodnocení výsledků
+\end_layout
+
+\begin_layout Standard
+S výsledky práce jsem spokojen, protože se mi podařilo předvést, že modul
+ AppArmor je vhodný pro praktické použití na Linuxovém serveru s typickým
+ softwarovým vybavením.
+\end_layout
+
+\begin_layout Section
+Závěr
+\end_layout
+
+\begin_layout Standard
+Cílem práce bylo seznámit čtenáře s
+\begin_inset space ~
+\end_inset
+
+problematikou zabezpečení Linuxových systémů a
+\begin_inset space ~
+\end_inset
+
+blíže rozebrat bezpečnostní modul AppArmor.
+ Dále jsem chtěl přiblížit čtenáři jeho fungování v
+\begin_inset space ~
+\end_inset
+
+teoretické rovině a
+\begin_inset space ~
+\end_inset
+
+poté předvést jeho nasazení v
+\begin_inset space ~
+\end_inset
+
+praxi na modelovém případu, včetně ověření a
+\begin_inset space ~
+\end_inset
+
+zhodnocení funkcionality.
+ 
+\end_layout
+
+\begin_layout Standard
+V práci jsem stručně otevřel problematiku Linuxového prostředí, popsal základní
+ aspekty zabezpečení, které by měl každý začínající správce Linuxového serveru
+ znát.
+ Důraz byl kladen na nejčastěji se vyskytující bezpečnostní chyby, možnosti
+ jejich zneužití a
+\begin_inset space ~
+\end_inset
+
+prostředky jejich řešení.
+ Dále byla v práci popsána dostupná rozšíření tohoto základu, která poskytují
+ pokročilejší možnosti zabezpečení.
+ Poté byl v
+\begin_inset space ~
+\end_inset
+
+práci podrobněji rozebrán modul AppArmor, který mezi tato rozšíření spadá.
+ V práci byly popsány jak základní principy fungování AppArmoru, tak i
+\begin_inset space ~
+\end_inset
+
+ukázka úspěšné aplikace AppArmoru na modelový případ.
+ Čtenář s
+\begin_inset space ~
+\end_inset
+
+pouze základní předchozí zkušeností se správou Linuxového serveru by tedy
+ po přečtení práce měl mít přehled o
+\begin_inset space ~
+\end_inset
+
+problematice AppArmoru dostatečný k
+\begin_inset space ~
+\end_inset
+
+tomu, aby ho byl schopen sám nasadit v testovacím provozu a
+\begin_inset space ~
+\end_inset
+
+za použití aktuální dokumentace postupně začít AppArmor nastavovat pro svoje
+ konkrétní potřeby.
+\end_layout
+
+\begin_layout Standard
+Tato práce byla zpracována na základě analýzy odborné literatury, technické
+ dokumentace a
+\begin_inset space ~
+\end_inset
+
+praktických zkušeností s nasazením popisovaných technologií.
+\end_layout
+
+\begin_layout Section
+Seznam použitých zdrojů
+\end_layout
+
+\begin_layout Subsection
+Seznam literatury
+\end_layout
+
+\begin_layout Description
+[1] BERLICH, R.
+ ALL YOU NEED TO KNOW ABOUT...
+ The early history of Linux: Part 2, Re: distribution [online].
+ 2001.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://oldlinux.org/Linux.old/docs/lu9-All_you_need_to_know_about
+\begin_inset Newline newline
+\end_inset
+
+-The_early_history_of_Linux_part_2.pdf>.
+\end_layout
+
+\begin_layout Description
+[2] SCHROEDER, M, SALTZER, J.
+ A Hardware Architecture for Implementing Protection Rings [online].
+ 1972.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.multicians.org/protection.html>
+\end_layout
+
+\begin_layout Description
+[3] Kolektiv autorů.
+ Linux Security HOWTO: Files and File system Security [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-HOWTO/file-security.html>
+\end_layout
+
+\begin_layout Description
+[4] The Linux Foundation, mfillpot.
+ Understanding Linux File Permissions [online].
+ 2010.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.linux.com/learn/tutorials/309527-understanding-linux-file-permissions>
+\end_layout
+
+\begin_layout Description
+[5] KERRISK, M.
+ CAP_SYS_ADMIN: the new root [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://lwn.net/Articles/486306/>
+\end_layout
+
+\begin_layout Description
+[6] Kolektiv autorů.
+ Linux Security HOWTO: Physical Security [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-HOWTO/physical-security.html>
+\end_layout
+
+\begin_layout Description
+[7] Kolektiv autorů.
+ TLDP: The File system [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://tldp.org/LDP/tlk/fs/filesystem.html>
+\end_layout
+
+\begin_layout Description
+[8] Kolektiv autorů.
+ Security Quick-Start HOWTO for Linux: Servers, Ports, and Packets [online].
+ 2004.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.tldp.org/HOWTO/Security-Quickstart-HOWTO/appendix.html>
+\end_layout
+
+\begin_layout Description
+[9] LEVY, E.
+ Smashing the Stack for Fun and Profit [online].
+ 1996.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://phrack.org/issues/49/14.html>
+\end_layout
+
+\begin_layout Description
+[10] COWAN, C, WAGLE, P, Pu, C, BEATTIE, S, WALPOLE, J.
+ Buffer Overflows: Attacks and Defenses for the Vulnerability of the Decade
+ [online].
+ 2000.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://tmp-www.cpe.ku.ac.th/~mcs/courses/
+\begin_inset Newline newline
+\end_inset
+
+2005_02/214573/papers/buffer_overflows.pdf>
+\end_layout
+
+\begin_layout Description
+[11] DEWRY, W, LUTOMIRSKI, A.
+ Dokumentace zdrojového kódu Linuxu: SECure COMPuting with filters [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://www.kernel.org/doc/Documentation/prctl/seccomp_filter.txt>
+\end_layout
+
+\begin_layout Description
+[12] ANDREASSON, O.
+ Iptables Tutorial 1.1.19 [online].
+ 2003.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.linuxhowtos.org/Security/iptables.htm>
+\end_layout
+
+\begin_layout Description
+[13] PAVLÍČEK, M.
+ Chroot prostředí - I [online].
+ 2003.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.abclinuxu.cz/clanky/bezpecnost/chroot-prostredi-i>
+\end_layout
+
+\begin_layout Description
+[14] WATZKE, D.
+ Unixové nástroje – 18 (nice, renice, umask) [online].
+ 2010.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.abclinuxu.cz/clanky/unixove-nastroje-18-nice-renice-umask>
+\end_layout
+
+\begin_layout Description
+[15] MENAGE, P, JACKSON, P, LAMETER, Ch.
+ Dokumentace zdrojového kódu Linuxu: CGROUPS [online].
+ 2006.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt>
+\end_layout
+
+\begin_layout Description
+[16] SIMES.
+ How to break out of a chroot() jail [online].
+ 2002.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.bpfh.net/simes/computing/chroot-break.html>
+\end_layout
+
+\begin_layout Description
+[17] WRIGHT, C, COWAN, C, MORRIS, J, SMALLEY, S, KROAH-HARTMAN, G, WireX
+ Communications, Inc., Intercode Pty, Ltd, NAI Labs, Network Associates,
+ Inc., IBM Linux Technology Center.
+ Linux Security Modules: General Security Support for the Linux Kernel [online].
+ 2002.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.usenix.org/event/sec02/wright.html>
+\end_layout
+
+\begin_layout Description
+[18] ŠINDELÁŘ, J.
+ Novell uvolňuje bezpečnostní řešení AppArmor pro Linux jako open-source
+ [online].
+ 2006.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.zive.cz/clanky/novell-uvolnuje-bezpecnostni-reseni-apparmor-pro-linux-
+jako-open-source/sc-3-a-128537/default.aspx>
+\end_layout
+
+\begin_layout Description
+[19] CORBET, J.
+ How patches get into the mainline [online].
+ 2009.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://lwn.net/Articles/318699/>
+\end_layout
+
+\begin_layout Description
+[20] http://wiki.apparmor.net/index.php/AppArmor_Core_Policy_Reference
+\end_layout
+
+\begin_layout Description
+[21] Kolektiv autorů, INSANITYBIT.
+ Compile And Patch Your Own Secure Linux Kernel With PaX and Grsecurity
+ [online].
+ 2012.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<http://www.insanitybit.com/2012/05/31/compile-and-patch-your-own-secure-linux-ker
+nel-with-pax-and-grsecurity/>
+\end_layout
+
+\begin_layout Description
+[22] Kolektiv autorů, Canonical, Ltd.
+ Ubuntu documentation: Security/AppArmor [online].
+ 2014.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://help.ubuntu.com/lts/serverguide/apparmor.html>
+\end_layout
+
+\begin_layout Description
+[23] Kolektiv autorů, Canonical, Ltd.
+ Ubuntu documentation: Community/AppArmor [online].
+ 2014.
+ [cit.
+ 20.11.2014].
+\begin_inset Newline newline
+\end_inset
+
+<https://help.ubuntu.com/community/AppArmor>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Přílohy
+\end_layout
+
+\begin_layout Subsection
+Ukázka použití seccompu v C
+\end_layout
+
+\begin_layout Standard
+Tento program jsem napsal v rámci studia seccompu pro názornou demonstraci
+ jeho využití při psaní programů v jazyce C.
+ Program nejdříve spustí externí program echo, což se projeví výpisem textu
+ 
+\begin_inset Quotes eld
+\end_inset
+
+before
+\begin_inset Quotes erd
+\end_inset
+
+, poté je aktivován seccomp a je znovu zopakován pokus o spuštění programu
+ echo.
+ V případě, že seccomp funguje, dojde k násilnému ukončení celého programu
+ kernelem.
+ Pokud by seccomp selhal, echo se spustí a vypíše text 
+\begin_inset Quotes eld
+\end_inset
+
+after
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},language=C"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*
+\end_layout
+
+\begin_layout Plain Layout
+
+ * seccomp.c (Tomas Mudrunka 2o14)
+\end_layout
+
+\begin_layout Plain Layout
+
+ *
+\end_layout
+
+\begin_layout Plain Layout
+
+ * This demonstrates how to use SECCOMP_MODE_STRICT to sandbox code on Linux.
+\end_layout
+
+\begin_layout Plain Layout
+
+ * You need kernel compiled with CONFIG_SECCOMP=y.
+\end_layout
+
+\begin_layout Plain Layout
+
+ * This prohibits everything except read(2), write(2), _exit(2), and sigreturn(2
+).
+\end_layout
+
+\begin_layout Plain Layout
+
+ * Trying to use other syscalls will result in SIGKILL.
+\end_layout
+
+\begin_layout Plain Layout
+
+ * If you need to enable more syscalls you can use SECCOMP_MODE_FILTER instead.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+ * See man 2 prctl for more...
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+ * 
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <stdlib.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <string.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/prctl.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <linux/seccomp.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <sys/syscall.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#define DISPLAY(msg) (syscall( SYS_write, 2, msg, strlen(msg) ))
+\end_layout
+
+\begin_layout Plain Layout
+
+#define exit(status) { syscall( SYS_exit, status ); abort(); }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+	system("echo before");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(prctl(PR_SET_SECCOMP, SECCOMP_MODE_STRICT) == 0)
+\end_layout
+
+\begin_layout Plain Layout
+
+		DISPLAY("SECCOMP Enabled!
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	else
+\end_layout
+
+\begin_layout Plain Layout
+
+		DISPLAY("SECCOMP Fail!
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	//fflush(NULL);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	system("echo after");
+\end_layout
+
+\begin_layout Plain Layout
+
+	exit(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

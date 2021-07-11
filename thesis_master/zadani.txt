@@ -1,0 +1,18 @@
+
+Název práce:	Využití holofonního prostorového zvuku pro účel rozšířené reality
+
+Název anglicky:	Use of spatial holophonic sound for augmented reality purposes
+
+
+Klíčová slova:	holofonní zvuk, prostorový zvuk, rozšířená realita
+
+
+
+Kolektiv autorů. Linux Security HOWTO: Files and File system Security [online]. 2004. [cit. 20.11.2014].<http://www.tldp.org/HOWTO/Security-HOWTO/file-security.html>
+
+
+Zuccarelli, Hugo; "Ears Hear by Making Sounds," New Scientist, 438-440 1983
+Baxter, A.J., and Kemp, David T.; "Zuccarelli's Theory," New Scientist, 606-606 1983
+"Process for forming an acoustic monitoring device", US Patent 4,680,856
+Gilkey & Anderson, "Binaural and Spatial Hearing in Real and Virtual Environments"
+Holophonics. [online]. [cit. 2016-03-21]. Dostupné z: https://en.wikipedia.org/wiki/Holophonics
